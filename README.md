@@ -3,7 +3,8 @@ ___
 
 + ## ___Acerca de___
     ```
-    Nuestro e-commerce es de una empresa automotriz , basicamente apuntamos a que los clientes puedan comprar autos online con la opcion de customizar su producto por ejemplo el color, llantas, tecnologia, etc
+    Nuestro e-commerce es de una empresa automotriz , basicamente apuntamos a que los clientes puedan comprar autos online
+    con la opcion de customizar su producto por ejemplo el color, llantas, tecnologia, etc. Y su entrega sea en domicio del cliente
 ___
 
 + ## ___Publico Objetivo___
