@@ -43,7 +43,7 @@ ___
 ___
 
 + ## ___Referentes___
-    - [___Netflix___](https://www.netflix.com/ar/)
+    - [___Tesla___](https://www.tesla.com/)
         ![Netflix Pelicula](https://miro.medium.com/max/3200/0*TNPMA2YfqilwqiZ5.)
         ```
         Detalle de la pelicula
