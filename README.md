@@ -31,8 +31,8 @@ ___
     - __Pablo Zerbinatti__
 
         ```
-        Dedicado a la Docencia desde el año 1991. Venezolano. Interesado en el Cloud Computing,
-        como en la Seguridad Informatica.
+        Lic. Administración de empresas. Me dedico hace 6 años a Marketing digital.
+        Hoy en día trabajo como product owner en Mercado libre
     ___
 
     - __Natalia Quiroga__
