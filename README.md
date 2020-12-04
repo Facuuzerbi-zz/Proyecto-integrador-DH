@@ -3,14 +3,14 @@ ___
 
 + ## ___Acerca de___
     ```
-    Nuestro e-commerce es de una empresa automotriz , basicamente apuntamos a que los clientes puedan comprar autos online
-    con la opcion de customizar su producto por ejemplo el color, llantas, tecnologia, etc. 
+    Nuestro e-commerce es de una empresa automotriz , basicamente apuntamos a que los clientes puedan comprar 
+    vehiculos online con la opcion de customizar su producto por ejemplo el color, llantas, tecnologia, etc. 
     Tambien aportaremos la opcion de entrega en domicio del cliente
 ___
 
 + ## ___Publico Objetivo___
     ```
-    Estudiantes con afan de querer aprender y emprender en el mundo tecnológico y digital.
+    Personas con afan de querer adquirir un vehiculo sin moverse de su hogar.
 ___
 
 + ## ___Caracteristicas Principales___
@@ -21,14 +21,21 @@ ___
 
 + ## ___Integrantes___
 
-    - __Eduardo Virgilio__
+    - __Facundo Zerbinatti__
 
         ```
-        Diseñador Multimedial, Productor Audiovisual, Músico, 24 años.
-        6 años en el mundo de la programacion, me desarrollo en la parte del Front End.
+        Técnico electrónico, Docente de tecnologías y robótica, 22 años.
+        6 años en el mundo de la programación, me desarrollo en Software aplicado Hardware
     ___
 
-    - __Daniel Fuentes__
+    - __Pablo Zerbinatti__
+
+        ```
+        Dedicado a la Docencia desde el año 1991. Venezolano. Interesado en el Cloud Computing,
+        como en la Seguridad Informatica.
+    ___
+
+    - __Natalia Quiroga__
 
         ```
         Dedicado a la Docencia desde el año 1991. Venezolano. Interesado en el Cloud Computing,
