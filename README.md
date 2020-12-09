@@ -47,16 +47,18 @@ ___
 ___
 
 + ## ___Referentes___
-    - [___Tesla___](https://www.tesla.com/)
+    - [___Dji___](https://www.dji.com/)
+        ![Home](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/14886357dc8044e237e6b4ad15408c3e/image.png)
+        ![Pruductos](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/faec1f94d4ea497dc67a1b8cdc1798ef/image.png)
+        ![Footer](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/97e859e409b711abde7814c88d738764/image.png)
+        ```
+        Home
+    ___
+        
+    - [___Tesla___](https://www.tesla.com/models/design#paint)
         ![Tesla Custom](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/dfe3dc9fd295c4e99b3574aa88123c71/image.png)
         ```
         Detalle de producto
-    ___
-
-    - [___CineAR Play___](https://play.cine.ar/bienvenida/)
-        ![Captura](/Capturas/Captura.PNG)
-        ```
-        Menu Desplegable
 ___  
 
 + ## ___Wireframes___
