@@ -25,7 +25,8 @@ ___
 
         ```
         Técnico electrónico, Docente de tecnologías y robótica, 22 años.
-        6 años en el mundo de la programación, me desarrollo en Software aplicado Hardware
+        6 años en el mundo de la programación, me desarrollo en Software aplicado Hardware.
+        Lider de equipo de Robotica y Simulacion en la LNR Argentina.
     ___
 
     - __Pablo Zerbinatti__
