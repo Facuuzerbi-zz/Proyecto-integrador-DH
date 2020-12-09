@@ -58,7 +58,14 @@ ___
     - [___Tesla___](https://www.tesla.com/models/design#paint)
         ![Tesla Custom](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/dfe3dc9fd295c4e99b3574aa88123c71/image.png)
         ```
-        Detalle de producto
+        Customizacion de producto
+    ___
+        
+    - [___Apple___](https://www.apple.com/la/ipad/)
+        ![Home](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/a944834661657d8bc46171d168edce88/image.png)
+        ```
+        Comparacion de productos
+    
 ___  
 
 + ## ___Wireframes___
