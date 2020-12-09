@@ -5,7 +5,7 @@ ___
     ```
     Nuestro e-commerce es de una empresa de vehiculos de trasporte como Autos, Motos, Monopatines
     electricos. Basicamente apuntamos a que los clientes puedan comprar vehiculos online con la
-    opcion de customizar su producto por ejemplo el color, llantas, tecnologia, etc. 
+    opcion de customizar su producto por ejemplo el color, llantas, tecnologia, potencia, etc. 
     Tambien aportaremos la opcion de entrega en domicilio del cliente.
 ___
 
