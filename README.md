@@ -38,8 +38,10 @@ ___
     - __Natalia Quiroga__
 
         ```
-        Dedicado a la Docencia desde el año 1991. Venezolano. Interesado en el Cloud Computing,
-        como en la Seguridad Informatica.
+       Lic en tecnología de la información. Trabajo en sistemas desde hace 10 años.
+       Actualmente me dedico a la configuración y despliegue de sitios y 
+       servicios .net y java en Anses, y como freelance en Magnético,
+       haciendo tareas de analista funcional y QA automation.
 ___
 
 + ## ___Referentes___
