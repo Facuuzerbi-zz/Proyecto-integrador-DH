@@ -48,9 +48,9 @@ ___
 
 + ## ___Referentes___
     - [___Tesla___](https://www.tesla.com/)
-        ![Netflix Pelicula](https://miro.medium.com/max/3200/0*TNPMA2YfqilwqiZ5.)
+        ![Tesla Custom](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/dfe3dc9fd295c4e99b3574aa88123c71/image.png)
         ```
-        Detalle de la pelicula
+        Detalle de producto
     ___
 
     - [___CineAR Play___](https://play.cine.ar/bienvenida/)
