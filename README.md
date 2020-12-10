@@ -82,11 +82,15 @@ ___
 
 + ## ___Paleta de colores___
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557)
-        1. ![#6C757D](https://via.placeholder.com/15/6C757D/000000?text=+) `#6C757D`
-        2. ![#f1faee](https://via.placeholder.com/15/f1faee/000000?text=+) `#f1faee`
-        3. ![#a8dadc](https://via.placeholder.com/15/a8dadc/000000?text=+) `#a8dadc`
-        4. ![#457b9d](https://via.placeholder.com/15/457b9d/000000?text=+) `#457b9d`
-        5. ![#1d3557](https://via.placeholder.com/15/1d3557/000000?text=+) `#1d3557`
+        1. ![#F8F9FA](https://via.placeholder.com/15/F8F9FA/000000?text=+) `#F8F9FA`
+        2. ![#E9ECEF](https://via.placeholder.com/15/E9ECEF/000000?text=+) `#E9ECEF`
+        3. ![#DEE2E6](https://via.placeholder.com/15/DEE2E6/000000?text=+) `#DEE2E6`
+        4. ![#CED4DA](https://via.placeholder.com/15/CED4DA/000000?text=+) `#CED4DA`
+        5. ![#ADB5BD](https://via.placeholder.com/15/ADB5BD/000000?text=+) `#ADB5BD`
+        6. ![#6C757D](https://via.placeholder.com/15/6C757D/000000?text=+) `#6C757D`
+        7. ![#495057](https://via.placeholder.com/15/495057/000000?text=+) `#495057`
+        8. ![#343A40](https://via.placeholder.com/15/343A40/000000?text=+) `#343A40`
+        9. ![#212529](https://via.placeholder.com/15/212529/000000?text=+) `#212529`
 ___
 
 + ## ___Tipografia___
