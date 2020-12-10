@@ -96,9 +96,7 @@ ___
 + ## ___Tipografia___
     | Estilo TIpografico | Ejemplo | Implementacion | Representa |
     | ------------- | ------------- | ------------- | ------------- |
-    | Open Sans | [Courier New](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Open_Sans_sample.svg/220px-Open_Sans_sample.svg.png) | Pedioricos - Documentos Formales  | Autoridad - Sobriedad - Formalidad |
-    | Sans Serif  | [Helvetica](https://upload.wikimedia.org/wikipedia/commons/2/28/HelveticaSpecimenCH.svg) [Verdana](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/VerdanaSpecimen.svg/1200px-VerdanaSpecimen.svg.png)  | Presentaciones Digitales - Revistas | Modernidad - Alegria - Seguridad |
-    | Script  | [Vivaldi](https://d144mzi0q5mijx.cloudfront.net/img/V/I/VivaldiD.png) [Killigraphy](https://d144mzi0q5mijx.cloudfront.net/img/K/I/Killigraphy.png) [Edwardian Script](https://i.pinimg.com/originals/d6/ec/73/d6ec73daed396b4ab9b2fd1262ed2dd6.jpg)  | Firmas - Titulares |Natural - Personalidad |
+    | Open Sans | [Ejemplo](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Open_Sans_sample.svg/220px-Open_Sans_sample.svg.png) | Tecnología - Periodicos  | Autoridad - Elegancia - Formalidad |
 ___
 
 + ## ___Logo___
