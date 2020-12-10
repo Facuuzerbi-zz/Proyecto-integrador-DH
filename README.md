@@ -17,7 +17,6 @@ ___
 + ## ___Caracteristicas Principales___
     1. Minimalismo
     2. Practicidad
-    3. Usabilidad basada en el Tree Test.
 ___
 
 + ## ___Integrantes___
@@ -79,20 +78,11 @@ ___
         
         2. ***Home*** : [Aca](https://cdn.dribbble.com/users/1863458/screenshots/5662949/dribbble4.png)
             ![Aca](https://cdn.dribbble.com/users/1863458/screenshots/5662949/dribbble4.png)
-        ___
-
-        3. ***Product Create***
-            - [List](https://cdn.dribbble.com/users/1231641/screenshots/9532014/media/bdf1f989d319bf383b36cb3c79142211.jpg)
-            - [Graficos](https://cdn.dribbble.com/users/1579320/screenshots/10990583/media/6b4b8287e91e45ddcfb4fde4700af717.png)
-            - [Ej 1 - Formulario](https://cdn.dribbble.com/users/911976/screenshots/5309136/create_event_4x.png?compress=1&resize=800x600)
-            - [Ej 2 - Formulario](https://cdn.dribbble.com/users/74921/screenshots/3519667/dribbble_shot_create_campaign.png)
-            - [Ej 3 - Formulario](https://cdn.dribbble.com/users/819177/screenshots/3359523/create_event_preview.png)
-
 ___     
 
 + ## ___Paleta de colores___
     - __Basado en la siguiente:__ [___Link___](https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557)
-        1. ![#e63946](https://via.placeholder.com/15/e63946/000000?text=+) `#e63946`
+        1. ![#6C757D](https://via.placeholder.com/15/6C757D/000000?text=+) `#6C757D`
         2. ![#f1faee](https://via.placeholder.com/15/f1faee/000000?text=+) `#f1faee`
         3. ![#a8dadc](https://via.placeholder.com/15/a8dadc/000000?text=+) `#a8dadc`
         4. ![#457b9d](https://via.placeholder.com/15/457b9d/000000?text=+) `#457b9d`
