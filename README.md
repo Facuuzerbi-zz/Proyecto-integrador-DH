@@ -101,12 +101,9 @@ ___
 
 + ## ___Logo___
 
-    | Clasificación | Caracteriztica | Ejemplo | 
-    | ------------- | ------------- | ------------- |
-    | Logotipo | Solamente Tipografico | [Ejemplo](https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-1.png) |
-    | Isotipo | Solamente Pictograma | [Ejemplo](https://i.pinimg.com/originals/1c/aa/03/1caa032c47f63d50902b9d34492e1303.jpg) |
-    | Isologotipo | Tipografia y Pictograma por separado | [Ejemplo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1200px-Spotify_logo_with_text.svg.png) |
-    | Imagotipo | Tipografia y pictograma combinados | [Ejemplo](https://1000marcas.net/wp-content/uploads/2019/12/Burger-King-Logo.png) | 
+![LogoNegro](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/6b22d21e3e3244acf8397231e253ae71/fd76d9df-eaca-4ca7-a113-92651c08a0a2_200x200.png)
+![LogoBlanco](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/b45f6780d7602e946c3323bdac77c2e9/0b98896b-322c-4ee0-94d2-5e1949ca6628_200x200.png)
+___
 
 # ***Gracias por leer hasta acá***
 ___
