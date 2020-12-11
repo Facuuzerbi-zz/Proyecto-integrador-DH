@@ -72,23 +72,12 @@ ___
     - [Que son los Mockups](https://es.ryte.com/wiki/Mockup)
     - ### ___Ejemplos:___
         
-        1. ***Home*** : ![Aca](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/b3ecc48525cbe3e783892407cc9a010d/image.png)
-        ___
-        2. ***Product Desc*** : 
-            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
-        ___
-        3. ***Product Customizer*** : 
-            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
-        ___
-        4. ***Shoping Cart*** : 
-            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
-        ___
-        5. ***LogIn*** : 
-            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
-        ___
-        6. ***SigIn*** : 
-            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
-
+        - [___1. Home___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc94192d037d00c999e1729/17e7be93bf676b3e835124d240924f52/1-Homepage.png)
+        - [___2. Product Desc___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc94195d1b9af1a080331ce/54d8b504b62d0521b616984422875396/2-Producto.png)
+        - [___3. Product Cust___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc94195d1b9af1a080331ce/7deed9a55d4fc32656261fbda7128155/3-Producto-personalizacion.png)
+        - [___4. Shoping Cart___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc94325af411f1a44b17fbe/c3a05803eb61b624176c2679491e23a0/4-Carrito.png)
+        - [___5. LogIn___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944798d1b4e676a68857a/99ac76b258654d2036f61d0267b7c8c3/5-Log-in.png)
+        - [___6. SigIn___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc9445448dbe788e08e1f5c/6dc184b4666b176de3baab7c27a6e979/6-Crear-cuenta.png)
 ___     
 
 + ## ___Paleta de colores___
