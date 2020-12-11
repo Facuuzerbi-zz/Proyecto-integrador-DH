@@ -71,13 +71,24 @@ ___
     - [Para que son?](https://www.lucidchart.com/pages/es/que-es-un-wireframe-para-un-sitio-web#section_1)
     - [Que son los Mockups](https://es.ryte.com/wiki/Mockup)
     - ### ___Ejemplos:___
-
-        1. ***Shoping Cart*** : 
+        
+        1. ***Home*** : ![Aca](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/b3ecc48525cbe3e783892407cc9a010d/image.png)
+        ___
+        2. ***Product Desc*** : 
             ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
         ___
-        
-        2. ***Home*** : [Aca](https://cdn.dribbble.com/users/1863458/screenshots/5662949/dribbble4.png)
-            ![Aca](https://cdn.dribbble.com/users/1863458/screenshots/5662949/dribbble4.png)
+        3. ***Product Customizer*** : 
+            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
+        ___
+        4. ***Shoping Cart*** : 
+            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
+        ___
+        5. ***LogIn*** : 
+            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
+        ___
+        6. ***SigIn*** : 
+            ![Dribble Shopping Cart](https://cdn.dribbble.com/users/952958/screenshots/4828084/cart.png)
+
 ___     
 
 + ## ___Paleta de colores___
