@@ -69,8 +69,6 @@ ___
 
 + ## ___Wireframes___
     - [Para que son?](https://www.lucidchart.com/pages/es/que-es-un-wireframe-para-un-sitio-web#section_1)
-    - [Que son los Mockups](https://es.ryte.com/wiki/Mockup)
-    - ### ___Ejemplos:___
         
         - [___1. Home___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc94192d037d00c999e1729/17e7be93bf676b3e835124d240924f52/1-Homepage.png)
         - [___2. Product Desc___](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc94195d1b9af1a080331ce/54d8b504b62d0521b616984422875396/2-Producto.png)
@@ -91,6 +89,9 @@ ___
         7. ![#495057](https://via.placeholder.com/15/495057/000000?text=+) `#495057`
         8. ![#343A40](https://via.placeholder.com/15/343A40/000000?text=+) `#343A40`
         9. ![#212529](https://via.placeholder.com/15/212529/000000?text=+) `#212529`
+        10. ![#8cccf2](https://via.placeholder.com/15/8CCCF2/000000?text=+) `#8CCCF2`
+        11. ![#79D06E](https://via.placeholder.com/15/79D06E/000000?text=+) `#79D06E`
+
 ___
 
 + ## ___Tipografia___
