@@ -1,0 +1,70 @@
+.tittle{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+#input-login{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    height: 30px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+}
+
+#input-login:focus{
+    border: transparent;
+}
+
+#button-acept{
+    font-size: 18px;
+    color: white;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    background-color: #343A40;
+    width: 250px;
+    height: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#olvi{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+#button-other{
+    font-size: 18px;
+    color:black;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    background-color:white;
+    width: 250px;
+    height: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.line{
+    text-align: center;
+}
+
+#terminos{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.check{
+    width: 15px;
+    height: 15px;
+}
