@@ -9,6 +9,11 @@ app.use(express.static(publicPath));
 
 app.listen(3030, ()=> console.log('Servidor Corriendo')); 
 
+app.get('/', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/Home.html');
+    res.sendFile(htmlPath);
+});
+
 app.get('/login', (req,res) => {
     let htmlPath = path.resolve(__dirname,'./views/Login.html');
     res.sendFile(htmlPath);
