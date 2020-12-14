@@ -3,24 +3,25 @@
     text-align: center;
     font-size: 35px;
 }
+/*------------------------ Info Usuario ------------------------------*/
 #input-login{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    padding-left: 20px;
     border-radius: 20px;
     border-color: black;
     border-width: 1px;
     height: 30px;
-    width: 250px;
+    width: 226px;
     margin-right: auto;
     margin-left: auto;
     display: block;
-
 }
-
 #input-login:focus{
-    border: transparent;
+    outline: none;
 }
 
+/*------------------------ Boton Principal ------------------------------*/
 #button-acept{
     font-size: 18px;
     color: white;
@@ -34,12 +35,13 @@
     margin-left: auto;
     display: block;
 }
-#olvi{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
-    display: block;
-    text-align: center;
+#button-acept:focus{
+    outline: none;
 }
+#button-acept:hover{
+    background-color:#495057;
+}
+/*------------------------ Boton Secundario ------------------------------*/
 #button-other{
     font-size: 18px;
     color:black;
@@ -53,18 +55,33 @@
     margin-left: auto;
     display: block;
 }
+#button-other:focus{
+    outline: none;
+}
+#button-other:hover{
+    background-color:#CED4DA;
+}
 
+/*------------------------ Otros ------------------------------*/
+
+#olvi{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
 .line{
     text-align: center;
 }
 
-#terminos{
-    font-family: 'Open Sans', sans-serif;
-    display: block;
-    text-align: center;
-}
 
 .check{
     width: 15px;
     height: 15px;
+    
+}
+#terminos{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    text-align: center;
 }
