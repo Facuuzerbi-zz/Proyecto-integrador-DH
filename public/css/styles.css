@@ -88,3 +88,96 @@
     display: block;
     text-align: center;
 }
+
+
+/*------------------------ Estilos pagina producto ------------------------------*/
+* {
+    box-sizing: border-box;
+}
+.header {
+    background-color:white; 
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 20px;
+    border-bottom: solid 3px black;
+    padding: 10px;
+    margin-bottom: -35px;
+    text-align: center;
+    box-sizing:border-box;
+}
+.logo-principal{
+    float: left;
+}
+.item{
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 25px;
+    color: black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+icon{
+float: right;
+}
+/*--------------------------------------------------*/
+
+/*.navigation {
+    background-color:white;
+    color: black;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+}*/
+
+.navigation-list{
+    background-color: red;
+    list-style: none;
+    display: flex;
+    margin: 5px;
+}
+.navigation-list2{
+    background-color: salmon;
+    list-style: none;
+    display: flex;
+}
+
+.navigation-item{
+    margin-right: 5vw;
+}
+.navigation-item2{
+    margin-right: 1vw;
+}
+
+.section-principal-producto{
+    background-image: url('http://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+}
+
+.title-principal-producto{
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    font-size: 35px;
+    padding-top: 35px;  
+}
+.subtitulo-principal-producto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.section-gris-producto{
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    background-color: #E9ECEF;
+    box-sizing: border-box;
+}
+
+.section-gris-left{
+    float: left;
+}
+
+.section-gris-right{
+    float: right;
+}
