@@ -8,27 +8,29 @@
         <title>Sig In</title>
     </head>
     <body>
+        <header>
+            <a href="http://localhost:3030"><img src="/img/Logos/logo-negro.png" width="12%" height="12%" alt="Logo"></a>
+        </header>
+        <section>
+            <h3 class="title"> Crear Cuenta</h3>
+            <input id="input-login" type="text" required placeholder="Nombre" ><br>
+            <input id="input-login" type="text" required placeholder="Apellido" ><br>
+            <input id="input-login" type="text" required placeholder="Email" ><br>
+            <input id="input-login" type="password" required placeholder="Contraseña" ><br>
         
-        <a href="http://localhost:3030"><img src="/img/Logos/logo-negro.png" width="12%" height="12%" alt="Logo"></a>
-        <h3 class="title"> Crear Cuenta</h3>
-        <input id="input-login" type="text" required placeholder="Nombre" ><br>
-        <input id="input-login" type="text" required placeholder="Apellido" ><br>
-        <input id="input-login" type="text" required placeholder="Email" ><br>
-        <input id="input-login" type="password" required placeholder="Contraseña" ><br>
 
+            <label id="terminos"><input type="checkbox" class="check">Acepto terminos y condiciones</label>
+            <label id="terminos"><input type="checkbox" class="check">Recibir novedades</label><br>
 
-        <label id="terminos"><input type="checkbox" class="check">Acepto terminos y condiciones</label>
+            <div id="button-acept">
+                <a href="" style="text-decoration: none"><input id="button-acept" type="button" value="Crear cuenta"></a>
+            </div>
 
-        <label id="terminos"><input type="checkbox" class="check">Recibir novedades</label><br>
+            <p class="line">___________________________________</p>
 
-        <div id="button-acept">
-            <a href="" style="text-decoration: none"><input id="button-acept" type="button" value="Crear cuenta"></a>
-        </div>
-
-        <p class="line">___________________________________</p>
-
-        <div id="button-other">
-            <a href="http://localhost:3030/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar"></a>
-        </div>
+            <div id="button-other">
+                <a href="http://localhost:3030/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar"></a>
+            </div>
+        </section>
     </body>
 </html>

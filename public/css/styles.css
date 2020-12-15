@@ -20,7 +20,6 @@
 #input-login:focus{
     outline: none;
 }
-
 /*------------------------ Boton Principal ------------------------------*/
 #button-acept{
     font-family: 'Open Sans', sans-serif;
@@ -53,7 +52,7 @@
     border-radius: 20px;
     border-style: inset;
     border-color: black;
-    border-width: 0.5px;
+    border-width: 1px;
     background-color:white;
     width: 250px;
     height: 35px;
@@ -80,12 +79,9 @@
 .line{
     text-align: center;
 }
-
-
 .check{
     width: 15px;
     height: 15px;
-    
 }
 #terminos{
     font-family: 'Open Sans', sans-serif;
