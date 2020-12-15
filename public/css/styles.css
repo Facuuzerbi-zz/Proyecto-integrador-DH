@@ -1,4 +1,4 @@
-.tittle{
+.title{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 35px;
@@ -23,6 +23,8 @@
 
 /*------------------------ Boton Principal ------------------------------*/
 #button-acept{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
     font-size: 18px;
     color: white;
     border-radius: 20px;
@@ -34,6 +36,7 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
+    cursor: pointer;
 }
 #button-acept:focus{
     outline: none;
@@ -43,17 +46,21 @@
 }
 /*------------------------ Boton Secundario ------------------------------*/
 #button-other{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
     font-size: 18px;
     color:black;
     border-radius: 20px;
+    border-style: inset;
     border-color: black;
-    border-width: 1px;
+    border-width: 0.5px;
     background-color:white;
     width: 250px;
     height: 35px;
     margin-right: auto;
     margin-left: auto;
     display: block;
+    cursor: pointer;
 }
 #button-other:focus{
     outline: none;

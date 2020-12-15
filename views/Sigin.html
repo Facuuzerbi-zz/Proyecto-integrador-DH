@@ -10,7 +10,7 @@
     <body>
         
         <a href="http://localhost:3030"><img src="/img/Logos/logo-negro.png" width="12%" height="12%" alt="Logo"></a>
-        <h3 class="tittle"> Crear Cuenta</h3>
+        <h3 class="title"> Crear Cuenta</h3>
         <input id="input-login" type="text" required placeholder="Nombre" ><br>
         <input id="input-login" type="text" required placeholder="Apellido" ><br>
         <input id="input-login" type="text" required placeholder="Email" ><br>
@@ -21,8 +21,14 @@
 
         <label id="terminos"><input type="checkbox" class="check">Recibir novedades</label><br>
 
-        <input id="button-acept" type="button" value="Crear cuenta" >
+        <div id="button-acept">
+            <a href="" style="text-decoration: none"><input id="button-acept" type="button" value="Crear cuenta"></a>
+        </div>
+
         <p class="line">___________________________________</p>
-        <a href="http://localhost:3030/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar" ></a>
+
+        <div id="button-other">
+            <a href="http://localhost:3030/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar"></a>
+        </div>
     </body>
 </html>
