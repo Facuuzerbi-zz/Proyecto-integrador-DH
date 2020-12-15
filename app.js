@@ -24,3 +24,18 @@ app.get('/sigin', (req,res) => {
     res.sendFile(htmlPath);
 });
 
+app.get('/auto', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/Producto-auto.html');
+    res.sendFile(htmlPath);
+});
+
+app.get('/moto', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/Producto-moto.html');
+    res.sendFile(htmlPath);
+});
+
+app.get('/monopatin', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/Producto-monopatin.html');
+    res.sendFile(htmlPath);
+});
+
