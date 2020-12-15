@@ -108,6 +108,12 @@ footer{
 #button-other:hover{
     background-color:#CED4DA;
 }
+#div-buttons{
+    width: 250px;
+    height: 35px;
+    border: transparent;
+    margin: auto;
+}
 /*---------------------------- Estilos Home -----------------------------*/
 .title-product-home{
     font-family: 'Open Sans', sans-serif;
@@ -252,8 +258,8 @@ article{
     border-radius: 20px;
     border-color: black;
     border-width: 1px;
-    height: 30px;
-    width: 226px;
+    height: 35px;
+    width: 250px;
     margin-right: auto;
     margin-left: auto;
     display: block;
@@ -266,6 +272,7 @@ article{
     font-size: 17px;
     display: block;
     text-align: center;
+    padding-top: 5px;
 }
 .line{
     text-align: center;
