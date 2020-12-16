@@ -39,3 +39,8 @@ app.get('/monopatin', (req,res) => {
     res.sendFile(htmlPath);
 });
 
+app.get('/cart', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/Cart.html');
+    res.sendFile(htmlPath);
+});
+

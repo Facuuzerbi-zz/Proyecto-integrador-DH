@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
         <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/Home.css">
-        <title>Home</title>
+        <link rel="stylesheet" href="/css/Cart.css">
+        <title>Cart</title>
     </head>
 <body>
     <header class="header">
@@ -26,40 +26,46 @@
             </ul>
         </nav>
     </header>
-<!-- De aca para abajo -->
-        <section>
-            <article class="auto"> 
-                <h1 class="title-product-home">Producto</h1>
-                <p class="descripcion-product-home">
-                    info del producto</p>
-                <a href=""><input id="button-home" type="button" value="Ver mas" ></a>
-            </article>
-            <!--article>
-                <img class="moto">
-                <h1>Producto</h1>
-                <p>info del producto</p>
-            </article>
-            <article>
-                <img class="monopatin">
-                <h1>Producto</h1>
-                <p>info del producto</p>
-            </article-->
-         </section>
-  <div id ="general">
-             <div id="auto">   
-             </div>
-             <div id="moto">   
+
+    <section class="Cart-section">
+        
+            <div id="cart-tittle">
+                <h2>Carrito</h2>
             </div>
-            <div id="monopatin">   
+            <div class="barra">
+                <nav class="caracteristicas">
+                    <li id="item">Item</li>
+                    <li>Precio P/unidad</li>
+                    <li>Cantidad</li>
+                    <li>Precio</li>
+                </nav>
             </div>
-         </div>       
-        <div id="suscribir">
-            <div id="novedades">suscribite para recibir mas novedades</div>
-            <div href=""><input id="button-other" type="button" value="Ingresar mail" ></div>
-            <div href=""><input id="button-home" type="button" value="Ver mas" ></div>
-        </div>
-         
-    </body>
+            <section class="compra">
+                <div class="barra-compra">
+                    <nav class="caracteristicas2">
+                        <li id="imagen"><img id="product-img" src="/img/auto/auto.jpg" alt="Producto"></li>
+                        <li id="desc">Auto QZ</li>
+                        <li>$ 100.000</li>
+                        <li>1</li>
+                        <li>$100.000</li>
+                    </nav>
+                </div>
+            </section>
+            <section class="barra-total">
+                <div class="precio-total">
+                    <h4>Total: $100.000</h4>
+                </div>
+            </section>
+            <section class="botones">
+                <div id="div-button-seguir">
+                    <a href="" style="text-decoration: none"><input id="button-other" type="button" value="Seguir comprando"></a>
+                </div>
+                <div id="div-button-pagar">
+                    <a href="" style="text-decoration: none"><input id="button-acept" type="button" value="Ir a pagar"></a>
+                </div>
+            </section>
+    </section>
+
     <footer>
         <div id="logo-footer"><img src="/img/Logos/logo-negro.png" alt="Logo"></div>
         <div id="caja-footer">

@@ -1,1 +1,98 @@
 /*----------------------- Estilos pagina Carrito ------------------------*/
+.Cart-section{
+    margin: 3vw;
+    height: auto;
+    border: 2px black solid;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1vh;
+    padding-bottom: 10vh;
+}
+#cart-tittle{
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 20px;
+    margin-bottom: 3vw;
+}
+.barra{
+    width: 80vw;
+    height: 5vh;
+    border-bottom: solid black 2px;
+}
+.caracteristicas{
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#item{
+    padding-right: 25vw;
+}
+.caracteristicas li{
+    display: inline;
+    padding-left: 8vw;
+}
+.barra-compra{
+    width: 80vw;
+    height: 10vh;
+    border-bottom: solid black 2px;
+}
+.caracteristicas2{
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#product-img{
+    margin-top: 1vh;
+    padding-left: 0vw;
+    width: 4vw;
+    height: 5vh;
+}
+#imagen{
+    padding-right: 1vw;
+    padding-left: 7vw;
+}
+#desc{
+    padding-left: 0vw;
+    padding-right: 16vw;
+}
+.caracteristicas2 li{
+    display: inline;
+    padding-left: 11vw;
+}
+.precio-total{
+    font-family: 'Open Sans', sans-serif;   
+    font-size: 20px;
+    padding-left: 69.5vw;
+}
+.barra-total{
+    width: 80vw;
+    height: 6vh;
+    border-bottom: solid black 2px;
+}
+.botones{
+    margin-top: 2vh;
+    position: relative;
+}
+#div-button-seguir{
+    position: absolute;
+    top: 1vh;
+    left: 0vw;
+    width: 250px;
+    height: 35px;
+    border: transparent;
+    margin: auto;
+}
+#div-button-pagar{
+    position: absolute;
+    top: 1vh;
+    right: 2vw;
+    width: 250px;
+    height: 35px;
+    border: transparent;
+    margin: auto;
+}
