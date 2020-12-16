@@ -1,0 +1,49 @@
+/*--------------------- Estilos pagina LogIn/SigIn ----------------------*/
+.header-logsin{
+    background-color:white; 
+    padding: 10px;
+    margin-bottom: 2px;
+}
+#logo-logsin{
+    float: left;
+}
+.titulo-in{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+#input-login{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    height: 35px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+#input-login:focus{
+    outline: none;
+}
+#olvi{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+}
+.line{
+    text-align: center;
+}
+.check{
+    width: 15px;
+    height: 15px;
+}
+#terminos{
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    text-align: center;
+}
