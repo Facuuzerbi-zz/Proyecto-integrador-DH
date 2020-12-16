@@ -33,15 +33,15 @@ article{
     box-sizing:border-box;
   }
   .auto {
-    background-image: url('/img/Logos/auto.jpg');
+    background-image: url('/img/auto/auto.jpg');
     background-size:cover;
   }
   .moto {
-    background-image: url('/img/Logos/auto.jpg');
+    background-image: url('/img/auto/auto.jpg');
     background-size:cover;
   }
   .monopatin {
-    background-image: url('/img/Logos/auto.jpg');
+    background-image: url('/img/auto/auto.jpg');
     background-size:cover;
   }
   div#general{
@@ -57,7 +57,7 @@ article{
     margin-top: 5px;
     width: 600px;
     height: 510px;
-    background-image: url('/img/Logos/auto.jpg');
+    background-image: url('/img/auto/auto.jpg');
     background-position: center;
     background-size:cover;
     float:left; 
@@ -67,7 +67,7 @@ article{
     margin-top: 5px;
     width: 600px;
     height: 250px;
-    background-image: url('/img/Logos/moto.jpg');
+    background-image: url('/img/moto/moto.jpg');
     background-position: center;
     background-size:cover;
     float:right;
@@ -77,7 +77,7 @@ article{
     margin-top: 10px;
     width: 600px;
     height: 250px;
-    background-image: url('/img/Logos/monopatin.jpg');
+    background-image: url('/img/monopatin/monopatin.jpg');
     background-position: center;
     background-size:cover;
     float:right;
