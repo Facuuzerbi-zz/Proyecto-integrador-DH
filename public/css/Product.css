@@ -1,4 +1,8 @@
 /*----------------------- Estilos pagina producto -----------------------*/
+*{
+    box-sizing: border-box;
+}
+
 .section-principal-producto{
     background-image: url('http://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
     background-position: center center;
@@ -19,15 +23,30 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
+div{
 
-.section-gris-producto{
+}
+
+.section-gris{
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
-    background-color: #E9ECEF;
+    background-color: red;
+    background: #F99;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 30px;
 }
 .section-gris-left{
-    float: left;
+    background: #99F;
+    float: left;    /* flotamos el elemento a la izquierda */
+    width: 35%;
+    height: 600px;
+
 }
 .section-gris-right{
-    float: right;
+    background: #99F;
+    float: right;    /* flotamos el elemento a la izquierda */
+    width: 35%;
+    height: 600px;
 }

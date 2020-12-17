@@ -1,0 +1,93 @@
+/* fuente: https://disenowebakus.net/diseno-web-responsive.php */
+
+body {
+	font-size:90%;
+}
+
+/* porcentaje base, solo en el body */
+p {
+	font-size:1em;
+}
+h1 {
+	font-size:2em;
+}
+h2 {
+	font-size:1.4em;
+}
+#pie {
+	font-size:1.2em;
+}
+.epigrafes {
+	font-size:1.1em;
+}
+
+img, video, object { max-width:100%; }
+
+#menupc {
+	display:none;
+}
+#menumovil {
+    display:block;
+    float: right;
+}
+
+#subtitulos {
+	display:none;
+}
+
+/* Teoria de bloques - fuente: https://www.genbeta.com/desarrollo/responsive-design-puesta-en-marcha */
+#contenedor .bloque{
+    display: inline-block;  /* Es esencial para que se muestren los bloques en línea */
+    height:300px;
+    width: 300px;
+    border:1px solid #333;
+    background: #999;
+    margin:20px;
+}
+
+/* fin de zona común a todas las resoluciones colocar 1024 */
+@media screen and (min-width:900px) {
+	body {
+		font-size:120%;
+		/* ampliamos los textos si mide más de 800px */
+    }
+    #menupc {
+		display:block; 
+		/* Mostramos el menú de PC */ 
+	}
+	#menumovil {
+		display:none; 
+		/* Ocultamos el select para teléfono */
+    }
+    #subtitulos {
+        display:block;
+        /* Mostramos el subtitulo */
+    }
+    #contenedor .bloque{
+        display: block !important;  /* Cuando el ancho sea inferior a 800px el elemento será un bloque */
+        width: auto !important;
+    }
+    #contenedor .bloque{
+        display: inline-block;  /* Es esencial para que se muestren los bloques en línea */
+        height:300px;
+        width: 300px;
+        border:1px solid #333;
+        background: #999;
+        margin:20px;
+}
+}
+
+
+/* Como orientación, podemos calcular que en la mayoría de las pantallas de PC, 
+a tamaño de fuente normal, la equivalencia entre ems y pixeles es que 1em = 16px, 
+por lo que, si queremos definir en la hoja de estilos un texto que en Photoshop 
+ocupaba 24px, lo dividiremos por 16 para saber su valor en em, que en este caso 
+sería 1.5em. Atención: utilicemos puntos como separador decimal, no comas. */
+
+
+
+/* 3) IMAGENES: Si en cada zona de los estilos CSS delimitada por una media querie 
+apuntamos a distintas imágenes (de distintos tamaños), no tendremos problemas con 
+background-image: 
+
+Buscar ejemplo en fuente*/

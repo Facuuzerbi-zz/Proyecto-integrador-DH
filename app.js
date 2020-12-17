@@ -44,3 +44,14 @@ app.get('/cart', (req,res) => {
     res.sendFile(htmlPath);
 });
 
+app.get('/responsive', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/responsive.html');
+    res.sendFile(htmlPath);
+});
+
+app.get('/responsive2', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/responsive2.html');
+    res.sendFile(htmlPath);
+});
+
+
