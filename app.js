@@ -14,6 +14,11 @@ app.get('/', (req,res) => {
     res.sendFile(htmlPath);
 });
 
+app.get('/Home2', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/Home2.html');
+    res.sendFile(htmlPath);
+});
+
 app.get('/login', (req,res) => {
     let htmlPath = path.resolve(__dirname,'./views/Login.html');
     res.sendFile(htmlPath);
