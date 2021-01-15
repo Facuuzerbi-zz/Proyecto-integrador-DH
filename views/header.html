@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/Header.css">
+        <title>Header</title>
+    </head>
+    <body>
+        <div class="menu-pc">
+            <div class="h-logo">
+                <a href="http://localhost:3030/" class="logo-principal"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
+            </div>
+            <div class="h-prod">   
+                    <div>
+                        <a href="http://localhost:3030/auto" style="text-decoration: none;" class="item">Auto</a>
+                    </div>
+                    <div>
+                        <a href="#" style="text-decoration: none;" class="item">Moto</a>
+                    </div>
+                    <div>
+                        <a href="#" style="text-decoration: none;" class="item">Monopatin</a>
+                    </div>
+            </div>
+            <div class="h-icons">
+                    <img src='/img/Iconos/Lupa.png' alt ="iconolupa">
+                    <a href="http://localhost:3030/cart"><img src='/img/Iconos/Carrito.png' alt ="iconocarrito "></a>
+                    <a href="http://localhost:3030/sigin"> <img src='/img/Iconos/account.png' alt ="iconocuenta"></a>
+            </div>
+        </div>
+        
+        <div class="menu-mobile">
+                <div class="logo-h-m">
+                    <a href="http://localhost:3030/" class="logo-principal"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
+                </div>
+                <div class="topnav">
+                    <div id="myLinks">
+                        <a href="http://localhost:3030/auto" style="text-decoration: none;" class="item-m">Auto</a>
+                        <a href="#" style="text-decoration: none;" class="item-m">Moto</a>
+                        <a href="#" style="text-decoration: none;" class="item-m">Monopatin</a>
+                        <a href="http://localhost:3030/cart" class="item-m">Cart</a>
+                        <a href="http://localhost:3030/sigin" class="item-m">Log in / Sign in</a>
+                    </div>
+                    <div class="hambur">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                    </a>
+                    </div>
+                </div>
+        </div>
+    </body>
+</html>
+
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+</html>

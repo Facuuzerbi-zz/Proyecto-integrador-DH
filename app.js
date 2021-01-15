@@ -54,4 +54,7 @@ app.get('/responsive2', (req,res) => {
     res.sendFile(htmlPath);
 });
 
-
+app.get('/header', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/header.html');
+    res.sendFile(htmlPath);
+});

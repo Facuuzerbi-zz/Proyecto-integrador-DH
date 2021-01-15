@@ -1,0 +1,73 @@
+.menu-pc{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: black 1px solid;
+}
+.h-prod{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: black;
+    width: 20em;
+}
+.item{
+    color: black;
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 8em;
+}
+/*------------------------------------*/
+.menu-mobile {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5em;
+  max-width: 100%;
+  height: auto;
+  color: black;
+  display: none;
+}
+.logo-h-m{
+  width: 50%;
+}
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+.hambur{
+  align-self: center;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a {
+  color: black;
+  padding-right: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.item-m{
+  padding: 10px;
+}
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+@media screen and (max-width:900px){
+    .menu-pc{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+}
