@@ -17,12 +17,13 @@
        
         <section>
             <h3 class="titulo-in">Log in</h3>
-            <input id="input-login" type="text" required placeholder="Email"><br>
-            <input id="input-login" type="password" required placeholder="Contraseña"><br><br>
-
-            <div id="div-buttons">
-                <a href="" style="text-decoration: none"><input id="button-acept" type="button" value="Ingresar"></a>
-            </div>
+            <form action="/" method="POST">
+                <input type="email" name="user" placeholder="Email" id="input-login" required>
+                <input type="password" name="pass" placeholder="Contraseña" id="input-login" minlength="8" required>
+                <div id="div-buttons">
+                    <input id="button-acept" type="submit" value="Ingresar">
+                </div>
+            </form>
             
             <div id="olvi">
                 <a href="" style="text-decoration: none">Olvidé mi Contraseña</a>
