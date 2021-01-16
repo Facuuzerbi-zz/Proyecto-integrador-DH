@@ -9,28 +9,125 @@
     background: #212529; 
   }
 /*--------- HEADER -------*/
-.header {
-    background-color:white; 
-    font-family: 'Open Sans', sans-serif;   
-    font-size: 20px;
-    border-bottom: solid 3px black;
-    padding: 10px;
-    margin-bottom: 2px;
+.main-header{
+    background-color: #DEE2E6;
+    padding: 0px 20px;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: solid black 1px;
+  }
+  .main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .logo{
+    max-width: 45%;
+    padding-right: 20px;
+  }
+  .busqueda{
+    display: flex;
+    max-width: 45%;
+    align-self: center;
+    text-justify: auto;
+  }
+  .busqueda input{
+    width: 100%;
+    border: none;
+    height: 5vh;  
+    padding: 0px 10px;
+  }
+  .busqueda button{
+    border: none;
+    height: 5vh;
+    background-color: white;
+    text-align: right;
+    padding: 0px 10px;
+  }
+  .main-header-top-bar h2{
+    margin: auto;
+    padding: 20px 0px;
+  }
+  .hamburguer-button{
+    background-color: #6C757D;
+    color: #DEE2E6;
+    display: block;
+    max-width: 80px;
+    padding: 5px 0px;
+    border-radius: 8px;
     text-align: center;
-}
-.logo-principal{
-    float: left;
-}
-.item{
-    font-family: 'Open Sans', sans-serif;   
-    font-size: 25px;
-    color: black;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-icon{
-float: right;
-}
+    font-size: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .main-navbar{
+    display: none;
+    margin-top: 10px;
+  }
+  .main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+  }
+  @media (min-width:600px){
+    .main-header{
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+    }
+    .hamburguer-button{
+      display: none;
+    }
+    .main-navbar{
+      width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .main-navbar ul{
+      display: flex;
+    }
+    .main-navbar li{
+      margin: 0 5px;
+    }
+    .left-navbar ul{
+      padding-left: 100px;
+    }
+    .left-navbar li{
+      margin: 0% 5%;
+    }
+    .left-navbar li a{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3vw;
+      padding-right: 20px;
+    }
+    .busqueda{
+      display: none;
+    }
+    header{
+      display: flex;
+    }
+    .logo{
+      max-width: 100%;
+    }
+  }
+  @media (min-width:900px){
+    .left-navbar li a{
+      font-size: 26px;
+      }
+    .left-navbar li{
+      padding-left: 25px;
+    }
+  }
 /*--------- FOOTER -------*/
 footer{
     height: 300px;
