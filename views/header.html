@@ -9,64 +9,27 @@
         <title>Header</title>
     </head>
     <body>
-        <div class="menu-pc">
-            <div class="h-logo">
-                <a href="http://localhost:3030/" class="logo-principal"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
+        <header class="main-header">
+            <div class="main-header-top-bar">
+                <img src="/img/Logos/logo-negro.png" alt="Logo" class="logo">
+                <form action="#" method="GET" class="busqueda">
+                    <input type="search" placeholder="Buscar" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
-            <div class="h-prod">   
-                    <div>
-                        <a href="http://localhost:3030/auto" style="text-decoration: none;" class="item">Auto</a>
-                    </div>
-                    <div>
-                        <a href="#" style="text-decoration: none;" class="item">Moto</a>
-                    </div>
-                    <div>
-                        <a href="#" style="text-decoration: none;" class="item">Monopatin</a>
-                    </div>
-            </div>
-            <div class="h-icons">
-                    <img src='/img/Iconos/Lupa.png' alt ="iconolupa">
-                    <a href="http://localhost:3030/cart"><img src='/img/Iconos/Carrito.png' alt ="iconocarrito "></a>
-                    <a href="http://localhost:3030/sigin"> <img src='/img/Iconos/account.png' alt ="iconocuenta"></a>
-            </div>
-        </div>
-        
-        <div class="menu-mobile">
-                <div class="logo-h-m">
-                    <a href="http://localhost:3030/" class="logo-principal"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
-                </div>
-                <div class="topnav">
-                    <div id="myLinks">
-                        <a href="http://localhost:3030/auto" style="text-decoration: none;" class="item-m">Auto</a>
-                        <a href="#" style="text-decoration: none;" class="item-m">Moto</a>
-                        <a href="#" style="text-decoration: none;" class="item-m">Monopatin</a>
-                        <a href="http://localhost:3030/cart" class="item-m">Cart</a>
-                        <a href="http://localhost:3030/sigin" class="item-m">Log in / Sign in</a>
-                    </div>
-                    <div class="hambur">
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                    </a>
-                    </div>
-                </div>
-        </div>
-    </body>
-</html>
-
-<body>
-
-<!-- Simulate a smartphone / tablet -->
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-
-</body>
+            <a href="#" class="hamburguer-button"><i class="fa fa-bars burger"></i></a>
+            <nav class="main-navbar">
+                <ul class="left-navbar">
+                    <li><a href="http://localhost:3030/Auto">Auto</a></li>
+                    <li><a href="#">Moto</a></li>
+                    <li><a href="#">Monopatin</a></li>
+                </ul>
+                <ul class="right-navbar">
+                    <li><img src='/img/Iconos/Lupa.png' alt ="iconolupa"></li>
+                    <li><a href="http://localhost:3030/cart"><img src='/img/Iconos/Carrito.png' alt ="iconocarrito "></a></li>
+                    <li><a href="http://localhost:3030/sigin"> <img src='/img/Iconos/account.png' alt ="iconocuenta"></a></li>
+                </ul>
+            </nav>
+        </header>
+        </body>
 </html>

@@ -9,20 +9,25 @@
         <title>Cart</title>
     </head>
 <body>
-    <header class="header">
-        <div>
-        <a href="http://localhost:3030/" class="logo-principal"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
-        </div>    
-        <nav>
-            <ul>
-                    <a href="http://localhost:3030/auto" style="text-decoration: none;" class="item">Auto</a>
-                    <a href="#" style="text-decoration: none;" class="item">Moto</a>
-                    <a href="#" style="text-decoration: none;" class="item">Monopatin</a>
-            <icon>
-                <img src='/img/Iconos/Lupa.png' alt ="iconolupa">
-                <a href="http://localhost:3030/cart"><img src='/img/Iconos/Carrito.png' alt ="iconocarrito "></a>
-                <a href="http://localhost:3030/sigin"> <img src='/img/Iconos/account.png' alt ="iconocuenta"></a>
-            </icon>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/img/Logos/logo-negro.png" alt="Logo" class="logo">
+            <form action="#" method="GET" class="busqueda">
+                <input type="search" placeholder="Buscar" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <a href="#" class="hamburguer-button"><i class="fa fa-bars burger"></i></a>
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="http://localhost:3030/Auto">Auto</a></li>
+                <li><a href="#">Moto</a></li>
+                <li><a href="#">Monopatin</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><img src='/img/Iconos/Lupa.png' alt ="iconolupa"></li>
+                <li><a href="http://localhost:3030/cart"><img src='/img/Iconos/Carrito.png' alt ="iconocarrito "></a></li>
+                <li><a href="http://localhost:3030/sigin"> <img src='/img/Iconos/account.png' alt ="iconocuenta"></a></li>
             </ul>
         </nav>
     </header>
