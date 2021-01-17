@@ -149,7 +149,7 @@
     display: block;
     cursor: pointer;
 }
-@media(min-width:600px){
+@media(min-width:900px){
   .column {
      width:100%; 
      flex-direction: column;

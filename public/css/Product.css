@@ -23,16 +23,16 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-div{
-
-}
 
 .section-gris{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 15px 10px;
-    background-color: gray;
+    background-color:#DEE2E6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: black;
 }
 
 .section-gris div { 
@@ -45,6 +45,19 @@ div{
 }
 
 .button-product {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border-radius: 20px;
+    border-style: inset;
+    border-color: black;
+    border-width: 1px;
+    background-color: transparent;
+    width: 200px;
+    height: 35px;
+    margin: auto;
+    cursor: pointer;
 }
 
 .section-blanca{
@@ -75,10 +88,23 @@ div{
     .section-gris div { 
         width: 49%;
     }
+    .section-gris img{
+        width: 100%;
+        padding: 15px 0px 0px 0px;
+        height:50vh;
+    }
     .section-blanca {
         padding: 10px 20px;
     }
     .section-blanca div{
+        width: 49%;
+    }
+    .section-blanca img {
+        width: 100%;
+        padding: 15px 0px 0px 0px;
+        height:50vh;
+    }
+    .section-suscribe div{
         width: 49%;
     }
 }
