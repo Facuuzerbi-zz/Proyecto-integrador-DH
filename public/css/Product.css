@@ -21,6 +21,7 @@ h3{
     height:90vh;
     position: relative;
     text-align: center;
+    text-shadow: 0 0 0.1em black;
 }
 .title-principal-producto{
     font-family: 'Open Sans', sans-serif;
@@ -140,11 +141,43 @@ h3{
     margin-top: 20px;
 }
 
-@media (min-width:600px){
 
+
+
+
+
+
+
+
+
+
+@media (min-width:600px){
+    .caracteristicas-principales{
+        justify-content: center;
+    }
+    .caracteristicas-principales div{
+        margin: 0px 50px;
+    }
 }
 
+
+
+
+
+
+
+
+
+
+
 @media (min-width:900px){
+    .caracteristicas-principales{
+        justify-content: center;
+        padding-top: 400px;
+    }
+    .caracteristicas-principales div{
+        margin: 0px 50px;
+    }
     .section-gris{
         padding: 10px 20px;
     }
