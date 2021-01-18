@@ -34,6 +34,9 @@ max-width: 100%;
 .slideshow-container {
 max-width: auto;
 position: relative;
+margin-right: 10px;
+margin-left: 10px;
+
 }
 .slideshow-container img {
   width: 100%;
