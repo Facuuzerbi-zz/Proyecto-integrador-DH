@@ -3,7 +3,7 @@ body{
   font-family: 'Roboto', sans-serif;
   background-color: #ebebeb;
   margin: 0px;
-  width: 97%;
+  width: 100%;
 }
 main{
   padding-bottom: 50px;
@@ -11,7 +11,6 @@ main{
 }
 .main-header{
   background-color: #DEE2E6;
-  padding: 0px 20px;
   top: 0;
   width: 100%;
   overflow: hidden;
@@ -44,6 +43,7 @@ main{
   background-color: white;
   text-align: right;
   padding: 0px 10px;
+  margin-right: 20px;
 }
 .main-header-top-bar h2{
   margin: auto;
@@ -78,6 +78,36 @@ main{
   padding: 5px 0px;
   font-size: 17px;
 }
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to left, #00cc66 0%, #0099cc 100%);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#logo-footer img{
+  max-width: 45%;
+  margin-bottom: 5vh;
+}
+#caja-footer ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 5px;
+}
+#caja-footer h2{
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+#caja-footer li{
+  display: block;
+  margin: auto;
+}
+
+
+
 
 @media (min-width:600px){
   .main-header{
@@ -120,10 +150,32 @@ main{
   .logo{
     max-width: 100%;
   }
-  
+  footer{
+    display: flex;
+    flex-direction: row;
+  }
+  #logo-footer{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: auto;
+  }
+
+  #logo-footer img{
+    margin: auto;
+    max-width: 100%;
+  }
+  #caja-footer{
+    display: flex;
+    padding: 0px;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #caja-footer div{
+    padding: 10px 10px;
+  }
 }
-
-
 
 @media (min-width:900px){
   .left-navbar li a{
@@ -132,4 +184,9 @@ main{
   .left-navbar li{
     padding-left: 25px;
   }
+  #caja-footer{
+    font-size: 15px;
+    padding-right: 30px;
+  }
+
 }
