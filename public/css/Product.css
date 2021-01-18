@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: auto;
+}
+
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -35,7 +39,7 @@ h3{
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding-top: 240px;
+    padding-top: 340px;
 }
 .caracteristicas-principales h2{
     font-family: 'Open Sans', sans-serif;
@@ -92,7 +96,7 @@ h3{
 
 .section-blanca{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     padding: 0px 15px 10px;
     background-color: white;
@@ -173,7 +177,6 @@ h3{
 @media (min-width:900px){
     .caracteristicas-principales{
         justify-content: center;
-        padding-top: 400px;
     }
     .caracteristicas-principales div{
         margin: 0px 50px;
@@ -191,6 +194,7 @@ h3{
     }
     .section-blanca {
         padding: 10px 20px;
+        flex-wrap: wrap;
     }
     .section-blanca div{
         width: 49%;
