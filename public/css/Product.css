@@ -134,6 +134,10 @@ h3{
     width: 300px;
     margin: auto;
 }
+.form-suscribe:focus{
+    outline: none;
+}
+
 .button-suscribe{
     border-radius: 20px;
     border-radius: 20px;
@@ -143,6 +147,9 @@ h3{
     width: 100px;
     margin: auto;
     text-align: center;
+}
+.button-suscribe:focus{
+    outline: none;
 }
 
 
