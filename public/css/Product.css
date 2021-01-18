@@ -5,34 +5,54 @@
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: black;
 }
 h3{
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: black;
 }
 
 .section-principal-producto{
     background-image: url('http://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
     background-position: center center;
-    background-attachment: scroll;
     background-size: cover;
-    background-repeat: no-repeat;
-    height:80vh;
-    width: 100%;
-    padding-top: 50px;
+    height:90vh;
+    position: relative;
+    text-align: center;
 }
 .title-principal-producto{
     font-family: 'Open Sans', sans-serif;
-    text-align:center;
-    font-size: 35px;
-    padding-top: 35px;  
+    font-size: 30px;
+    display: inline-block;
+    color:white;    
 }
-.subtitulo-principal-producto{
+.caracteristicas-principales{
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    color:white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 240px;
+}
+.caracteristicas-principales h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    color:white;
+    position: relative;
+    display: flex;
+    margin: 5px 0px;
+    justify-content: space-around;
+}
+.caracteristicas-principales p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:white;
+    position: relative;
+    display: flex;
+    margin: 0px;
+    justify-content: space-around;
 }
 
 .section-gris{
