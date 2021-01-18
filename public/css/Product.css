@@ -182,7 +182,7 @@ h3{
         margin: 0px 50px;
     }
     .section-gris{
-        padding: 10px 20px;
+        padding: 15px 25px 25px 25px;
     }
     .section-gris div { 
         width: 49%;
@@ -193,7 +193,7 @@ h3{
         height:50vh;
     }
     .section-blanca {
-        padding: 10px 20px;
+        padding: 15px 25px 25px 25px;
         flex-wrap: wrap;
     }
     .section-blanca div{
@@ -204,6 +204,11 @@ h3{
         padding: 15px 0px 0px 0px;
         height:50vh;
     }
+    .button-product:hover {
+        background-color: black;
+        color: white;
+    }
+
     .section-suscribe{
         align-items: center;
         padding: 15px 0px;
@@ -213,6 +218,10 @@ h3{
     }
     .section-suscribe p {
         text-align: center;
+    }
+    .button-suscribe:hover {
+        background-color: black;
+        color: white;
     }
     
 }
