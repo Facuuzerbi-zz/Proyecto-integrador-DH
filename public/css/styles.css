@@ -144,7 +144,7 @@ footer{
 }
 #caja-footer{
     position: relative;
-    width: 1500px;
+    width: 100%;
     height: 250px;
 }
 #prod-footer{

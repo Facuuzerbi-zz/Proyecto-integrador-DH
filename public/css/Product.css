@@ -3,6 +3,17 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
 .section-principal-producto{
     background-image: url('http://tesla-cdn.thron.com/delivery/public/image/tesla/b03da2fc-ecaa-4554-8df9-8f73e411f360/bvlatuR/std/2880x1800/model-3-hero-desktop');
     background-position: center center;
@@ -23,16 +34,14 @@
     font-family: 'Open Sans', sans-serif;
     text-align: center;
 }
-div{
-
-}
 
 .section-gris{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 15px 10px;
-    background-color: gray;
+    background-color:#DEE2E6;
+
 }
 
 .section-gris div { 
@@ -45,6 +54,19 @@ div{
 }
 
 .button-product {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 14px;
+    color: black;
+    border-radius: 20px;
+    border-style: inset;
+    border-color: black;
+    border-width: 1px;
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    cursor: pointer;
 }
 
 .section-blanca{
@@ -64,6 +86,40 @@ div{
     padding: 15px 0px 0px 0px;
 }
 
+.section-suscribe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+}
+.section-suscribe div{
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.form-suscribe{
+    border-radius: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    height: 35px;
+    width: 300px;
+    margin: auto;
+}
+.button-suscribe{
+    border-radius: 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 1px;
+    height: 35px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
 @media (min-width:600px){
 
 }
@@ -75,10 +131,24 @@ div{
     .section-gris div { 
         width: 49%;
     }
+    .section-gris img{
+        width: 100%;
+        padding: 15px 0px 0px 0px;
+        height:50vh;
+    }
     .section-blanca {
         padding: 10px 20px;
     }
     .section-blanca div{
         width: 49%;
     }
+    .section-blanca img {
+        width: 100%;
+        padding: 15px 0px 0px 0px;
+        height:50vh;
+    }
+    .button-suscribe{
+        margin-top:-20px;
+    }
+    
 }
