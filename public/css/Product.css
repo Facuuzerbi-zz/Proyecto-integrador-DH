@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: auto;
+}
+
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -35,7 +39,7 @@ h3{
     position: relative;
     display: flex;
     justify-content: space-around;
-    padding-top: 240px;
+    padding-top: 340px;
 }
 .caracteristicas-principales h2{
     font-family: 'Open Sans', sans-serif;
@@ -92,7 +96,7 @@ h3{
 
 .section-blanca{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     padding: 0px 15px 10px;
     background-color: white;
@@ -110,9 +114,10 @@ h3{
 .section-suscribe{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 15px;
+    padding: 15px 15px 30px 15px;
+    background-color: white;
 }
 .section-suscribe div{
     width: auto;
@@ -138,7 +143,6 @@ h3{
     width: 100px;
     margin: auto;
     text-align: center;
-    margin-top: 20px;
 }
 
 
@@ -173,13 +177,12 @@ h3{
 @media (min-width:900px){
     .caracteristicas-principales{
         justify-content: center;
-        padding-top: 400px;
     }
     .caracteristicas-principales div{
         margin: 0px 50px;
     }
     .section-gris{
-        padding: 10px 20px;
+        padding: 15px 25px 25px 25px;
     }
     .section-gris div { 
         width: 49%;
@@ -190,7 +193,8 @@ h3{
         height:50vh;
     }
     .section-blanca {
-        padding: 10px 20px;
+        padding: 15px 25px 25px 25px;
+        flex-wrap: wrap;
     }
     .section-blanca div{
         width: 49%;
@@ -200,8 +204,24 @@ h3{
         padding: 15px 0px 0px 0px;
         height:50vh;
     }
-    .button-suscribe{
-        margin-top:-20px;
+    .button-product:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .section-suscribe{
+        align-items: center;
+        padding: 15px 0px;
+    }
+    .section-suscribe div{
+        width: 49%
+    }
+    .section-suscribe p {
+        text-align: center;
+    }
+    .button-suscribe:hover {
+        background-color: black;
+        color: white;
     }
     
 }
