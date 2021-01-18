@@ -36,11 +36,29 @@ max-width: auto;
 position: relative;
 margin-right: 10px;
 margin-left: 10px;
-
 }
+
 .slideshow-container img {
   width: 100%;
-  }
+}
+.centrado{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #343A40;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centrado-bajo{
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8px;
+  color: #6C757D;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Hide the images by default */
 .mySlides {
@@ -174,6 +192,14 @@ section#suscribir{
 .slideshow-container img {
   height:50vmax;  
   }
+.centrado{
+    font-size: 40px;
+  }
+.centrado-bajo{
+    font-size: 15px;
+  }
+  
+
 }
 
 
