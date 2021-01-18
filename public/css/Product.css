@@ -114,9 +114,10 @@ h3{
 .section-suscribe{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 15px 15px;
+    padding: 15px 15px 30px 15px;
+    background-color: white;
 }
 .section-suscribe div{
     width: auto;
@@ -142,7 +143,6 @@ h3{
     width: 100px;
     margin: auto;
     text-align: center;
-    margin-top: 20px;
 }
 
 
@@ -204,8 +204,15 @@ h3{
         padding: 15px 0px 0px 0px;
         height:50vh;
     }
-    .button-suscribe{
-        margin-top:-20px;
+    .section-suscribe{
+        align-items: center;
+        padding: 15px 0px;
+    }
+    .section-suscribe div{
+        width: 49%
+    }
+    .section-suscribe p {
+        text-align: center;
     }
     
 }
