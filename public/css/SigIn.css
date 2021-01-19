@@ -38,12 +38,21 @@
 .line{
     text-align: center;
 }
-.check{
-    width: 15px;
-    height: 15px;
+.formulario{
+    display: flex;
+    flex-direction: column;
 }
-#terminos{
-    font-family: 'Open Sans', sans-serif;
-    display: block;
-    text-align: center;
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    
+    max-width: ;
+    margin: auto;
+}
+.check-acep{
+    align-self: flex-start;
+}
+.check-reci{
+    align-self: flex-start;
 }

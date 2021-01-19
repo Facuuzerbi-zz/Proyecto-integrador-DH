@@ -6,6 +6,7 @@
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="/css/LogIn.css">
+        <link rel="stylesheet" href="/css/SigIn.css">
         <title>Sig In</title>
     </head>
     <body>
@@ -16,22 +17,23 @@
         </header>
         <section>
             <h3 class="titulo-in"> Crear Cuenta</h3>
-            <form action="/" method="POST">
+            <form action="/" method="POST" class="formulario">
                 <input id="input-login" type="text" required placeholder="Nombre" required>
                 <input id="input-login" type="text" required placeholder="Apellido" required>
                 <input id="input-login" type="email" required placeholder="Email">
                 <input id="input-login" type="password" required placeholder="Contraseña" required minlength="8">
-                <label id="terminos"><input type="checkbox" class="check">Acepto terminos y condiciones</label>
-                <label id="terminos"><input type="checkbox" class="check">Recibir novedades</label><br>
+                <div class="checkboxes">
+                    <div class="check-acep">
+                        <label id="terminos"><input type="checkbox" class="check" required>Acepto terminos y condiciones</label>
+                    </div>
+                    <div class="check-reci">
+                        <label id="terminos"><input type="checkbox" class="check">Recibir novedades</label><br>
+                    </div>
+                </div>
                 <div id="div-buttons">
                     <input id="button-acept" type="submit" value="Crear cuenta">
                 </div>
-    
             </form>
-        
-
-
-            
             <p class="line">___________________________________</p>
 
             <div id="div-buttons">
