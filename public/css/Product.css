@@ -170,71 +170,6 @@ h3{
     .caracteristicas-principales div{
         margin: 0px 50px;
     }
-    .main-header{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 20px;
-      }
-      .hamburguer-button{
-        display: none;
-      }
-      .main-navbar{
-        width: 70%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .main-navbar ul{
-        display: flex;
-      }
-      .main-navbar li{
-        margin: 0 5px;
-      }
-      .left-navbar ul{
-        padding-left: 100px;
-      }
-      .left-navbar li{
-        margin: 0% 5%;
-      }
-      .left-navbar li a{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 3vw;
-        padding-right: 20px;
-      }
-      .busqueda{
-        display: none;
-      }
-      header{
-        display: flex;
-      }
-      .logo{
-        max-width: 100%;
-      }
-      footer{
-        display: flex;
-        flex-direction: row;
-      }
-      #logo-footer{
-        display: flex;
-        width: 30%;
-        align-items: center;
-        justify-content: auto;
-      }
-    
-      #logo-footer img{
-        margin: auto;
-        max-width: 100%;
-      }
-      #caja-footer{
-        display: flex;
-        padding: 0px;
-        width: 60%;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-      #caja-footer div{
-        padding: 10px 10px;
-      }
 }
 
 
@@ -295,15 +230,5 @@ h3{
     .button-suscribe:hover {
         background-color: black;
         color: white;
-    }
-    .left-navbar li a{
-        font-size: 26px;
-        }
-    .left-navbar li{
-        padding-left: 25px;
-      }
-    #caja-footer{
-        font-size: 15px;
-        padding-right: 30px;
     }
 }
