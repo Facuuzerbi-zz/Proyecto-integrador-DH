@@ -5,8 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/3eaccf5d38.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
+<<<<<<< HEAD
         <link rel="stylesheet" href="/css/Cart.css">
         <link rel="stylesheet" href="/css/Header.css">    
+=======
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/Cartprov.css">    
+>>>>>>> e02c8c1d322c87da2549d6c4f069e0a64582cf7a
         <title>Cart</title>
     </head>
 <body>
@@ -37,7 +43,45 @@
         </div>
     </header>
 
-    <section class="Cart-section">
+    <!--Codigo provisorio maqueteado de carrito(cartprov.css)-->
+    <div>
+    <table>
+        <tr>
+          <th>Item</th>
+          <th></th>
+          <th>Precio P/unidad</th>
+          <th>Cantidad</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td class="product-img" id="imagen"><img id="product-img" src="/img/auto/auto.jpg" alt="Producto" >   </td>
+          <td>Auto QZ</td>
+          <td>$ 100.000</td>
+          <td>+1-</td>
+          <td>$ 100.000</td>
+          <td><button class="btn"><i class="fa fa-trash"></i> </button></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="total">Total:$ 100.000</td>
+         
+          <td></td>
+        </tr>
+      </table>
+    </div>
+        <div class="contenedor">
+        <div class="botones">
+                <input class="button-suscribe" type="submit" value="Seguir comprando">
+                <input class="button-suscribe" type="submit" value="Ir a pagar">
+       </div>
+    </div>
+</div>
+<!-- De aca para abajo código de cart Facu(cart.css) -->
+    <!--section class="Cart-section">
             <div id="cart-tittle">
                 <h2>Carrito</h2>
             </div>
@@ -46,7 +90,6 @@
                     <li id="item">Item</li>
                     <li>Precio P/unidad</li>
                     <li>Cantidad</li>
-                    <li>Precio</li>
                 </nav>
             </div>
             <section class="compra">
@@ -54,9 +97,9 @@
                     <nav class="caracteristicas2">
                         <li id="imagen"><img id="product-img" src="/img/auto/auto.jpg" alt="Producto"></li>
                         <li id="desc">Auto QZ</li>
-                        <li>$ 100.000</li>
+                        <li >$ 100.000</li>
                         <li>1</li>
-                        <li>$100.000</li>
+                        <li id="precio">$100.000</li>
                     </nav>
                 </div>
             </section>
@@ -73,7 +116,7 @@
                     <a href="" style="text-decoration: none"><input id="button-acept" type="button" value="Ir a pagar"></a>
                 </div>
             </section>
-    </section>
+    </section-->
 
     <footer>
         <div id="logo-footer"><a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a></div>
@@ -104,4 +147,5 @@
             </div>
         </div>
     </footer>
+</body>
 </html>
