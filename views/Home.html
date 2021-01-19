@@ -5,35 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/3eaccf5d38.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
-        <link rel="stylesheet" href="/css/Header.css">
-
+        <link rel="stylesheet" href="/css/Header.css">   
         <link rel="stylesheet" href="/css/Home.css">
         <title>Home</title>
     </head>
 <body>
     <header class="main-header">
         <div class="main-header-top-bar">
-            <img src="/img/Logos/logo-negro.png" alt="Logo" class="logo">
+            <div class="caja-logo">
+                <a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a>
+            </div>
             <form action="#" method="GET" class="busqueda">
                 <input type="search" placeholder="Buscar" name="search">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
         </div>
         <a href="#" class="hamburguer-button"><i class="fa fa-bars burger"></i></a>
-        <nav class="main-navbar">
-            <ul class="left-navbar">
-                <li><a href="http://localhost:3030/Auto">Auto</a></li>
-                <li><a href="#">Moto</a></li>
-                <li><a href="#">Monopatin</a></li>
-            </ul>
-            <div class="iconos">
+        <div class="navbar-prod">
+                <ul class="left-navbar">
+                    <li><a href="http://localhost:3030/Auto">Auto</a></li>
+                    <li><a href="#">Moto</a></li>
+                    <li><a href="#">Monopatin</a></li>
+                </ul>
+        </div>
+        <div class="iconos">
                 <ul class="right-navbar">
                     <li><a href="#"><i class="fas fa-search fa-2x"></i></a></li>
                     <li><a href="http://localhost:3030/cart"><i class="fas fa-shopping-cart fa-2x"></i></li>
                     <li><a href="http://localhost:3030/sigin"><i class="far fa-user fa-2x"></i></a></li>
                 </ul>
-            </div>
-        </nav>
+        </div>
     </header>
 <!-- De aca para abajo -->
 <div class="home-box">
@@ -99,12 +100,12 @@
         </section>
         </div>
         <footer>
-            <div id="logo-footer"><img src="/img/Logos/logo-negro.png" alt="Logo"></div>
+            <div id="logo-footer"><a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a></div>
             <div id="caja-footer">
                 <div id="prod-footer">
                     <h2>Productos</h2>
                     <ul>
-                        <li><a href="#" style="text-decoration: none">Auto</a></li>
+                        <li><a href="http://localhost:3030/Auto" style="text-decoration: none">Auto</a></li>
                         <li><a href="#" style="text-decoration: none">Moto</a></li>
                         <li><a href="#" style="text-decoration: none">Monopatin</a></li>
                     </ul>
@@ -118,7 +119,7 @@
                     </ul>
                 </div>
                 <div id="redes-footer">
-                    <h2>Redes sociales</h2>
+                    <h2>Redes Sociales</h2>
                     <ul>
                         <li><a href="#" style="text-decoration: none">Facebook</a></li>
                         <li><a href="#" style="text-decoration: none">Twitter</a></li>

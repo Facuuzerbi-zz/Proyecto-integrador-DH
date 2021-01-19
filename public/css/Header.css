@@ -1,8 +1,13 @@
 *{
   box-sizing: border-box;
 }
-
 body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+  margin: 0px;
+  width: 100%;
+}
+header{
   font-family: 'Roboto', sans-serif;
   background-color: #ebebeb;
   margin: 0px;
@@ -24,9 +29,12 @@ main{
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.caja-logo{
+  width: 50%;
+  padding-left: 10px;
+}
 .logo{
-  max-width: 45%;
-  padding-right: 20px;
+  max-width: 100%;
 }
 .busqueda{
   display: flex;
@@ -65,16 +73,16 @@ main{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.main-navbar{
+.navbar-prod, .iconos{
   display: none;
   margin-top: 10px;
 }
-.main-navbar ul{
+.navbar-prod, .iconos{
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.main-navbar a{
+.navbar-prod a, .iconos a{
   text-decoration: none;
   color: #222222;
   display: inline-block;
@@ -84,72 +92,83 @@ main{
 footer{
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(to left, #00cc66 0%, #0099cc 100%);
-  overflow: hidden;
+  background-color: #DEE2E6;;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  border-bottom: solid 1px black;
+  font-size: 15px;
 }
 #logo-footer img{
   max-width: 45%;
-  margin-bottom: 5vh;
+}
+#caja-footer{
+  display: flex;
+  padding-top: 8vh;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 50%;
+}
+#prod-footer, #noso-footer, #redes-footer{
+  flex-direction: column;
+}
+#prod-footer h2, #noso-footer h2, #redes-footer h2{
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 #caja-footer ul{
   list-style: none;
-  padding: 0px;
-  margin: 0px;
-  margin-top: 5px;
+  margin: 0;
+  padding: 0;
 }
-#caja-footer h2{
-  margin-top: 25px;
-  margin-bottom: 0px;
-}
-#caja-footer li{
-  display: block;
-  margin: auto;
+#prod-footer ul li a, #noso-footer ul li a, #redes-footer ul li a{
+  color: black;
 }
 
-
+/*Query de 600*/
 @media (min-width:600px){
   .main-header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .hamburguer-button{
     display: none;
   }
-  .main-navbar{
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .main-navbar ul{
-    display: flex;
-  }
-  .main-navbar li{
-    margin: 0 5px;
-  }
-  .left-navbar ul{
-    padding-left: 100px;
-  }
-  .left-navbar li{
-    margin: 0% 5%;
-  }
-  .left-navbar li a{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3vw;
-    padding-right: 20px;
-  }
   .busqueda{
     display: none;
   }
-  header{
+  .caja-logo{
+    width: 100%;
+  }
+  .navbar-prod, .iconos{
     display: flex;
   }
-  .logo{
-    max-width: 100%;
+  .navbar-prod li, .iconos li{
+    list-style: none;
+  }
+  .left-navbar, .right-navbar{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .left-navbar{
+    padding-top: 10px;
+  }
+  .left-navbar li{
+    padding: 0px 3vw;
+  }
+  .right-navbar li{
+    padding: 0px 5px;
+  }
+  .left-navbar li a{
+    font-size: 3vw;
+  }
+  .right-navbar{
+    padding-right: 10px;
   }
   footer{
     display: flex;
@@ -161,7 +180,6 @@ footer{
     align-items: center;
     justify-content: auto;
   }
-
   #logo-footer img{
     margin: auto;
     max-width: 100%;
@@ -176,18 +194,15 @@ footer{
   #caja-footer div{
     padding: 10px 10px;
   }
+  #caja-footer ul{
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
 }
-
+/*Query de 900*/
 @media (min-width:900px){
   .left-navbar li a{
-    font-size: 26px;
+    font-size: 27px;
     }
-  .left-navbar li{
-    padding-left: 25px;
-  }
-  #caja-footer{
-    font-size: 15px;
-    padding-right: 30px;
-  }
 
 }
