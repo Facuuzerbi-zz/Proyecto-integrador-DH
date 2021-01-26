@@ -44,6 +44,9 @@ ___
        servicios .net y java en Anses, y como freelance en Magnético,
        haciendo tareas de analista funcional y QA automation.
 ___
++ ## ___Trello___
+     ![Trello](https://trello.com/b/5KaLwnlB/dh-proyecto-integrador) `trello`
+___
 
 + ## ___Referentes___
     - [___Dji___](https://www.dji.com/)
