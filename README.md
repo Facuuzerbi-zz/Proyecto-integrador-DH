@@ -45,7 +45,7 @@ ___
        haciendo tareas de analista funcional y QA automation.
 ___
 + ## ___Trello___
-      - [___1. Trello___](https://trello.com/b/5KaLwnlB/dh-proyecto-integrador)
+      __ [___Trello___](https://trello.com/b/5KaLwnlB/dh-proyecto-integrador)
 ___
 
 + ## ___Referentes___
