@@ -43,11 +43,11 @@ ___
        Actualmente me dedico a la configuración y despliegue de sitios y 
        servicios .net y java en Anses, y como freelance en Magnético,
        haciendo tareas de analista funcional y QA automation.
+ ___
+        
+    - [___Trello___](https://trello.com/b/5KaLwnlB/dh-proyecto-integrador)
+       
 ___
-+ ## ___Trello___
-      - [___Trello___](https://trello.com/b/5KaLwnlB/dh-proyecto-integrador)
-___
-
 + ## ___Referentes___
     - [___Dji___](https://www.dji.com/)
         ![Home](https://trello-attachments.s3.amazonaws.com/5fc94173fd4329519507e55a/5fc944ae2e3d1f3927390961/14886357dc8044e237e6b4ad15408c3e/image.png)
