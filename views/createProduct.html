@@ -5,58 +5,87 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
         <link rel="stylesheet" href="/css/createProduct.css">
-        
-        <title>Nuevo producto</title>
+
+        <title>Crear producto</title>
     </head>
     <body>
-        <header class="header-logsin">
-            <div>
-            <a href="http://localhost:3030/" class="logo-logsin"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
-            </div>    
+        <header>
+            <h1>Poner link al modulo de header</h1>
         </header>
-        <section>
-            <h3 class="titulo-in"> Crear producto</h3>
-            <form action="/" method="POST" class="formulario">
-                <input id="input-login" type="text" required placeholder="Nombre del producto" required>
-                <input id="input-login" type="image" required placeholder="ImagenPrincipal">
-
-                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada1-titulo" required>
-                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada1-descripcion" required>
-                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada2-titulo" required>
-                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada2-descripcion" required>
-                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada3-titulo" required>
-                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada3-descripcion" required>
-
-                <input id="input-login" type="text" required placeholder="Seccion1-titulo" required>
-                <input id="input-login" type="text" required placeholder="Seccion1-descripcion" required>
-                <input id="input-login" type="image" required placeholder="Seccion1-imagen" required>
-
-                <input id="input-login" type="text" required placeholder="Seccion2-titulo" required>
-                <input id="input-login" type="text" required placeholder="Seccion2-descripcion" required>
-                <input id="input-login" type="image" required placeholder="Seccion2-imagen" required>
-
-                <input id="input-login" type="text" required placeholder="Seccion3-titulo" required>
-                <input id="input-login" type="text" required placeholder="Seccion3-descripcion" required>
-                <input id="input-login" type="image" required placeholder="Seccion3-imagen" required>
+        <main>
+            <h1> Crear producto</h1>
+            <form action="/" method="POST">
+                <h2>Datos generales</h2>
+                <div>
+                    <label>Titulo del producto:</label>
+                    <input type="text" placeholder="nombreProducto" required>
+                </div>
+                <div>
+                    <h3>Categoria</h3>
+                    <input type="radio" name="auto" value="auto">
+                    <label for="auto">Auto</label><br>
+                    <input type="radio" name="moto" value="moto">
+                    <label for="moto">Moto</label><br>
+                    <input type="radio" name="monopatin" value="monopatin">
+                    <label for="monopatin">Monopatin</label>
+                </div>
+                <div>
+                    <br>
+                    <label>Precio:</label>
+                    <input type="text" placeholder="nombreProducto" required>
+                </div>
                 
-                <div class="checkboxes">
-                    <div class="check-acep">
-                        <label id="terminos"><input type="radiobutton" class="check" required>Auto</label>
-                    </div>
-                    <div class="check-reci">
-                        <label id="terminos"><input type="radiobutton" class="check">Moto</label><br>
-                    </div>
-                    <div class="check-reci">
-                        <label id="terminos"><input type="radiobutton" class="check">Monopatin</label><br>
-                    </div>
+                
+                <h2>Secccion principal</h2>
+                <div>
+                    <label>Imagen principal:</label>
+                    <input type="file" name="ImagenPrincipal" required>
+                </div>
+                <div>
+                    <h3>Característica 1</h3>
+                    <input type="text" placeholder="Título" name="CaracteristicaDestacada1-titulo" required>
+                    <input type="text" placeholder="Descripción" name="CaracteristicaDestacada1-descripcion" required>
+                </div>
+                <div>
+                    <h3>Característica 2</h3>
+                    <input type="text" placeholder="Título" name="CaracteristicaDestacada2-titulo" required>
+                    <input type="text" placeholder="Descripción" name="CaracteristicaDestacada2-descripcion" required>
+                </div>
+                <div>
+                    <h3>Característica 3</h3>
+                    <input type="text" placeholder="Título" name="CaracteristicaDestacada3-titulo" required>
+                    <input type="text" placeholder="Descripción" name="CaracteristicaDestacada3-descripcion" required>
                 </div>
 
+                <h2>Secciones secundarias</h2>
+                <div>
+                    <h3>Sección 1</h3>
+                    <input type="text" placeholder="Título" name="Seccion1-titulo" required>
+                    <input type="text" placeholder="Descripción" name="Seccion1-descripcion" required>
+                    <input type="file" name="Seccion1-imagen" required>
+                </div>
 
-                <div id="div-buttons">
-                    <input id="button-acept" type="submit" value="Crear cuenta">
+                <div>
+                    <h3>Sección 2</h3>
+                    <input type="text" placeholder="Título" name="Seccion2-titulo" required>
+                    <input type="text" placeholder="Descripción" name="Seccion2-descripcion" required>
+                    <input type="file" name="Seccion2-imagen" required>
+                </div>
+
+                <div>
+                    <h3>Sección 3</h3>
+                    <input type="text" placeholder="Título" name="Seccion3-titulo" required>
+                    <input type="text" placeholder="Descripción" name="Seccion3-descripcion" required>
+                    <input type="file" name="Seccion3-imagen" required>
+                </div>
+                
+
+                <div>
+                    <input type="submit" value="Crear cuenta">
                 </div>
 
             </form>
+
             <p class="line">___________________________________</p>
 
             <div id="div-buttons">
