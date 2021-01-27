@@ -30,7 +30,7 @@ app.get('/sigin', (req,res) => {
 });
 
 app.get('/auto', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Producto-auto.html');
+    let htmlPath = path.resolve(__dirname,'./views/detalleProducto.html');
     res.sendFile(htmlPath);
 });
 
@@ -49,13 +49,8 @@ app.get('/cart', (req,res) => {
     res.sendFile(htmlPath);
 });
 
-app.get('/responsive', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/responsive.html');
-    res.sendFile(htmlPath);
-});
-
-app.get('/responsive2', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/responsive2.html');
+app.get('/crear', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/createProduct.html');
     res.sendFile(htmlPath);
 });
 

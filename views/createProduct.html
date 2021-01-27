@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
+        <link rel="stylesheet" href="/css/createProduct.css">
+        
+        <title>Nuevo producto</title>
+    </head>
+    <body>
+        <header class="header-logsin">
+            <div>
+            <a href="http://localhost:3030/" class="logo-logsin"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
+            </div>    
+        </header>
+        <section>
+            <h3 class="titulo-in"> Crear producto</h3>
+            <form action="/" method="POST" class="formulario">
+                <input id="input-login" type="text" required placeholder="Nombre del producto" required>
+                <input id="input-login" type="image" required placeholder="ImagenPrincipal">
+
+                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada1-titulo" required>
+                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada1-descripcion" required>
+                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada2-titulo" required>
+                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada2-descripcion" required>
+                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada3-titulo" required>
+                <input id="input-login" type="text" required placeholder="CaracteristicaDestacada3-descripcion" required>
+
+                <input id="input-login" type="text" required placeholder="Seccion1-titulo" required>
+                <input id="input-login" type="text" required placeholder="Seccion1-descripcion" required>
+                <input id="input-login" type="image" required placeholder="Seccion1-imagen" required>
+
+                <input id="input-login" type="text" required placeholder="Seccion2-titulo" required>
+                <input id="input-login" type="text" required placeholder="Seccion2-descripcion" required>
+                <input id="input-login" type="image" required placeholder="Seccion2-imagen" required>
+
+                <input id="input-login" type="text" required placeholder="Seccion3-titulo" required>
+                <input id="input-login" type="text" required placeholder="Seccion3-descripcion" required>
+                <input id="input-login" type="image" required placeholder="Seccion3-imagen" required>
+                
+                <div class="checkboxes">
+                    <div class="check-acep">
+                        <label id="terminos"><input type="radiobutton" class="check" required>Auto</label>
+                    </div>
+                    <div class="check-reci">
+                        <label id="terminos"><input type="radiobutton" class="check">Moto</label><br>
+                    </div>
+                    <div class="check-reci">
+                        <label id="terminos"><input type="radiobutton" class="check">Monopatin</label><br>
+                    </div>
+                </div>
+
+
+                <div id="div-buttons">
+                    <input id="button-acept" type="submit" value="Crear cuenta">
+                </div>
+
+            </form>
+            <p class="line">___________________________________</p>
+
+            <div id="div-buttons">
+                <a href="http://localhost:3030/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar"></a>
+            </div>
+        </section>
+    </body>
+</html>
