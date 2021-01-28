@@ -3,58 +3,40 @@ const app = express();
 const path = require('path');
 
 const publicPath = path.resolve(__dirname, './public');
+
 app.use(express.static(publicPath));
+app.use('/product', require('./routes/product.js'));
 
-//app.use(express.static(‘public’));
+app.set('view engine','ejs');
 
-app.listen(3030, ()=> console.log('Servidor Corriendo')); 
+app.listen(process.env.PORT || 3030, () => console.log('Servidor Corriendo')); 
 
 app.get('/', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Home.html');
-    res.sendFile(htmlPath);
-});
-
-app.get('/Home2', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Home2.html');
-    res.sendFile(htmlPath);
+    let htmlPath = path.resolve(__dirname,'./views/Home.ejs');
+    res.render(htmlPath);
 });
 
 app.get('/login', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Login.html');
-    res.sendFile(htmlPath);
+    let htmlPath = path.resolve(__dirname,'./views/users/Login.ejs');
+    res.render(htmlPath);
 });
 
 app.get('/sigin', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Sigin.html');
-    res.sendFile(htmlPath);
-});
-
-app.get('/auto', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/detalleProducto.html');
-    res.sendFile(htmlPath);
-});
-
-app.get('/moto', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Producto-moto.html');
-    res.sendFile(htmlPath);
-});
-
-app.get('/monopatin', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Producto-monopatin.html');
-    res.sendFile(htmlPath);
+    let htmlPath = path.resolve(__dirname,'./views/users/Sigin.ejs');
+    res.render(htmlPath);
 });
 
 app.get('/cart', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/Cart.html');
-    res.sendFile(htmlPath);
+    let htmlPath = path.resolve(__dirname,'./views/Cart.ejs');
+    res.render(htmlPath);
 });
 
 app.get('/crear', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/createProduct.html');
-    res.sendFile(htmlPath);
+    let htmlPath = path.resolve(__dirname,'./views/product/createProduct.ejs');
+    res.render(htmlPath);
 });
 
 app.get('/header', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/header.html');
-    res.sendFile(htmlPath);
+    let htmlPath = path.resolve(__dirname,'./views/partials/header.ejs');
+    res.render(htmlPath);
 });
