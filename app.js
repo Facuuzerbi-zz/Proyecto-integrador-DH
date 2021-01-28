@@ -30,7 +30,7 @@ app.get('/sigin', (req,res) => {
 });
 
 app.get('/auto', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/detalleProducto.html');
+    let htmlPath = path.resolve(__dirname,'./views/product/detalleProducto.html');
     res.sendFile(htmlPath);
 });
 
@@ -50,7 +50,7 @@ app.get('/cart', (req,res) => {
 });
 
 app.get('/crear', (req,res) => {
-    let htmlPath = path.resolve(__dirname,'./views/createProduct.html');
+    let htmlPath = path.resolve(__dirname,'./views/product/createProduct.html');
     res.sendFile(htmlPath);
 });
 
