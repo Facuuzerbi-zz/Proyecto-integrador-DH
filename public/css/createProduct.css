@@ -35,3 +35,25 @@ h3{
 input{
     margin-bottom: 5px;
 }
+
+.button{
+    color: black;
+    border-radius: 20px;
+    border-style: inset;
+    border-color: black;
+    border-width: 1px;
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width:900px){
+    .button:hover{
+        background-color: black;
+        color: white;
+    }
+}
