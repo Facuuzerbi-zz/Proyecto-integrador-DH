@@ -5,92 +5,102 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
         <link rel="stylesheet" href="/css/createProduct.css">
-
-        <title>Crear producto</title>
+        <link rel="stylesheet" href="/css/Header.css">
+        <title>Crear nuevo producto</title>
     </head>
     <body>
-        <header>
-            <h1>Poner link al modulo de header</h1>
-        </header>
+        <%- include("../partials/header") %>
         <main>
-            <h1> Crear producto</h1>
+            <h1> Crear nuevo producto</h1>
             <form action="/" method="POST">
                 <h2>Datos generales</h2>
-                <div>
-                    <label>Titulo del producto:</label>
-                    <input type="text" placeholder="nombreProducto" required>
+                <div class="seccion-flex">
+                    <div>
+                        <label for="title-product">Titulo del producto:</label>
+                        <input type="text" placeholder="Ex: Auto 1" name="title-product" required>
+                    </div>
+                    <div>
+                        <label for="category">Categoría:</label>
+                            <select name="category">
+                                <option value="auto">Auto</option>
+                                <option value="moto">Moto</option>
+                                <option value="monopatin">Monopatin</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label>Precio:</label>
+                        <input type="text" placeholder="Ex: $1000" required>
+                    </div>
                 </div>
-                <div>
-                    <h3>Categoria</h3>
-                    <input type="radio" name="auto" value="auto">
-                    <label for="auto">Auto</label><br>
-                    <input type="radio" name="moto" value="moto">
-                    <label for="moto">Moto</label><br>
-                    <input type="radio" name="monopatin" value="monopatin">
-                    <label for="monopatin">Monopatin</label>
-                </div>
-                <div>
-                    <br>
-                    <label>Precio:</label>
-                    <input type="text" placeholder="nombreProducto" required>
-                </div>
-                
                 
                 <h2>Secccion principal</h2>
                 <div>
-                    <label>Imagen principal:</label>
+                    <label for="imagenPrincipal">Imagen principal:</label>
                     <input type="file" name="ImagenPrincipal" required>
                 </div>
-                <div>
-                    <h3>Característica 1</h3>
-                    <input type="text" placeholder="Título" name="CaracteristicaDestacada1-titulo" required>
-                    <input type="text" placeholder="Descripción" name="CaracteristicaDestacada1-descripcion" required>
-                </div>
-                <div>
-                    <h3>Característica 2</h3>
-                    <input type="text" placeholder="Título" name="CaracteristicaDestacada2-titulo" required>
-                    <input type="text" placeholder="Descripción" name="CaracteristicaDestacada2-descripcion" required>
-                </div>
-                <div>
-                    <h3>Característica 3</h3>
-                    <input type="text" placeholder="Título" name="CaracteristicaDestacada3-titulo" required>
-                    <input type="text" placeholder="Descripción" name="CaracteristicaDestacada3-descripcion" required>
+                <div class="seccion-flex">
+                    <div>
+                        <h3>Característica 1</h3>
+                        <label for="CaracteristicaDestacada1-titulo">Título:</label>
+                        <input type="text" placeholder="Ex: Performance" name="CaracteristicaDestacada1-titulo" required><br>
+                        <label for="CaracteristicaDestacada1-descripcion">Descripción:</label>
+                        <input type="text" placeholder="Ex: 250HP" name="CaracteristicaDestacada1-descripcion" required>
+                    </div>
+                    <div>
+                        <h3>Característica 2</h3>
+                        <label for="CaracteristicaDestacada2-titulo">Título:</label>
+                        <input type="text" placeholder="Ex: Autonomía" name="CaracteristicaDestacada2-titulo" required><br>
+                        <label for="CaracteristicaDestacada2-descripcion">Descripción:</label>
+                        <input type="text" placeholder="Ex: 300km" name="CaracteristicaDestacada2-descripcion" required>
+                    </div>
+                    <div>
+                        <h3>Característica 3</h3>
+                        <label for="CaracteristicaDestacada3-titulo">Título:</label>
+                        <input type="text" placeholder="Ex: Seguridad" name="CaracteristicaDestacada3-titulo" required><br>
+                        <label for="CaracteristicaDestacada3-descripcion">Descripción:</label>
+                        <input type="text" placeholder="Ex: 5 Airbags" name="CaracteristicaDestacada3-descripcion" required>
+                    </div>
                 </div>
 
                 <h2>Secciones secundarias</h2>
-                <div>
-                    <h3>Sección 1</h3>
-                    <input type="text" placeholder="Título" name="Seccion1-titulo" required>
-                    <input type="text" placeholder="Descripción" name="Seccion1-descripcion" required>
-                    <input type="file" name="Seccion1-imagen" required>
+                <div class="seccion-flex">
+                    <div>
+                        <h3>Sección 1</h3>
+                        <label for="Seccion1-titulo">Título:</label>
+                        <input type="text" placeholder="Ex: Performance & Autonomía" name="Seccion1-titulo" required><br>
+                        <label for="Seccion1-descripcion">Descripción:</label>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion1-descripcion" required><br>
+                        <label for="Seccion1-imagen">Imagen:</label>
+                        <input type="file" name="Seccion1-imagen" required>
+                    </div>
+
+                    <div>
+                        <h3>Sección 2</h3>
+                        <label for="Seccion2-titulo">Título:</label>
+                        <input type="text" placeholder="Ex: Performance & Autonomía" name="Seccion2-titulo" required><br>
+                        <label for="Seccion2-descripcion">Descripción:</label>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion2-descripcion" required><br>
+                        <label for="Seccion2-imagen">Imagen:</label>
+                        <input type="file" name="Seccion2-imagen" required>
+                    </div>
+
+                    <div>
+                        <h3>Sección 3</h3>
+                        <label for="Seccion3-titulo">Título:</label>
+                        <input type="text" placeholder="Ex: Performance & Autonomía" name="Seccion3-titulo" required><br>
+                        <label for="Seccion3-descripcion">Descripción:</label>
+                        <textarea type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion3-descripcion" required></textarea><br>
+                        <label for="Seccion3-imagen">Imagen:</label>
+                        <input type="file" name="Seccion3-imagen" required>
+                    </div>
                 </div>
 
                 <div>
-                    <h3>Sección 2</h3>
-                    <input type="text" placeholder="Título" name="Seccion2-titulo" required>
-                    <input type="text" placeholder="Descripción" name="Seccion2-descripcion" required>
-                    <input type="file" name="Seccion2-imagen" required>
-                </div>
-
-                <div>
-                    <h3>Sección 3</h3>
-                    <input type="text" placeholder="Título" name="Seccion3-titulo" required>
-                    <input type="text" placeholder="Descripción" name="Seccion3-descripcion" required>
-                    <input type="file" name="Seccion3-imagen" required>
-                </div>
-                
-
-                <div>
-                    <input type="submit" value="Crear cuenta">
+                    <input type="submit" value="Crear producto">
                 </div>
 
             </form>
-
-            <p class="line">___________________________________</p>
-
-            <div id="div-buttons">
-                <a href="http://localhost:3030/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar"></a>
-            </div>
-        </section>
+        </main>
+        <%- include("../partials/footer") %>
     </body>
 </html>
