@@ -12,7 +12,7 @@
         <%- include("../partials/header") %>
         <main>
             <h1> Crear nuevo producto</h1>
-            <form action="/" method="POST">
+            <form action="/" method="POST" class="form-crear">
                 <h2>Datos generales</h2>
                 <div class="seccion-flex">
                     <div>
@@ -32,7 +32,7 @@
                         <input type="text" placeholder="Ex: $1000" required>
                     </div>
                 </div>
-                
+                <hr>
                 <h2>Secccion principal</h2>
                 <div>
                     <label for="imagenPrincipal">Imagen principal:</label>
@@ -43,24 +43,25 @@
                         <h3>Característica 1</h3>
                         <label for="CaracteristicaDestacada1-titulo">Título:</label>
                         <input type="text" placeholder="Ex: Performance" name="CaracteristicaDestacada1-titulo" required><br>
-                        <label for="CaracteristicaDestacada1-descripcion">Descripción:</label>
+                        <label for="CaracteristicaDestacada1-descripcion">Desc :</label>
                         <input type="text" placeholder="Ex: 250HP" name="CaracteristicaDestacada1-descripcion" required>
                     </div>
                     <div>
                         <h3>Característica 2</h3>
                         <label for="CaracteristicaDestacada2-titulo">Título:</label>
                         <input type="text" placeholder="Ex: Autonomía" name="CaracteristicaDestacada2-titulo" required><br>
-                        <label for="CaracteristicaDestacada2-descripcion">Descripción:</label>
+                        <label for="CaracteristicaDestacada2-descripcion">Desc :</label>
                         <input type="text" placeholder="Ex: 300km" name="CaracteristicaDestacada2-descripcion" required>
                     </div>
                     <div>
                         <h3>Característica 3</h3>
                         <label for="CaracteristicaDestacada3-titulo">Título:</label>
                         <input type="text" placeholder="Ex: Seguridad" name="CaracteristicaDestacada3-titulo" required><br>
-                        <label for="CaracteristicaDestacada3-descripcion">Descripción:</label>
+                        <label for="CaracteristicaDestacada3-descripcion">Desc :</label>
                         <input type="text" placeholder="Ex: 5 Airbags" name="CaracteristicaDestacada3-descripcion" required>
                     </div>
                 </div>
+                <hr>
 
                 <h2>Secciones secundarias</h2>
                 <div class="seccion-flex">
@@ -68,7 +69,7 @@
                         <h3>Sección 1</h3>
                         <label for="Seccion1-titulo">Título:</label>
                         <input type="text" placeholder="Ex: Performance & Autonomía" name="Seccion1-titulo" required><br>
-                        <label for="Seccion1-descripcion">Descripción:</label>
+                        <label for="Seccion1-descripcion">Desc :</label>
                         <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion1-descripcion" required><br>
                         <label for="Seccion1-imagen">Imagen:</label>
                         <input type="file" name="Seccion1-imagen" required>
@@ -78,7 +79,7 @@
                         <h3>Sección 2</h3>
                         <label for="Seccion2-titulo">Título:</label>
                         <input type="text" placeholder="Ex: Performance & Autonomía" name="Seccion2-titulo" required><br>
-                        <label for="Seccion2-descripcion">Descripción:</label>
+                        <label for="Seccion2-descripcion">Desc :</label>
                         <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion2-descripcion" required><br>
                         <label for="Seccion2-imagen">Imagen:</label>
                         <input type="file" name="Seccion2-imagen" required>
@@ -88,13 +89,13 @@
                         <h3>Sección 3</h3>
                         <label for="Seccion3-titulo">Título:</label>
                         <input type="text" placeholder="Ex: Performance & Autonomía" name="Seccion3-titulo" required><br>
-                        <label for="Seccion3-descripcion">Descripción:</label>
-                        <textarea type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion3-descripcion" required></textarea><br>
+                        <label for="Seccion3-descripcion">Desc :</label>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="Seccion3-descripcion" required><br>
                         <label for="Seccion3-imagen">Imagen:</label>
                         <input type="file" name="Seccion3-imagen" required>
                     </div>
                 </div>
-
+                <hr>
                 <div>
                     <input type="submit" value="Crear producto">
                 </div>

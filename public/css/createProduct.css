@@ -12,19 +12,26 @@ h1 {
 }
 
 h2{
-    padding-top: 15px;
     text-align: center;
-
 }
 
 h3{
     margin-bottom: 10px;
 }
 
+.form-crear {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 .seccion-flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-bottom: 5px;
 }
