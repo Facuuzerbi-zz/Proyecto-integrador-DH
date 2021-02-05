@@ -10,32 +10,7 @@
         <title>Home</title>
     </head>
 <body>
-    <header class="main-header">
-        <div class="main-header-top-bar">
-            <div class="caja-logo">
-                <a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a>
-            </div>
-            <form action="#" method="GET" class="busqueda">
-                <input type="search" placeholder="Buscar" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <a href="#" class="hamburguer-button"><i class="fa fa-bars burger"></i></a>
-        <div class="navbar-prod">
-                <ul class="left-navbar">
-                    <li><a href="http://localhost:3030/Auto">Auto</a></li>
-                    <li><a href="#">Moto</a></li>
-                    <li><a href="#">Monopatin</a></li>
-                </ul>
-        </div>
-        <div class="iconos">
-                <ul class="right-navbar">
-                    <li><a href="#"><i class="fas fa-search fa-2x"></i></a></li>
-                    <li><a href="http://localhost:3030/cart"><i class="fas fa-shopping-cart fa-2x"></i></li>
-                    <li><a href="http://localhost:3030/sigin"><i class="far fa-user fa-2x"></i></a></li>
-                </ul>
-        </div>
-    </header>
+    <%- include("./partials/header") %>
 <!-- De aca para abajo -->
 <div class="home-box">
         <section>
@@ -45,7 +20,7 @@
                   <img src='/img/auto/auto.jpg' >
                     <div class="centrado">Auto</div>
                     <div class="centrado-bajo">Auto Eléctrico V.1</div>
-                    <a href="http://localhost:3030/Auto"><input class="button-product" type="button" value="Ver más"></a>
+                    <a href="http://localhost:3030/product/auto"><input class="button-product" type="button" value="Ver más"></a>
                 </div>
               
                 <div class="mySlides fade">
@@ -99,35 +74,7 @@
             </div>
         </section>
         </div>
-        <footer>
-            <div id="logo-footer"><a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a></div>
-            <div id="caja-footer">
-                <div id="prod-footer">
-                    <h2>Productos</h2>
-                    <ul>
-                        <li><a href="http://localhost:3030/Auto" style="text-decoration: none">Auto</a></li>
-                        <li><a href="#" style="text-decoration: none">Moto</a></li>
-                        <li><a href="#" style="text-decoration: none">Monopatin</a></li>
-                    </ul>
-                </div>
-                <div id="noso-footer">
-                    <h2>Nosotros</h2>
-                    <ul>
-                        <li><a href="#" style="text-decoration: none">Enlace 1</a></li>
-                        <li><a href="#" style="text-decoration: none">Enlace 2</a></li>
-                        <li><a href="#" style="text-decoration: none">Enlace 3</a></li>
-                    </ul>
-                </div>
-                <div id="redes-footer">
-                    <h2>Redes Sociales</h2>
-                    <ul>
-                        <li><a href="#" style="text-decoration: none">Facebook</a></li>
-                        <li><a href="#" style="text-decoration: none">Twitter</a></li>
-                        <li><a href="#" style="text-decoration: none">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <%- include("./partials/footer") %>
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);

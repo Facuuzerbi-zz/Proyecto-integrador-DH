@@ -11,32 +11,7 @@
         <title>Auto</title>
     </head>
 <body>
-    <header class="main-header">
-        <div class="main-header-top-bar">
-            <div class="caja-logo">
-                <a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a>
-            </div>
-            <form action="#" method="GET" class="busqueda">
-                <input type="search" placeholder="Buscar" name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
-        <a href="#" class="hamburguer-button"><i class="fa fa-bars burger"></i></a>
-        <div class="navbar-prod">
-                <ul class="left-navbar">
-                    <li><a href="http://localhost:3030/Auto">Auto</a></li>
-                    <li><a href="#">Moto</a></li>
-                    <li><a href="#">Monopatin</a></li>
-                </ul>
-        </div>
-        <div class="iconos">
-                <ul class="right-navbar">
-                    <li><a href="#"><i class="fas fa-search fa-2x"></i></a></li>
-                    <li><a href="http://localhost:3030/cart"><i class="fas fa-shopping-cart fa-2x"></i></li>
-                    <li><a href="http://localhost:3030/sigin"><i class="far fa-user fa-2x"></i></a></li>
-                </ul>
-        </div>
-    </header>
+    <%- include("../partials/header") %>
     <main>
         <section class="section-principal-producto">
             <div class="title-principal-producto">
@@ -63,7 +38,7 @@
            <h3>Performance & Autonomía</h3>
            <p>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph in as little as 3.1 seconds.
         </p>
-           <a href="http://localhost:3030/login" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
+           <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
            <img src="/img/auto/auto-performance.jpg">
@@ -76,14 +51,14 @@
         <div>
            <h3>Exterior</h3>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, natus minima enim, molestias porro dignissimos provident illo itaque sed praesentium numquam animi quos similique sint repudiandae impedit, suscipit laudantium? Nulla!</p>
-           <a href="http://localhost:3030/login" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
+           <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
        </section>
        <section class="section-gris">
         <div>
            <h3>Interior</h3>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, natus minima enim, molestias porro dignissimos provident illo itaque sed praesentium numquam animi quos similique sint repudiandae impedit, suscipit laudantium? Nulla!</p>
-           <a href="http://localhost:3030/login" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
+           <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
            <img src="/img/auto/auto-interior.jpeg">
@@ -102,35 +77,7 @@
        </section>
     </main>
     
-    <footer>
-        <div id="logo-footer"><a href="http://localhost:3030/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a></div>
-        <div id="caja-footer">
-            <div id="prod-footer">
-                <h2>Productos</h2>
-                <ul>
-                    <li><a href="http://localhost:3030/Auto" style="text-decoration: none">Auto</a></li>
-                    <li><a href="#" style="text-decoration: none">Moto</a></li>
-                    <li><a href="#" style="text-decoration: none">Monopatin</a></li>
-                </ul>
-            </div>
-            <div id="noso-footer">
-                <h2>Nosotros</h2>
-                <ul>
-                    <li><a href="#" style="text-decoration: none">Enlace 1</a></li>
-                    <li><a href="#" style="text-decoration: none">Enlace 2</a></li>
-                    <li><a href="#" style="text-decoration: none">Enlace 3</a></li>
-                </ul>
-            </div>
-            <div id="redes-footer">
-                <h2>Redes Sociales</h2>
-                <ul>
-                    <li><a href="#" style="text-decoration: none">Facebook</a></li>
-                    <li><a href="#" style="text-decoration: none">Twitter</a></li>
-                    <li><a href="#" style="text-decoration: none">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <%- include("../partials/footer") %>
 
     </body>
 </html>
