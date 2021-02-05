@@ -12,6 +12,7 @@ h1 {
     color: white;
     margin: 0px;
     text-align: center;
+    width: auto;
 }
 
 h2{
@@ -20,24 +21,6 @@ h2{
 
 h3{
     margin-bottom: 10px;
-}
-
-.form-crear {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.seccion-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    margin: auto;
-}
-
-input{
-    margin-bottom: 5px;
 }
 
 .button{
@@ -55,6 +38,24 @@ input{
     display: flex;
     justify-content: center;
 }
+section {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    padding: 0px 15px 10px;
+    width: auto;
+}
+section div { 
+    width: auto;
+}
+
+section div img {
+    width: 100%;
+    padding: 15px 0px 0px 0px;
+}
+hr{
+    width: auto;
+}
 
 
 @media (min-width:900px){
@@ -62,4 +63,16 @@ input{
         background-color: black;
         color: white;
     }
+    section{
+        padding: 15px 25px 25px 25px;
+    }
+    section div { 
+        width: 67%;
+    }
+    section img{
+        width: 30%;
+        padding: 15px 0px 0px 0px;
+        height:40vh;
+    }
 }
+

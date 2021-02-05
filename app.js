@@ -36,6 +36,11 @@ app.get('/crear', (req,res) => {
     res.render(htmlPath);
 });
 
+app.get('/producto', (req,res) => {
+    let htmlPath = path.resolve(__dirname,'./views/product/listProduct.ejs');
+    res.render(htmlPath);
+});
+
 app.get('/header', (req,res) => {
     let htmlPath = path.resolve(__dirname,'./views/partials/header.ejs');
     res.render(htmlPath);
