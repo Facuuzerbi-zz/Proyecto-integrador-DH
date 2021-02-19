@@ -1,0 +1,1 @@
+Chicos acuerdense de cuando pullean, levantar npm install para instalar las dependencias
