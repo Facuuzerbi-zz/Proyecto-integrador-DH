@@ -1,36 +1,39 @@
 let express = require('express');
 let router = express.Router();
+const productsController = require('../controllers/products')
 const dataproducts = require('../data/products.json'); // a corregir
 
 
-// Sprint 4
-router.get('/',(req,res) => {
-    res.json(dataproducts);
-});
+// Middlewares
+
+//router.use('/',(productsController.all)); A CORREGIR
+router.use('/autos', (productsController.autos));
+router.use('/motos', (productsController.motos));
+router.use('/monopatines', (productsController.monopatines));
+router.use('/detail/:id?', (productsController.detail));
+
+
+//Routes
 
 router.get('/create',(req,res) => {
-    res.render('../views/products/create.ejs');
+    res.render('../views/products/create');
 });
 
-router.get('/:id',(req,res) => {
-    
+router.get('/autos/:id/edit',(req,res) => {
+    res.render('../views/products/listProduct.ejs');
 });
-
-
-//
-
-//localhost:3030/products/auto
-router.get('/auto',(req,res) => {
-    res.render(controller.auto);
+router.get('/motos/:id',(req,res) => {
+    res.render('../views/products/detalleProducto.ejs');
 });
-
-router.get('/moto',(req,res) => {
+router.get('/motos/:id/edit',(req,res) => {
+    res.render('../views/products/detalleProducto.ejs');
+});
+router.get('/monopatines/:id',(req,res) => {
+    res.render('../views/products/detalleProducto.ejs');
+});
+router.get('/monopatines/:id/edit',(req,res) => {
     res.render('../views/products/detalleProducto.ejs');
 });
 
-router.get('/monopatin',(req,res) => {
-    res.render('../views/products/detalleProducto.ejs');
-});
-    
 
 module.exports = router;

@@ -10,8 +10,4 @@ router.get('/cart', (req,res) => {
     res.render('../views/cart.ejs');
 });
 
-router.get('/crear', (req,res) => {
-    res.render('../views/product/create.ejs');
-});
-
 module.exports = router;

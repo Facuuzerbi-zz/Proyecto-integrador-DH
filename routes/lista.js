@@ -3,15 +3,15 @@ let router = express.Router();
 
 
 router.get('/auto',(req,res) => {
-    res.render('../views/product/listProduct.ejs');
+    res.render('../views/products/listProduct.ejs');
 });
 
 router.get('/moto',(req,res) => {
-    res.render('../views/product/detalleProducto.ejs');
+    res.render('../views/products/detalleProducto.ejs');
 });
 
 router.get('/monopatin',(req,res) => {
-    res.render('../views/product/detalleProducto.ejs');
+    res.render('../views/products/detalleProducto.ejs');
 });
     
 
