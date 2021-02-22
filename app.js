@@ -8,6 +8,8 @@ const publicPath = path.resolve(__dirname, './public');
 // Middlewares
 app.use(express.static(publicPath));
 app.use(methodOverride ('_method'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 app.use('/', require('./routes/principal.js'))
 app.use('/products', require('./routes/products.js'));
