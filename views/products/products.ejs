@@ -14,7 +14,7 @@
             <h1> Encontrá tu vehiculo ideal</h1>
             <% productosAMostrar.forEach(function(product){ %>
             <section>
-                <img src= <%= product.image %>>
+                <img src= "/img/auto/<%= product.image %>">
                 <div>
                     <h3><%= product.name%></h3>
                     <h4>$ <%= product.price%></h4>
