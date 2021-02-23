@@ -127,6 +127,55 @@ footer{
   color: black;
 }
 
+.section-suscribe{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 30px 15px;
+  background-color: white;
+}
+.section-suscribe div{
+  width: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+.form-suscribe{
+  border-radius: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 1px;
+  height: 35px;
+  width: 300px;
+  margin: auto;
+}
+.form-suscribe:focus{
+  outline: none;
+}
+
+.button-suscribe{
+  border-radius: 20px;
+  border-radius: 20px;
+  border-color: black;
+  border-width: 1px;
+  height: 35px;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+}
+.button-suscribe:focus{
+  outline: none;
+}
+
+
+
+
+
+
+
+
+
 /*Query de 600*/
 @media (min-width:600px){
   .main-header{
@@ -199,10 +248,32 @@ footer{
     justify-content: flex-start;
   }
 }
+
+
+
+
+
+
+
+
 /*Query de 900*/
 @media (min-width:900px){
   .left-navbar li a{
     font-size: 27px;
-    }
+  }
+    .section-suscribe{
+      align-items: center;
+      padding: 15px 0px;
+  }
+  .section-suscribe div{
+      width: 49%
+  }
+  .section-suscribe p {
+      text-align: center;
+  }
+  .button-suscribe:hover {
+      background-color: black;
+      color: white;
+  }
 
 }
