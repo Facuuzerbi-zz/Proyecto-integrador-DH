@@ -6,7 +6,7 @@
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
         <link rel="stylesheet" href="/css/listProduct.css">
         <link rel="stylesheet" href="/css/Header.css">
-        <title>Encontrá tu {{category}}</title>
+        <title>Encontrá tu vehículo</title>
     </head>
     <body>
         <%- include("../partials/header") %>
@@ -14,7 +14,7 @@
             <h1> Encontrá tu vehiculo ideal</h1>
             <% productosAMostrar.forEach(function(product){ %>
             <section>
-                <img src= "/img/auto/<%= product.image %>">
+                <img src= "/img/<%= product.category %>/<%= product.image %>">
                 <div>
                     <h3><%= product.name%></h3>
                     <h4>$ <%= product.price%></h4>

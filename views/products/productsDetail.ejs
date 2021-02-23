@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="/css/Header.css">   
         <link rel="stylesheet" href="/css/Product.css">
         
-        <title>Auto</title>
+        <title><%= productsDetail[0].name %></title>
     </head>
 <body>
     <%- include("../partials/header") %>
@@ -40,12 +40,12 @@
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
-           <img src="/img/auto/<%= productsDetail[0].ch1Img %>">
+           <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch1Img %>">
         </div>
        </section>
        <section class="section-blanca">
         <div>
-            <img src="/img/auto/auto-interior.jpeg">
+            <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch2Img %>">
          </div>
         <div>
            <h3>Exterior</h3>
@@ -60,19 +60,8 @@
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
-           <img src="/img/auto/<%= productsDetail[0].ch3Img %>">
+           <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch3Img %>">
         </div>
-       </section>
-       <section class="section-suscribe">
-           <div>
-               <p>Suscribite para recibir todas nuestras novedades</p>
-           </div>
-           <div>
-                <form action="/" method="POST">
-                    <input class="form-suscribe" type="email" name="user" placeholder="Ingrese su email" required>
-                    <input class="button-suscribe" type="submit" value="Suscribirse">
-                </form>
-           </div>
        </section>
     </main>
     

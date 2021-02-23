@@ -10,7 +10,7 @@
  "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
  "ch1Img":"auto-performance.jpg",
  "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
- "ch2Img":"product_1.jpg",
+ "ch2Img":"auto-exterior.jpg",
  "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
  "ch3Img":"auto-interior.jpeg"
 },
@@ -25,11 +25,11 @@
 "autonomy":"300",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Img":"auto-performance.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"auto-exterior.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"auto-interior.jpeg"
 },
    
 {"id":3,
@@ -37,16 +37,16 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"auto",
 "price":30121,
-"image":"product_1.jpg",
+"image":"auto-performance.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Img":"auto-performance.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"auto-exterior.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"auto-interior.jpeg"
 },
 
 {"id":4,
@@ -54,16 +54,16 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"moto",
 "price":30121,
-"image":"product_1.jpg",
+"image":"moto.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Img":"moto.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"moto.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"moto.jpg"
 },
 
 {"id":5,
@@ -71,16 +71,16 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"moto",
 "price":30121,
-"image":"product_1.jpg",
+"image":"moto.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Img":"moto.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"moto.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"moto.jpg"
 },
 
 {"id":6,
@@ -88,16 +88,16 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"moto",
 "price":30121,
-"image":"product_1.jpg",
+"image":"moto.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Img":"moto.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"moto.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"moto.jpg"
 },
 
 {"id":7,
@@ -105,16 +105,16 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"monopatin",
 "price":30121,
-"image":"product_1.jpg",
+"image":"monopatin.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
-"ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Desc":"Performance del monopatin wachinnn",
+"ch1Img":"monopatin.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"monopatin.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"monopatin.jpg"
 },
 
 {"id":8,
@@ -122,16 +122,16 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"monopatin",
 "price":30121,
-"image":"product_1.jpg",
+"image":"monopatin.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
-"ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Desc":"Performance del monopatin wachinnn",
+"ch1Img":"monopatin.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"monopatin.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"monopatin.jpg"
 },
 
 {"id":9,
@@ -139,15 +139,15 @@
 "description":"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
 "category":"monopatin",
 "price":30121,
-"image":"product_1.jpg",
+"image":"monopatin.jpg",
 "potency":418,
 "autonomy":"300",
 "security":"5 Airbags",
-"ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"product_1.jpg",
+"ch1Desc":"Performance del monopatin wachinnn",
+"ch1Img":"monopatin.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"product_1.jpg",
+"ch2Img":"monopatin.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"product_1.jpg"
+"ch3Img":"monopatin.jpg"
 }
  ]
