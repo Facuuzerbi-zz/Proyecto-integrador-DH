@@ -15,11 +15,11 @@
             <% productosAMostrar.forEach(function(product){ %>
             <% let color; %>
             <% if((product.id) %2 != 0){ %> 
-            <% color = "#DEE2E6" %> 
+            <% color = "style=background-color:#DEE2E6" %> 
             <% } else { %>
-            <% color = "white" %> 
+            <% color = "style=background-color:white" %> 
             <% } %> 
-            <section style="background-color: <%= color %>">
+            <section  <%= color %>>
                 <img src= "/img/<%= product.category %>/<%= product.image %>">
                 <div>
                     <h3><%= product.name%></h3>
