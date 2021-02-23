@@ -6,34 +6,32 @@
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
         <link rel="stylesheet" href="/css/createProduct.css">
         <link rel="stylesheet" href="/css/Header.css">
-        <title>Crear producto</title>
+        <title>Editar producto</title>
     </head>
     <body>
         <%- include("../partials/header") %>
         <main>
-            <h1> Crear nuevo producto</h1>
+            <h1> Editar producto</h1>
             <form method="POST" class="form-crear">
                 <h2>Datos generales</h2>
                 <div class="seccion-flex">
                     <div>
                         <label for="name">Titulo del producto:</label>
-                        <input type="text" placeholder="Ex: Auto 1" name="name" required>
+                        <input value=<%= productoAEditar.name %> type="text" placeholder="Ex: Auto 1" name="name" required>
                     </div>
                     <div>
                         <label for="description">Descripcion general:</label>
-                        <input type="text" placeholder="Ex: Este es un auto..." name="description" required>
+                        <input value=<%= productoAEditar.description %> type="text" placeholder="Ex: Este es un auto..." name="description" required>
                     </div>
                     <div>
                         <label for="category">Categoría:</label>
                             <select name="category">
-                                <option value="auto">Auto</option>
-                                <option value="moto">Moto</option>
-                                <option value="monopatin">Monopatin</option>
+                                <option value="auto"><%= productoAEditar.category %></option>
                             </select>
                     </div>
                     <div>
                         <label for="price">Precio:</label>
-                        <input type="text" placeholder="Ex: $1000" name="price" required>
+                        <input value=<%= productoAEditar.price %> type="text" placeholder="Ex: $1000" name="price" required>
                     </div>
                 </div>
                 <hr>
@@ -46,17 +44,17 @@
                     <div>
                         <h3>Potencia</h3>
                         <label for="potency">Desc :</label>
-                        <input type="text" placeholder="Ex: 250HP" name="potency" required>
+                        <input value=<%= productoAEditar.potency %> type="text" placeholder="Ex: 250HP" name="potency" required>
                     </div>
                     <div>
                         <h3>Autonomía</h3>
                         <label for="autonomy">Desc :</label>
-                        <input type="text" placeholder="Ex: 300km" name="autonomy" required>
+                        <input value=<%= productoAEditar.autonomy %> type="text" placeholder="Ex: 300km" name="autonomy" required>
                     </div>
                     <div>
                         <h3>Seguridad</h3>
                         <label for="security">Desc :</label>
-                        <input type="text" placeholder="Ex: 5 Airbags" name="security" required>
+                        <input value=<%= productoAEditar.security %> type="text" placeholder="Ex: 5 Airbags" name="security" required>
                     </div>
                 </div>
                 <hr>
@@ -66,7 +64,7 @@
                     <div>
                         <h3>Performance & Autonomía</h3>
                         <label for="ch1-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch1-desc" required><br>
+                        <input value=<%= productoAEditar.ch1Desc %> type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch1-desc" required><br>
                         <label for="ch1-img">Imagen:</label>
                         <input type="file" name="ch1-img" required>
                     </div>
@@ -74,7 +72,7 @@
                     <div>
                         <h3>Exterior</h3>
                         <label for="ch2-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch2-desc" required><br>
+                        <input value=<%= productoAEditar.ch2Desc %> type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch2-desc" required><br>
                         <label for="ch2-img">Imagen:</label>
                         <input type="file" name="ch2-img" required>
                     </div>
@@ -82,14 +80,14 @@
                     <div>
                         <h3>Confort</h3>
                         <label for="ch3-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch3-desc" required><br>
+                        <input value=<%= productoAEditar.ch3Desc %> type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch3-desc" required><br>
                         <label for="ch3-img">Imagen:</label>
                         <input type="file" name="ch3-img" required>
                     </div>
                 </div>
                 <hr>
                 <div>
-                    <input type="submit" value="Crear producto" class="button">
+                    <input type="submit" value="Guardar" class="button">
                 </div>
             </form>
         </main>
