@@ -20,15 +20,15 @@
             <div class="caracteristicas-principales">
                 <div>
                     <p>Potencia</p>
-                    <h2><%= productsDetail[0].potency %> kw</h2>
+                    <h2><%= productsDetail[0].potency %> KW</h2>
                 </div>
                 <div>
                     <p>Autonomia</p>
-                    <h2>402 Mi</h2>
+                    <h2><%= productsDetail[0].autonomy %> Kms</h2>
                 </div>
                 <div>
                     <p>Seguridad</p>
-                    <h2>5 Airbags</h2>
+                    <h2><%= productsDetail[0].security %></h2>
                 </div>
             </div>
         </section>
@@ -36,12 +36,11 @@
        <section class="section-gris">
         <div>
            <h3>Performance & Autonomía</h3>
-           <p>Model 3 comes with the option of dual motor all-wheel drive, 20” Überturbine Wheels and Performance Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph in as little as 3.1 seconds.
-        </p>
+           <p><%= productsDetail[0].ch1-desc %></p>
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
-           <img src="/img/auto/auto-performance.jpg">
+           <img src="/img/auto/auto-interior.jpeg">
         </div>
        </section>
        <section class="section-blanca">
@@ -50,14 +49,14 @@
          </div>
         <div>
            <h3>Exterior</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, natus minima enim, molestias porro dignissimos provident illo itaque sed praesentium numquam animi quos similique sint repudiandae impedit, suscipit laudantium? Nulla!</p>
+           <p><%= productsDetail[0].ch2-desc %></p>
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
        </section>
        <section class="section-gris">
         <div>
            <h3>Interior</h3>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, natus minima enim, molestias porro dignissimos provident illo itaque sed praesentium numquam animi quos similique sint repudiandae impedit, suscipit laudantium? Nulla!</p>
+           <p><%= productsDetail[0].ch3-desc %></p>
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
