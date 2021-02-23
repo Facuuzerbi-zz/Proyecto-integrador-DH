@@ -55,6 +55,7 @@ section div img {
 }
 hr{
     width: auto;
+    margin-block: 0;
 }
 
 

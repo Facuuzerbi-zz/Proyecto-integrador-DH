@@ -6,9 +6,9 @@ const dataproducts = require('../data/products.json'); // a corregir
 
 // Middlewares
 
-router.use('/autos', (productsController.autos));
-router.use('/motos', (productsController.motos));
-router.use('/monopatines', (productsController.monopatines));
+router.use('/auto', (productsController.autos));
+router.use('/moto', (productsController.motos));
+router.use('/monopatin', (productsController.monopatines));
 router.use('/detail/:id?', (productsController.detail));
 router.use('/edit/:id?', (productsController.edit));
 

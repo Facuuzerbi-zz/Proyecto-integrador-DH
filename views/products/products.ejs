@@ -13,23 +13,25 @@
         <main>
             <h1> Encontrá tu vehiculo ideal</h1>
             <% productosAMostrar.forEach(function(product){ %>
-            <section>
+            <% let color; %>
+            <% if((product.id) %2 != 0){ %> 
+            <% color = "#DEE2E6" %> 
+            <% } else { %>
+            <% color = "white" %> 
+            <% } %> 
+            <section style="background-color: <%= color %>">
                 <img src= "/img/<%= product.category %>/<%= product.image %>">
                 <div>
                     <h3><%= product.name%></h3>
                     <h4>$ <%= product.price%></h4>
                     <p><%= product.description%></p>
                     <a href="http://localhost:3030/products/detail/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Ver más"></a>
-                </div>  
-                <div>
                     <a href="http://localhost:3030/products/edit/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Editar"></a>
-                </div>
-                <div>
                     <a href="http://localhost:3030/products/delete/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Eliminar"></a>
                 </div>  
             </section>
-            <hr>
             <% }); %>
+            <hr>
             <div>
                 <a href="http://localhost:3030/products/create" style="text-decoration: none"><input class="button" type="button" value="Crear producto"></a>
             </div>  
