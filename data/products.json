@@ -3,16 +3,16 @@
  "description":"El NSX-2 (abreviatura de New Sport experimental), es un automóvil eléctrico deportivo de dos puertas biplaza, capaz de producir 418Kw de potencia con torque instantaneo gracias a su poderoso motor central-trasero. Tambien cuenta con una autonomía aproximada de 300 Kms y un sistema de seguridad y confort inigualable.",
  "category":"auto",
  "price":30121,
- "image":"auto-performance.jpg",
+ "image":"NSX-2.jpg",
  "potency":418,
  "autonomy":"300",
  "security":"5 Airbags",
  "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
- "ch1Img":"auto-performance.jpg",
+ "ch1Img":"NSX-2-1.jpg",
  "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
- "ch2Img":"auto-exterior.jpg",
+ "ch2Img":"NSX-2-2.jpg",
  "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
- "ch3Img":"auto-interior.jpeg"
+ "ch3Img":"NSX-2-3.jpg"
 },
 
 {"id":2,
@@ -20,16 +20,16 @@
 "description":"El F2000 es el modelo eléctrico del automóvil deportivo S2000 producido por el fabricante japonés Honda desde abril de 1999 hasta junio de 2009. El automóvil fue creado para celebrar el 50º aniversario de la compañía. El F2000 es capaz de producir 522Kw de potencia con torque instantaneo gracias a su poderoso motor central-trasero. Tiene una autonomía de 315 Kms y un sistema de seguridad que cuenta con 5 Airbags.",
 "category":"auto",
 "price":35418,
-"image":"auto-performance.jpg",
+"image":"F2000.jpg",
 "potency":522,
 "autonomy":"315",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"auto-performance.jpg",
+"ch1Img":"F2000-1.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"auto-exterior.jpg",
+"ch2Img":"F2000-2.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"auto-interior.jpeg"
+"ch3Img":"F2000-3.jpg"
 },
    
 {"id":3,
@@ -37,16 +37,16 @@
 "description":"El Supa es un automóvil deportivo coupé Hatchback de 3 puertas con 4 poderosos motores electricos montados en cada rueda. En total, el Supa, es capaz de entregar instantaneamente más de 560Kw de potencia, siendo asi uno de los vehiculos eléctricos mas potentes del mercado. Cuenta con sistema de ABS y 5 Airbags. También se estima que su autonomía es de unos 460Kms, lo que permite recorrer mas distancia en comparacion con sus competidores.",
 "category":"auto",
 "price":41984,
-"image":"auto-performance.jpg",
+"image":"SUPA.jpg",
 "potency":561,
 "autonomy":"457",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"auto-performance.jpg",
+"ch1Img":"SUPA-1.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"auto-exterior.jpg",
+"ch2Img":"SUPA-2.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"auto-interior.jpeg"
+"ch3Img":"SUPA-3.jpg"
 },
 
 {"id":4,
