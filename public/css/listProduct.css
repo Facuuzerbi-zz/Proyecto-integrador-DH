@@ -35,9 +35,12 @@ h3{
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
 }
+
+.buttonCreate{
+    justify-content: space-around;
+}
+
 section {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -46,12 +49,11 @@ section {
     width: auto;
 }
 section div { 
-    width: auto;
+    width: 100%;
 }
 
-section div img {
-    width: 100%;
-    padding: 15px 0px 0px 0px;
+img {
+    width: 100%;  
 }
 hr{
     width: auto;

@@ -25,15 +25,17 @@
                     <h3><%= product.name%></h3>
                     <h4>$ <%= product.price%></h4>
                     <p><%= product.description%></p>
-                    <a href="http://localhost:3030/products/detail/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Ver más"></a>
-                    <a href="http://localhost:3030/products/edit/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Editar"></a>
-                    <a href="http://localhost:3030/products/delete/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Eliminar"></a>
+                    <div>
+                        <a href="http://localhost:3030/products/detail/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Ver más"></a>
+                        <a href="http://localhost:3030/products/edit/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Editar"></a>
+                        <a href="http://localhost:3030/products/delete/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Eliminar"></a>
+                    </div>
                 </div>  
             </section>
             <% }); %>
             <hr>
             <div>
-                <a href="http://localhost:3030/products/create" style="text-decoration: none"><input class="button" type="button" value="Crear producto"></a>
+                <a class="buttonCreate" href="http://localhost:3030/products/create" style="text-decoration: none"><input class="button" type="button" value="Crear producto"></a>
             </div>  
         </main>
         <%- include("../partials/footer") %>
