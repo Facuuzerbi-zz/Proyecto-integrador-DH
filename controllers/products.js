@@ -17,7 +17,8 @@ module.exports = {
     detail: function (req,res){
         let id = req.params.id;
         let productsDetail = data.filter(x => x.id == id);
-        res.render('../views/products/productsDetail.ejs', {productsDetail});
+        
+        res.render('../views/products/productsDetail.ejs',{productsDetail});
     },
     //FORMULARIO DE PRODUCTO
     edit: function (req,res){

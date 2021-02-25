@@ -5,15 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/3eaccf5d38.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
-        <link rel="stylesheet" href="/css/Header.css">   
+        <link rel="stylesheet" href="/css/d-products-header.css">   
         <link rel="stylesheet" href="/css/Product.css">
         
         <title><%= productsDetail[0].name %></title>
     </head>
 <body>
-    <%- include("../partials/header") %>
     <main>
         <section class="section-principal-producto" style="background-image: url('/img/auto/<%= productsDetail[0].name %>-PORTADA.jpg')"> 
+            <%- include("../partials/d-products-header") %>
             <div class="title-principal-producto">
                 <h1><%= productsDetail[0].name %> </h1>
             </div>

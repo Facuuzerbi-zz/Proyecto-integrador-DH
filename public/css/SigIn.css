@@ -1,8 +1,8 @@
 /*--------------------- Estilos pagina LogIn/SigIn ----------------------*/
 .header-logsin{
     background-color:white; 
-    padding: 10px;
-    margin-bottom: 2px;
+    padding: 0px;
+    margin: 0px 0px 0px 0px;
 }
 #logo-logsin{
     float: left;
