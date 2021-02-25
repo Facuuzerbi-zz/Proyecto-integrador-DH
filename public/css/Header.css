@@ -25,7 +25,7 @@ body{
   padding-left: 10px;
 }
 .logo{
-  max-width: 100%;
+  max-width: 90%;
 }
 .busqueda{
   display: flex;
@@ -263,7 +263,7 @@ footer{
     z-index: 10;
   }
   .left-navbar li a{
-    font-size: 27px;
+    font-size: 25px;
   }
   .section-suscribe{
       align-items: center;

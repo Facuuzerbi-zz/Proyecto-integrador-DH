@@ -12,7 +12,7 @@
     </head>
 <body>
     <main>
-        <section class="section-principal-producto" style="background-image: url('/img/auto/<%= productsDetail[0].name %>-PORTADA.jpg')"> 
+        <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>-PORTADA.jpg')"> 
             <%- include("../partials/d-products-header") %>
             <div class="title-principal-producto">
                 <h1><%= productsDetail[0].name %> </h1>

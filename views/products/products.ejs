@@ -11,7 +11,7 @@
     <body>
         <%- include("../partials/products-header") %>
         <main>
-            <h1> Encontrá tu vehiculo ideal</h1>
+            <h1> Encontrá tu <%= productosAMostrar[0].category %> ideal</h1>
             <% productosAMostrar.forEach(function(product){ %>
             <% let color; %>
             <% if((product.id) %2 != 0){ %> 
