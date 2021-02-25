@@ -181,7 +181,6 @@ footer{
   .main-header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
   }
   .hamburguer-button{
     display: none;
@@ -213,8 +212,16 @@ footer{
   .right-navbar li{
     padding: 0px 5px;
   }
+  .right-navbar li i:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
   .left-navbar li a{
     font-size: 3vw;
+  }
+  .left-navbar li a:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
   }
   .right-navbar{
     padding-right: 10px;
@@ -275,5 +282,4 @@ footer{
       background-color: black;
       color: white;
   }
-
 }

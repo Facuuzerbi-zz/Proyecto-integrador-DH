@@ -20,7 +20,7 @@
             <% color = "style=background-color:white" %> 
             <% } %> 
             <section  <%= color %>>
-                <img src= "/img/<%= product.category %>/<%= product.image %>">
+                <img class="imagen-lista" src= "/img/<%= product.category %>/<%= product.image %>">
                 <div>
                     <h3><%= product.name%></h3>
                     <h4>$ <%= product.price%></h4>
@@ -34,7 +34,7 @@
             </section>
             <% }); %>
             <hr>
-            <div>
+            <div style="display: flex;">
                 <a class="buttonCreate" href="http://localhost:3030/products/create" style="text-decoration: none"><input class="button" type="button" value="Crear producto"></a>
             </div>  
         </main>
