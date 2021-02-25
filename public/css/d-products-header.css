@@ -3,17 +3,25 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: transparent;
+  background-color: #ebebeb;
   margin: 0px;
   width: 100%;
-  position: relative;
-  z-index: 50;
+}
+header{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+  margin: 0px;
+  width: 100%;
+}
+main{
+  padding-bottom: 0px;
+  margin-top: 0px;
 }
 .main-header{
   background-color: transparent;
+  top: 0;
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 .main-header-top-bar{
   display: flex;
@@ -75,7 +83,7 @@ body{
 }
 .navbar-prod a, .iconos a{
   text-decoration: none;
-  color: #222222;
+  color: #ebebeb;
   display: inline-block;
   padding: 5px 0px;
   font-size: 14px;
@@ -172,8 +180,6 @@ footer{
   .main-header{
     display: flex;
     justify-content: space-between;
-      position: absolute;
-      z-index: 10;
   }
   .hamburguer-button{
     display: none;
@@ -258,14 +264,10 @@ footer{
 
 /*Query de 900*/
 @media (min-width:900px){
-  .main-header{
-    position: absolute;
-    z-index: 10;
-  }
   .left-navbar li a{
-    font-size: 25px;
+    font-size: 27px;
   }
-  .section-suscribe{
+    .section-suscribe{
       align-items: center;
       padding: 15px 0px;
   }
