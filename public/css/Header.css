@@ -181,7 +181,6 @@ footer{
   .main-header{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
   }
   .hamburguer-button{
     display: none;
@@ -283,5 +282,4 @@ footer{
       background-color: black;
       color: white;
   }
-
 }
