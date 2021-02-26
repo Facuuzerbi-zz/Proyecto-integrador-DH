@@ -213,7 +213,7 @@ footer{
     font-size: 3vw;
   }
   .left-navbar li a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 0.2s;
   }
   .right-navbar{
