@@ -31,7 +31,11 @@ h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     display: inline-block;
-    color:white;    
+    color:white;
+    text-shadow: 0 0 0.2em black;
+    animation-name: ProductName;
+    animation-timing-function:ease ;
+    animation-duration: 2.5s;  
 }
 .caracteristicas-principales{
     font-family: 'Open Sans', sans-serif;
@@ -40,6 +44,9 @@ h3{
     display: flex;
     justify-content: space-around;
     padding-top: 340px;
+    animation-name: ProductName;
+    animation-timing-function:ease ;
+    animation-duration: 1s;  
 }
 .caracteristicas-principales h2{
     font-family: 'Open Sans', sans-serif;
@@ -200,5 +207,17 @@ h3{
     .button-suscribe:hover {
         background-color: black;
         color: white;
+        
+    }
+
+@keyframes ProductName {
+    from {
+        opacity: 0;
+        bottom: -4vh;
+    }
+    to {
+        opacity: 1;
+        bottom: 0vh;
+    }
     }
 }
