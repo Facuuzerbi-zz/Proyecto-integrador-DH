@@ -13,7 +13,7 @@ app.use(express.json());
 
 app.use('/', require('./routes/principal.js'))
 app.use('/products', require('./routes/products.js'));
-app.use('/auth', require('./routes/auth.js'));
+app.use('/user', require('./routes/userRoutes.js'));
 
 app.set('view engine','ejs');
 

@@ -18,16 +18,16 @@
         <section>
             <h3 class="titulo-in"> Crear Cuenta</h3>
             <form action="/" method="POST" class="formulario">
-                <input id="input-login" type="text" required placeholder="Nombre" required>
-                <input id="input-login" type="text" required placeholder="Apellido" required>
-                <input id="input-login" type="email" required placeholder="Email">
-                <input id="input-login" type="password" required placeholder="Contraseña" required minlength="8">
+                <input id="input-login" type="text" required name="first_name" placeholder="Nombre" required>
+                <input id="input-login" type="text" required name="last_name" placeholder="Apellido" required>
+                <input id="input-login" type="email" required name="email" placeholder="Email">
+                <input id="input-login" type="password" required name="password" placeholder="Contraseña" required minlength="8">
                 <div class="checkboxes">
                     <div class="check-acep">
-                        <label id="terminos"><input type="checkbox" class="check" required>Acepto terminos y condiciones</label>
+                        <label id="terminos"><input type="checkbox" class="check" required name="accepted_terms">Acepto terminos y condiciones</label>
                     </div>
                     <div class="check-reci">
-                        <label id="terminos"><input type="checkbox" class="check">Recibir novedades</label><br>
+                        <label id="terminos"><input type="checkbox" class="check" name="opt_in_newsletter">Recibir novedades</label><br>
                     </div>
                 </div>
                 <div id="div-buttons">
