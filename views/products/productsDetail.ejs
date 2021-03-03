@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/3eaccf5d38.js" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="/img/Logos/Icono-negro.png">
+        <link rel="shortcut icon" href="/img/Logos/Rayito-celeste.png">
         <link rel="stylesheet" href="/css/d-products-header.css">   
         <link rel="stylesheet" href="/css/Product.css">
         
@@ -32,7 +32,35 @@
                 </div>
             </div>
         </section>
-       </section> 
+
+
+
+
+       <!-- Facu probando cosas -->
+       <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch1Img %>')"> 
+        <div class="title-principal-producto">
+            <h1>Performance</h1>
+        </div>
+        
+        </section>
+        <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch3Img %>')"> 
+            <div class="title-principal-producto">
+                <% let titulo; %>
+                <%  if(productsDetail[0].category == "auto"){ %>
+                    <% titulo = "Interior" %>  
+                <% }  else {%>
+                        <% titulo = "Tecnología y Confort" %>  
+                <% } %>
+                <h1><%= titulo %></h1>
+            </div>
+            
+            </section>
+        <!--Facu probando cosas -->
+
+
+
+
+
        <section class="section-gris">
         <div>
            <h3>Performance & Autonomía</h3>
