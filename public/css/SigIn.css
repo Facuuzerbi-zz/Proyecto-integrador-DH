@@ -1,4 +1,9 @@
 /*--------------------- Estilos pagina LogIn/SigIn ----------------------*/
+body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
 .header-logsin{
     background-color:white; 
     padding: 0px;
