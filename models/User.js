@@ -16,7 +16,11 @@ const User = {
     generateId: function (){
         let allUsers = this.findAll();
         let lastUser = allUsers.pop();
-        return lastUser.id + 1
+        if (lastUser) {
+            return lastUser.id + 1;
+        } 
+        return 1;
+        
     },
 
     findAll: function (){
@@ -37,10 +41,21 @@ const User = {
 
     create: function (userData){
         let allUsers = this.findAll();
-        allUsers.push(userData);
+        let newUser = {
+            id: this.generateId(),
+            ...userData
+        }
+        allUsers.push(newUser);
         fs.writeFileSync(this.fileName, JSON.stringify(allUsers, null, ' '));
+        return newUser;
+    },
+    delete: function (id){
+        let allUsers = this.findAll();
+        let finalUsers = allUsers.filter(oneUser => oneUser.id !== id);
+        fs.writeFileSync(this.fileName, JSON.stringify(finalUsers, null, ' '));
         return true;
     }
+
 }
 
-console.log(User.generateId());
+module.exports = User;
