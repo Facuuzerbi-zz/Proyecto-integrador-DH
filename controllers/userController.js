@@ -20,7 +20,7 @@ const controller ={
 
         let userInDB = User.findByField('email', req.body.email);
 
-        if (userDB){
+        if (userInDB){
             return res.render ('../views/users/signin.ejs', {
                 errors: {
                     email: {
