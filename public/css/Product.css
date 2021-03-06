@@ -72,28 +72,33 @@ h3{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 15px 10px;
-    background-color:#DEE2E6;
-
+    background-color:#212529;
+    
 }
 
 .section-gris div { 
     width: 100%;
 }
 
+.section-gris div p,
+.section-gris div h3{ 
+    color: #E9ECEF;
+}
+
 .section-gris div img {
     width: 100%;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .button-product {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 14px;
-    color: black;
+    color:  #E9ECEF;
     border-radius: 20px;
     border-style: inset;
-    border-color: black;
+    border-color: #E9ECEF;
     border-width: 1px;
     background-color: transparent;
     width: 150px;
@@ -111,17 +116,22 @@ h3{
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     padding: 0px 15px 10px;
-    background-color: white;
+    background-color: #212529;
 }
 
 .section-blanca div { 
     width: 100%;
 }
 
+.section-blanca div p,
+.section-blanca div h3{ 
+    color: #E9ECEF;
+}
+
 .section-blanca div img {
     width: 100%;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .button-product:focus{
@@ -167,7 +177,7 @@ h3{
         margin: 0px 50px;
     }
     .section-gris{
-        padding: 15px 25px 25px 25px;
+        padding: 5px 25px 5px 25px;
     }
     .section-gris div { 
         width: 49%;
@@ -178,7 +188,7 @@ h3{
         height:50vh;
     }
     .section-blanca {
-        padding: 15px 25px 25px 25px;
+        padding: 5px 25px 5px 25px;
         flex-wrap: wrap;
     }
     .section-blanca div{
@@ -190,8 +200,9 @@ h3{
         height:50vh;
     }
     .button-product:hover {
-        background-color: black;
-        color: white;
+        background-color: #E9ECEF;
+        color: black;
+        border-color: black;
     }
 
     .section-suscribe{

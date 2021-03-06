@@ -12,7 +12,7 @@
     </head>
 <body>
     <main>
-        <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>-PORTADA.jpg')"> 
+        <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>/<%= productsDetail[0].name %>-PORTADA.jpg')"> 
             <%- include("../partials/d-products-header") %>
             <div class="title-principal-producto">
                 <h1><%= productsDetail[0].name %> </h1>
@@ -37,13 +37,13 @@
 
 
        <!-- Facu probando cosas -->
-       <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch1Img %>')"> 
+       <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>/Performance-<%= productsDetail[0].name %>.jpg')"> 
         <div class="title-principal-producto">
             <h1>Performance</h1>
         </div>
         
         </section>
-        <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch3Img %>')"> 
+        <section class="section-principal-producto" style="background-image: url('/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>/Interior-<%= productsDetail[0].name %>.jpg')"> 
             <div class="title-principal-producto">
                 <% let titulo; %>
                 <%  if(productsDetail[0].category == "auto"){ %>
@@ -68,12 +68,12 @@
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
-           <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch1Img %>">
+           <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>/<%= productsDetail[0].ch1Img %>">
         </div>
        </section>
        <section class="section-blanca">
         <div>
-            <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch2Img %>">
+            <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>/<%= productsDetail[0].ch2Img %>">
          </div>
         <div>
            <h3>Exterior</h3>
@@ -88,7 +88,7 @@
            <a href="http://localhost:3030/cart" style="text-decoration: none"><input class="button-product" type="button" value="Agregar al carrito"></a>
         </div>
         <div>
-           <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].ch3Img %>">
+           <img src="/img/<%= productsDetail[0].category %>/<%= productsDetail[0].name %>/<%= productsDetail[0].ch3Img %>">
         </div>
        </section>
     </main>

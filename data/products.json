@@ -10,9 +10,9 @@
   "ch1Desc":"Carrocería de aluminio reforzada con elementos de acero al boro. El 97% de la carrocería es aluminio ligero. Parabrisas con bloqueo para rayos ultravioleta e infrarrojos. Suspensión delantera de doble horquilla, eje virtual de dirección y muelles. El cargador incorporado de 10 kW es compatible con 85-265 V, 45-65 Hz, 1-40  A. Permite recargar hasta 50 km en una hora de recarga a 40 A. La EPA estableció la autonomía del Model S 60 kWh en 318 km. ",
   "ch1Img":"MODEL-S-1.jpg",
   "ch2Desc":"El coeficiente aerodinámico del Model S es Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás.",
-  "ch2Img":"MODEL-S-21.jpg",
+  "ch2Img":"MODEL-S-2.jpg",
   "ch3Desc":"Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu",
-  "ch3Img":"MODEL-S-3.jpeg"
+  "ch3Img":"MODEL-S-3.jpg"
 },
 
 {"id":2,
@@ -24,7 +24,7 @@
  "potency":418,
  "autonomy":"326",
  "security":"5 Airbags",
- "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
+ "ch1Desc":"El coche acelera de 0 a 100 km/h (62 mph) en 2,9 segundos y tiene una velocidad máxima superior a 307 km / h (191 mph). El NSX completa un cuarto de milla en 11,2 segundos. Estructuralmente, el cuerpo utiliza un diseño de marco espacial, que está hecho de aluminio, acero de ultra alta resistencia y otros materiales rígidos y livianos. El cargador incorporado de 12 kW es compatible con 85-265 V, 45-65 Hz, 1-35 A. Permite recargar hasta 63 km en una hora de recarga a 35 A. La EPA estableció la autonomía del NSX en 326 km.",
  "ch1Img":"NSX-2-1.jpg",
  "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
  "ch2Img":"NSX-2-2.jpg",
@@ -37,20 +37,20 @@
 "description":"El Supa es un automóvil deportivo coupé Hatchback de 3 puertas con 4 poderosos motores electricos montados en cada rueda. En total, el Supa, es capaz de entregar instantaneamente más de 560Kw de potencia, siendo asi uno de los vehiculos eléctricos mas potentes del mercado. Cuenta con sistema de ABS y 5 Airbags. También se estima que su autonomía es de unos 460Kms, lo que permite recorrer mas distancia en comparacion con sus competidores.",
 "category":"auto",
 "price":41984,
-"image":"SUPA.jpg",
+"image":"SUPA MK5.jpg",
 "potency":561,
 "autonomy":"457",
 "security":"5 Airbags",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"SUPA-1.jpg",
+"ch1Img":"SUPA MK5-1.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"SUPA-2.jpg",
+"ch2Img":"SUPA MK5-2.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"SUPA-3.jpg"
+"ch3Img":"SUPA MK5-3.jpg"
 },
 
 {"id":4,
-"name":"Vespa Electtrica",
+"name":"Vespa",
 "description":"La primera moto eléctrica de Vespa se llama Elettrica y se ve fantástica. Rápido de cargar y sin esfuerzo de conducir, el glorioso vehículo emana con pura practicidad. Sube a bordo y atraviesa el terreno más cercano con una facilidad sin límites, haciendo girar las cabezas mientras navega a una velocidad moderada. Este es perfecto para los habitantes de las ciudades.",
 "category":"moto",
 "price":21579,
@@ -71,16 +71,16 @@
 "description":"La S2 Adventure Smartscooter ofrece una estructura robusta y un estante trasero ampliado. Gracias a la mejora de la distancia al suelo, a una suspensión especialmente diseñada y a una potente transmisión, el scooter eléctrico está preparado para cualquier terreno. Entre las características adicionales se encuentran los soportes de los paneles laterales, las barras delanteras protectoras, las alfombrillas de viaje impermeables y una alfombrilla de aluminio. Su próximo viaje por carretera le espera.",
 "category":"moto",
 "price":24873,
-"image":"GOGORO.jpeg",
+"image":"GORO S2.jpg",
 "potency":4,
 "autonomy":"99,2",
 "security":"ABS",
 "ch1Desc":"nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam molestie",
-"ch1Img":"GOGORO-1.jpg",
+"ch1Img":"GORO S2-1.jpg",
 "ch2Desc":"amet consectetuer adipiscing elit proin risus praesent lectus vestibulum quam sapien varius ut blandit non interdum in",
-"ch2Img":"GOGORO-2.jpg",
+"ch2Img":"GORO S2-2.jpg",
 "ch3Desc":"sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
-"ch3Img":"GOGORO-3.jpg"
+"ch3Img":"GORO S2-3.jpg"
 },
 
 {"id":6,

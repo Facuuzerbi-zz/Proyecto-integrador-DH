@@ -3,12 +3,12 @@
   }
   body{
     font-family: 'Roboto', sans-serif;
-    background-color: black;
+    background-color: #212529;
     margin: 0px;
     width: 100%;
   }
   .main-header{
-    background-color: black;
+    background-color: #212529;
     width: 100%;
     overflow: hidden;
   }
