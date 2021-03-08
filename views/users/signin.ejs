@@ -18,14 +18,86 @@
         <section>
             <h3 class="titulo-in"> Crear Cuenta</h3>
             <form action="/user/signin" method="POST" class="formulario">
-                <input id="input-login" type="text" required name="first_name" placeholder="Nombre" required>
-                <input id="input-login" type="text" required name="last_name" placeholder="Apellido" required>
-                <input id="input-login" type="email" required name="email" placeholder="Email">
-                <input id="input-login" type="password" required name="password" placeholder="Contraseña" required minlength="8">
+
+
+                <input id="input-login"
+                       type="text" 
+                       name="first_name" 
+                       placeholder="Nombre"
+                       <% if (locals.oldData) { %>
+                        value="<%= oldData.first_name %> "
+                       <% } %>
+                       >
+                <% if (locals.errors && errors.first_name) { %>
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors.first_name.msg %> 
+                    </div>
+                <% } %>
+
+
+                <input id="input-login"
+                       type="text" 
+                       name="last_name" 
+                       placeholder="Apellido"
+                       <% if (locals.oldData) { %>
+                         value="<%= oldData.last_name %> "
+                       <% } %>
+                       >
+                <% if (locals.errors && errors.last_name) { %>
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors.last_name.msg %> 
+                    </div>
+                <% } %>
+
+
+                <input id="input-login" 
+                       type="text" 
+                       name="email" 
+                       placeholder="Email"
+                       <% if (locals.oldData) { %>
+                        value="<%= oldData.email %>"
+                       <% } %>
+                       >
+                <% if (locals.errors && errors.email) { %>
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors.email.msg %> 
+                    </div>
+                <% } %>
+
+
+                <input id="input-login" 
+                       type="password" 
+                       name="password" 
+                       placeholder="Contraseña"
+                       <% if (locals.oldData) { %>
+                       value="<%= oldData.password %> "
+                       <% } %>
+                        >
+                <% if (locals.errors && errors.password) { %>
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors.password.msg %> 
+                    </div>
+                <% } %>
+
+
                 <div class="checkboxes">
                     <div class="check-acep">
-                        <label id="terminos"><input type="checkbox" class="check" required name="accepted_terms">Acepto terminos y condiciones</label>
+                        <label id="terminos">
+                            <input type="checkbox" 
+                            class="check" 
+                            name="accepted_terms"
+                            <% if (locals.oldData) { %>
+                             value="<%= oldData.accepted_terms %> "
+                            <% } %>
+                            >
+                            Acepto terminos y condiciones
+                        </label>
                     </div>
+                    <% if (locals.errors && errors.accepted_terms) { %>
+                        <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                            <%= errors.accepted_terms.msg %> 
+                        </div>
+                       <% } %>
                     <div class="check-reci">
                         <label id="terminos"><input type="checkbox" class="check" name="opt_in_newsletter">Recibir novedades</label><br>
                     </div>
