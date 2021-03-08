@@ -18,9 +18,15 @@
        
         <section>
             <h3 class="titulo-in">Log in</h3>
-            <form action="/" method="POST">
+            <form method="POST">
                 <input type="email" name="user" placeholder="Email" id="input-login" required>
-                <input type="password" name="pass" placeholder="Contraseña" id="input-login" minlength="8" required>
+                <% if (locals.errors && errors.email) { %>
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors.email.msg %> 
+                    </div>
+                <% } %>
+
+                <input type="password" name="pass" placeholder="Contraseña" id="input-login" minlength="8">
                 <div id="div-buttons">
                     <input id="button-acept" type="submit" value="Ingresar">
                 </div>

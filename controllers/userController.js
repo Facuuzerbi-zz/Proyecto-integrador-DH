@@ -15,7 +15,7 @@ const controller ={
                 oldData: req.body
             });
         }
-/*
+
         let userInDB = User.findByField('email', req.body.email);
 
         if (userInDB){
@@ -34,12 +34,36 @@ const controller ={
             password: bcryptjs.hashSync(req.body.password, 10)
         }
 
-        User.create(userToCreate);
-        return res.send('Ok, se guardo el usuario');*/
+        let userCreated = User.create(userToCreate);
+        return res.redirect('../user/login');
     },
+
     login: (req,res) => {
         return res.render('../views/users/login.ejs');
     },
+
+    processLogin: (req,res) => {
+        let userToLogin = User.findByField('email', req.body.email);
+        
+        if(userToLogin) {
+            res.send(userToLogin);
+            /*
+            let isPassOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if(isPassOk) {
+                return res.send('Ok puedes ingresar');
+            }
+            */
+        }
+
+        return res.render('../views/users/login.ejs', {
+            errors: {
+                email: {
+                    msg: 'Este email no se encuentra registrado'
+                }
+            }
+        })
+    },
+
     profile: (req,res) => {
         return res.render('../views/users/userProfile.ejs');
     }
