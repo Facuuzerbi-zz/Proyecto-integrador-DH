@@ -75,7 +75,13 @@ const controller ={
         return res.render('../views/users/userProfile.ejs',{
             user: req.session.userLogged
         });
+    },
+    
+    logout: (req, res) => {
+        req.session.destroy();
+        return res.redirect('/');
     }
+
 }
 
 module.exports = controller;

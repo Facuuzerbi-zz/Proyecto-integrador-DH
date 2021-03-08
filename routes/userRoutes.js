@@ -3,22 +3,26 @@ const router = express.Router();
 
 
 // Controller
-const usersController = require ('../controllers/userController');
+const userController = require ('../controllers/userController');
 
 // Middlewares
 const validationsCreate = require ('../middlewares/validateRegisterMiddleware');
 const guestMiddleware = require ('../middlewares/guestMiddleware');
+const authMiddleware = require ('../middlewares/authMiddleware');
 
 // Form de Registro
-router.get('/signin', guestMiddleware, usersController.signin);
-router.post('/signin',validationsCreate, usersController.processSignin);
+router.get('/signin', guestMiddleware, userController.signin);
+router.post('/signin',validationsCreate, userController.processSignin);
 
 // Form de Log in 
-router.get('/login',  guestMiddleware, usersController.login);
-router.post('/login', usersController.processLogin);
+router.get('/login',  guestMiddleware, userController.login);
+router.post('/login', userController.processLogin);
+
+// Log out
+router.get('/logout', userController.logout);
 
 // Perfil de usuario
-router.get('/profile', usersController.profile);
+router.get('/profile', authMiddleware, userController.profile);
 
 
 module.exports = router;
