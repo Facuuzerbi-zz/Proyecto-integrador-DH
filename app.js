@@ -1,4 +1,5 @@
 const express = require('express');
+const session = require ('express-session');
 const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
@@ -10,7 +11,13 @@ app.use(express.static(publicPath));
 app.use(methodOverride ('_method'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+app.use(session({
+    secret: 'Shh, secret',
+    resave: false,
+    saveUninitialized: false,
+}));
 
+// Routes
 app.use('/', require('./routes/principal.js'))
 app.use('/products', require('./routes/products.js'));
 app.use('/user', require('./routes/userRoutes.js'));

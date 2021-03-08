@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/Logos/Rayito-celeste.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/LogIn.css">
+        <link rel="stylesheet" href="/css/SigIn.css">
+        <title>Log In</title>
+    </head>
+    <body>
+        <header class="header-logsin">
+            <div>
+            <a href="/" class="logo-logsin"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
+            </div>    
+        </header>
+       
+        <section>
+            <h3 class="titulo-in">Hola <%=user.first_name %></h3>
+            <p class="titulo-in"><%=user.email %></p>
+        </section>
+    </body>
+</html>

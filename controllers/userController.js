@@ -46,13 +46,20 @@ const controller ={
         let userToLogin = User.findByField('email', req.body.email);
         
         if(userToLogin) {
-            res.send(userToLogin);
-            /*
-            let isPassOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
-            if(isPassOk) {
-                return res.send('Ok puedes ingresar');
+            let PassOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
+            if(PassOk) {
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+                return res.redirect('/user/profile');
             }
-            */
+
+            return res.render('../views/users/login.ejs', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son inválidas'
+                    }
+                }
+            });
         }
 
         return res.render('../views/users/login.ejs', {
@@ -61,11 +68,13 @@ const controller ={
                     msg: 'Este email no se encuentra registrado'
                 }
             }
-        })
+        });
     },
 
     profile: (req,res) => {
-        return res.render('../views/users/userProfile.ejs');
+        return res.render('../views/users/userProfile.ejs',{
+            user: req.session.userLogged
+        });
     }
 }
 
