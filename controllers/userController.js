@@ -4,7 +4,7 @@ const User = require ('../models/User');
 
 const controller ={
     signin: (req,res) => {
-        res.render('../views/users/signin');
+        return res.render('../views/users/signin');
     },
     processSignin: (req, res) => {
         const resultValidation = validationResult(req);
@@ -50,6 +50,11 @@ const controller ={
             if(PassOk) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
+
+                if(req.body.remember_user){
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 });
+                }
+
                 return res.redirect('/user/profile');
             }
 
@@ -78,6 +83,7 @@ const controller ={
     },
     
     logout: (req, res) => {
+        res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
     }
