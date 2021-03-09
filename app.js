@@ -5,6 +5,7 @@ const path = require('path');
 const methodOverride = require('method-override');
 
 const publicPath = path.resolve(__dirname, './public');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
 // Middlewares
 app.use(express.static(publicPath));
@@ -16,6 +17,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
 }));
+app.use(userLoggedMiddleware);
 
 // Routes
 app.use('/', require('./routes/principal.js'))
