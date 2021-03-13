@@ -6,5 +6,13 @@
   "email": "pablozerbi@gmail.com",
   "password": "$2a$10$kZc.ektbU4c3erS.uYcBBuNHAgRUXl4ByFfnL6EF.jahTHR.Nioae",
   "accepted_terms": "on"
+ },
+ {
+  "id": 2,
+  "first_name": "Facundo",
+  "last_name": "Zerbinatti",
+  "email": "facuzerbinatti@gmail.com",
+  "password": "$2a$10$15Pb.f.59VRopJmhE8VzNug4KZc.4B3ZKrvxBM2usRlXmvaP8XofS",
+  "accepted_terms": "on"
  }
 ]
