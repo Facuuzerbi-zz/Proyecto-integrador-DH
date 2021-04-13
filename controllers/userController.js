@@ -1,12 +1,13 @@
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
-const User = require ('../models/User');
+const db = require('../database/models');
+const User = db.User;
 
-const controller ={
+const userController ={
     signin: (req,res) => {
         return res.render('../views/users/signin');
     },
-    processSignin: (req, res) => {
+    processSignin:(req,res)=>{
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
@@ -15,10 +16,10 @@ const controller ={
                 oldData: req.body
             });
         }
+        
+        let userInDB =  db.users.findAll({attributes: ['email'], where: {email:req.body.email} });
 
-        let userInDB = User.findByField('email', req.body.email);
-
-        if (userInDB){
+        if (userInDB =!"<pending>"){
             return res.render ('../views/users/signin.ejs', {
                 errors: {
                     email: {
@@ -28,25 +29,30 @@ const controller ={
                 oldData: req.body
             });
         }
-    
-        let userToCreate = {
-            ...req.body,
-            password: bcryptjs.hashSync(req.body.password, 10)
-        }
-
-        let userCreated = User.create(userToCreate);
-        return res.redirect('../user/login');
-    },
-
+            db.users.create({
+                firstname:req.body.first_name,
+                lastname:req.body.last_name,
+                email:req.body.email,
+                password:req.body.password,
+            });
+            let userToCreate = {
+                ...req.body,
+                password: bcryptjs.hashSync(req.body.password, 10)
+            }
+             res.redirect('../user/login');
+        },
+       
     login: (req,res) => {
         return res.render('../views/users/login.ejs');
     },
 
     processLogin: (req,res) => {
-        let userToLogin = User.findByField('email', req.body.email);
-        
-        if(userToLogin) {
-            let PassOk = bcryptjs.compareSync(req.body.password, userToLogin.password);
+        let userToLogin =  db.users.findAll({attributes: ['email',"password"], where: {email:req.body.email} });
+
+        console.log(userToLogin)
+        if(userToLogin!="<pending>") {
+            //let PassOk = (userToLogin.password);//falta validacion de password,
+            let PassOk = bcryptjs.compareSync(req.body.password, userToLogin);
             if(PassOk) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
@@ -86,8 +92,9 @@ const controller ={
         res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
-    }
+    },
+ 
 
 }
 
-module.exports = controller;
+module.exports = userController;

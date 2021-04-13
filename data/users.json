@@ -14,5 +14,13 @@
   "email": "facuzerbinatti@gmail.com",
   "password": "$2a$10$15Pb.f.59VRopJmhE8VzNug4KZc.4B3ZKrvxBM2usRlXmvaP8XofS",
   "accepted_terms": "on"
+ },
+ {
+  "id": 3,
+  "first_name": "natalia",
+  "last_name": "quiroga",
+  "email": "natalia.b.quiroga@gmail.com",
+  "password": "$2a$10$4FbbowCkIo9RJ/P5Zm5PwOAU1e2cSmk373ZqlW.wHcBLpY4m.sEOa",
+  "accepted_terms": "on"
  }
 ]

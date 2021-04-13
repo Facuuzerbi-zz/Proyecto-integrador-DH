@@ -12,51 +12,59 @@
         <%- include("../partials/header") %>
         <main>
             <h1> Crear nuevo producto</h1>
-            <form method="POST" class="form-crear">
+            <form action "/products/create" method="POST" class="form-crear">
                 <h2>Datos generales</h2>
                 <div class="seccion-flex">
                     <div>
                         <label for="name">Titulo del producto:</label>
-                        <input type="text" placeholder="Ex: Auto 1" name="name" required>
+                        <input id="input-pr"
+                        type="text" 
+                        placeholder="Ex: Auto 1" 
+                        name="name" 
+                        <% if (locals.oldData) { %>
+                            value="<%= oldData.name %> "
+                           <% } %>
+                        
+                        >
                     </div>
                     <div>
                         <label for="description">Descripcion general:</label>
-                        <input type="text" placeholder="Ex: Este es un auto..." name="description" required>
+                        <input type="text" placeholder="Ex: Este es un auto..." name="description" >
                     </div>
                     <div>
                         <label for="category">Categoría:</label>
                             <select name="category">
-                                <option value="auto">Auto</option>
-                                <option value="moto">Moto</option>
-                                <option value="monopatin">Monopatin</option>
+                                <option value="1">Auto</option>
+                                <option value="2">Moto</option>
+                                <option value="3">Monopatin</option>
                             </select>
                     </div>
                     <div>
                         <label for="price">Precio:</label>
-                        <input type="text" placeholder="Ex: $1000" name="price" required>
+                        <input type="text" placeholder="Ex: $1000" name="price" >
                     </div>
                 </div>
                 <hr>
                 <h2>Secccion principal</h2>
                 <div>
                     <label for="image">Imagen principal:</label>
-                    <input type="file" name="image" required>
+                    <input type="file" name="image" >
                 </div>
                 <div class="seccion-flex">
                     <div>
                         <h3>Potencia</h3>
                         <label for="potency">Desc :</label>
-                        <input type="text" placeholder="Ex: 250HP" name="potency" required>
+                        <input type="text" placeholder="Ex: 250HP" name="potency" >
                     </div>
                     <div>
                         <h3>Autonomía</h3>
                         <label for="autonomy">Desc :</label>
-                        <input type="text" placeholder="Ex: 300km" name="autonomy" required>
+                        <input type="text" placeholder="Ex: 300km" name="autonomy" >
                     </div>
                     <div>
                         <h3>Seguridad</h3>
                         <label for="security">Desc :</label>
-                        <input type="text" placeholder="Ex: 5 Airbags" name="security" required>
+                        <input type="text" placeholder="Ex: 5 Airbags" name="security" >
                     </div>
                 </div>
                 <hr>
@@ -66,31 +74,32 @@
                     <div>
                         <h3>Performance & Autonomía</h3>
                         <label for="ch1-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch1-desc" required><br>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch1-desc" ><br>
                         <label for="ch1-img">Imagen:</label>
-                        <input type="file" name="ch1-img" required>
+                        <input type="file" name="ch1-img" >
                     </div>
 
                     <div>
                         <h3>Exterior</h3>
                         <label for="ch2-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch2-desc" required><br>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch2-desc" ><br>
                         <label for="ch2-img">Imagen:</label>
-                        <input type="file" name="ch2-img" required>
+                        <input type="file" name="ch2-img" >
                     </div>
 
                     <div>
                         <h3>Confort</h3>
                         <label for="ch3-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch3-desc" required><br>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="ch3-desc" ><br>
                         <label for="ch3-img">Imagen:</label>
-                        <input type="file" name="ch3-img" required>
+                        <input type="file" name="ch3-img" >
                     </div>
                 </div>
                 <hr>
-                <div>
-                    <input type="submit" value="Crear producto" class="button">
+                <div id="div-buttons">
+                    <input id="button-acept" type="submit" value="Crear producto"">
                 </div>
+            
             </form>
         </main>
         <%- include("../partials/footer") %>

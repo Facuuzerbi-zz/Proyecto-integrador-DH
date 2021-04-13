@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 const publicPath = path.resolve(__dirname, './public');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
+
 // Middlewares
 app.use(express.static(publicPath));
 app.use(methodOverride ('_method'));
@@ -25,7 +26,7 @@ app.use(userLoggedMiddleware);
 
 // Routes
 app.use('/', require('./routes/principal.js'))
-app.use('/products', require('./routes/products.js'));
+app.use('/products', require('./routes/productsRoutes.js'));
 app.use('/user', require('./routes/userRoutes.js'));
 
 app.set('view engine','ejs');
