@@ -2,6 +2,7 @@ const fs = require('fs');
 const data = require('../data/products.json');
 const db = require('../database/models');
 const Product = db.Product;
+const Producttype = db.Producttype;
 
 module.exports = {
     autos: function (req,res){
@@ -48,7 +49,7 @@ module.exports = {
     },
     create:(req,res)=>{
         //peticion db. a los tipos de productos de la bd
-        db.Producttype.findAll().then(function(types){
+        Producttype.findAll().then(function(types){
             return res.render('../views/products/create.ejs',{types});
         })
 
@@ -58,18 +59,32 @@ module.exports = {
 }, 
 
 store: function (req,res){
-    const create = db.Product.create({
+    const create = Product.create({
         name:req.body.name,
         description:req.body.description,
-        productstypedid:req.body.category,
+        productstypeid:req.body.category,
         price:req.body.price,
         potency:req.body.potency,
         autonomy:req.body.autonomy,
         security:req.body.security,
         active:1,
 
+
+
     })
+
+    const result = Producttype.findAll({
+        attributes: [
+        "category"
+        ],
+        where: { id: req.body.category }
+        })
+        console.log(result)
+
+
     //return agregarlo dentro del then agregar catch --> o que sea asincrono , se usan async await (try y catch)
-    return res.render('../views/products/create.ejs');
+    return res.redirect('../views/products/' + result);
+    //return res.render('Hola');
+
 }, 
 }
