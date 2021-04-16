@@ -10,7 +10,7 @@ module.exports = function(sequelize, dataTypes){
     name: {
       type: dataTypes.STRING
     },
-    productTypeid: {
+    productstypeid: {
       type: dataTypes.INTEGER,
     },
     description: {
@@ -38,8 +38,8 @@ module.exports = function(sequelize, dataTypes){
 
   Product.associate = function(models){
     Product.hasMany(models.Producttype, {
-      as: "producttype",
-      foreignKey:"productstypeid"
+      as: "productsType",
+      foreignKey:"id"
 
   });
       

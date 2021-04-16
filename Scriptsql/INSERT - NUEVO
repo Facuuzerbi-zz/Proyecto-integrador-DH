@@ -1,0 +1,134 @@
+--correr en orden
+-- cuando corren el insert de la tabla imagen, revisen q el id q se genera sea correcto.. me paso q me genero desde el id en adelante, si queda mal se puede editar manualmente y se guarda el id correcto, luego en opciones cambier valor de autoincremental
+
+
+INSERT INTO `qztech_db`.`productsType` (`category`, `detail`) VALUES ("auto", null), ("moto", null),("monopatín", null)
+
+--producto 1 auto
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("MODEL-S",1,"El Model S es un automóvil sedán liftback eléctrico para 5 plazas. En 2020 el Model S Long Range Plus tenía una autonomía EPA de 647 km, que era la mayor para un coche eléctrico de serie. En 2012 el modelo base (batería de 60 kWh y motor de 345 CV) tenía una autonomía de 318 km y una aceleración de 0 a 100 km/h de 5,8 segundos.",
+30121,400,318,"5 Airbags",	1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("MODEL-S",null),("MODEL-S-1.jpg","El coeficiente aerodinámico del Model S es Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás."),
+("MODEL-S-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
+("MODEL-S-3.jpg",null)
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(1,"primary",1),(1,"secundary",2),(1,"secundary",3),(1,"secundary",4)
+
+--producto 2 auto
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("NSX-2",1,"El NSX-2 (abreviatura de New Sport experimental), es un automóvil eléctrico deportivo de dos puertas biplaza, capaz de producir 418Kw de potencia con torque instantaneo gracias a su poderoso motor central-trasero. Tambien cuenta con una autonomía aproximada de 325 Kms y un sistema de seguridad y confort inigualable.",
+35418,418,326,"5 Airbags",	1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("NSX-2.jpg",null),("NSX-2-1.jpg","El coeficiente aerodinámico del Model NSX-2 es Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás."),
+("NSX-2-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
+("NSX-2-3.jpg",null)
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(2,"primary",5),(2,"secundary",6),(2,"secundary",7),(2,"secundary",8)
+
+--producto 3 auto
+
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("Supa MK5",1,"El Supa es un automóvil deportivo coupé Hatchback de 3 puertas con 4 poderosos motores electricos montados en cada rueda. En total, el Supa, es capaz de entregar instantaneamente más de 560Kw de potencia, siendo asi uno de los vehiculos eléctricos mas potentes del mercado. Cuenta con sistema de ABS y 5 Airbags. También se estima que su autonomía es de unos 460Kms, lo que permite recorrer mas distancia en comparacion con sus competidores.",
+41984,561,457,"5 Airbags",	1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("SUPA MK5.jpg",null),("SUPA MK5-1.jpg","El coeficiente aerodinámico del Model SUPA MK5 es Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás."),
+("SUPA MK5-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
+("SUPA MK5-3.jpg",null)
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(3,"primary",9),(3,"secundary",10),(3,"secundary",11),(3,"secundary",12)
+
+--producto 4 moto
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("Vespa",2,"La primera moto eléctrica de Vespa se llama Elettrica y se ve fantástica. Rápido de cargar y sin esfuerzo de conducir, el glorioso vehículo emana con pura practicidad. Sube a bordo y atraviesa el terreno más cercano con una facilidad sin límites, haciendo girar las cabezas mientras navega a una velocidad moderada. Este es perfecto para los habitantes de las ciudades.",
+21579,2,257,"ABS",	1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("VESPA.jpg",null),("VESPA-1.jpg","El coeficiente aerodinámico del Model VESPA Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás."),
+("VESPA-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
+("VESPA-3.jpg",null)
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(4,"primary",13),(4,"secundary",14),(4,"secundary",15),(4,"secundary",16)
+
+--producto 5 moto
+
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("GORO S2",2,"La S2 Adventure Smartscooter ofrece una estructura robusta y un estante trasero ampliado. Gracias a la mejora de la distancia al suelo, a una suspensión especialmente diseñada y a una potente transmisión, el scooter eléctrico está preparado para cualquier terreno. Entre las características adicionales se encuentran los soportes de los paneles laterales, las barras delanteras protectoras, las alfombrillas de viaje impermeables y una alfombrilla de aluminio. Su próximo viaje por carretera le espera.",
+24873,4,99,"ABS",	1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("GORO S2.jpg",null),("GORO S2-1.jpg","El coeficiente aerodinámico del Model GORO S2 Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás."),
+("GORO S2-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
+("GORO S2-3.jpg",null)
+
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(5,"primary",17),(5,"secundary",18),(5,"secundary",19),(5,"secundary",20)
+
+
+--producto 6 moto
+
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("LS-218",2,"Fiel a su nombre, el Lightning LS-218 es ampliamente considerado como la moto eléctrica más rápida del mundo. ¿Qué tan rápido, te preguntas? Prueba de 0 a 60 mph en 2,2 segundos y una ridícula velocidad máxima de 218 mph. Considéralo una prueba viviente de que las motos eléctricas pueden y seguirán el ritmo de sus homólogas que consumen gasolina. El modelo base viene con un paquete de baterías de 380V 12 kwh. y hay dos actualizaciones disponibles.",
+26547,12,192,"ABS",	1);
+
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("LS-218.jpg",null),("LS-218-1.jpg","El coeficiente aerodinámico del Model LS-218 Cd= 0.24. Este es el menor de los coches de serie fabricados en 2012. El centro de gravedad con dos ocupantes está a 445 milímetros del suelo. Esto es similar al centro de gravedad del superdeportivo Ford GT. Llantas de aluminio de 19 pulgadas y neumáticos 245/45R19. Tambien cuenta de 8 cámaras, 3 de las cuales están junto al retrovisor interior y apuntan al frente, 2 laterales junto a los intermitentes apuntando hacia atrás, 2 laterales en los pilares de la carrocería apuntando un poco hacia adelante y una cámara trasera apuntando hacia atrás."),
+("LS-218-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
+("LS-218-3.jpg",null)
+
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(6,"primary",21),(6,"secundary",22),(6,"secundary",23),(6,"secundary",24)
+
+
+--producto 7 monopatin
+
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("M365",3,"Fiel a su nombre, el M365 es ampliamente considerado como la moto eléctrica más rápida del mundo. ¿Qué tan rápido, te preguntas? Prueba de 0 a 60 mph en 2,2 segundos y una ridícula velocidad máxima de 218 mph. Considéralo una prueba viviente de que las motos eléctricas pueden y seguirán el ritmo de sus homólogas que consumen gasolina. El modelo base viene con un paquete de baterías de 380V 12 kwh. y hay dos actualizaciones disponibles.",
+14578,125,200,"ABS",1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("monopatin.jpg",null),("monopatin.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
+("monopatin.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
+("monopatin.jpg",null)
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(7,"primary",25),(7,"secundary",26),(7,"secundary",27),(7,"secundary",28)
+
+--producto 8 monopatin
+
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("CitySurfer",3,"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
+16780,140,220,"ABS",1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("CitySurfer.jpg",null),("CitySurfer-1.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
+("CitySurfer-2.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
+("CitySurfer-3.jpg",null)
+
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(8,"primary",29),(8,"secundary",30),(8,"secundary",31),(8,"secundary",32)
+
+--producto 9 monopatin
+
+INSERT INTO `qztech_db`.`products`(`name`,`productstypedid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
+VALUES("EFI51",3,"accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam nam",
+18249,167,235,"ABS",1);
+
+INSERT INTO `qztech_db`.`image`(`image`,`description`)
+VALUES("monopatin.jpg",null),("monopatin.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
+("monopatin.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
+("monopatin.jpg",null)
+
+INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+VALUES(9,"primary",33),(9,"secundary",34),(9,"secundary",35),(9,"secundary",36)

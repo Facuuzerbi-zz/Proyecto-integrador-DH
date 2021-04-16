@@ -3,8 +3,6 @@ let router = express.Router();
 
 
 const productsController = require('../controllers/productsController');
-const productcrudController = require('../controllers/productcrudController');
-
 
 // Middlewares
 

@@ -47,27 +47,29 @@ module.exports = {
         res.redirect('/');
     },
     create:(req,res)=>{
-        const create = db.Product.create({
-            name:req.body.name,
-            description:req.body.description,
-            producsttypeid:req.body.producsttypeid,
-            price:req.body.price,
-            potency:req.body.potency,
-            autonomy:req.body.autonomy,
-            security:req.body.security,
-            active:1,
-
+        //peticion db. a los tipos de productos de la bd
+        db.Producttype.findAll().then(function(types){
+            return res.render('../views/products/create.ejs',{types});
         })
-        return res.render('../views/products/create.ejs');
 
-        //res.redirect("/create");
-        //res.redirect('../user/login');
+
 
 
 }, 
 
 store: function (req,res){
-    //req.body;
-    return res.render('../views/products/productcreate.ejs');
+    const create = db.Product.create({
+        name:req.body.name,
+        description:req.body.description,
+        productstypedid:req.body.category,
+        price:req.body.price,
+        potency:req.body.potency,
+        autonomy:req.body.autonomy,
+        security:req.body.security,
+        active:1,
+
+    })
+    //return agregarlo dentro del then agregar catch --> o que sea asincrono , se usan async await (try y catch)
+    return res.render('../views/products/create.ejs');
 }, 
 }
