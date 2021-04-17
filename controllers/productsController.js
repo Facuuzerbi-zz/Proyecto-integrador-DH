@@ -68,9 +68,6 @@ store: function (req,res){
         autonomy:req.body.autonomy,
         security:req.body.security,
         active:1,
-
-
-
     })
 
     const result = Producttype.findAll({
@@ -79,11 +76,15 @@ store: function (req,res){
         ],
         where: { id: req.body.category }
         })
-        console.log(result)
+        
+        .then(function(result){
+            console.log(result)
+            return res.redirect('/products/' + result[0].category);
+        })
 
 
     //return agregarlo dentro del then agregar catch --> o que sea asincrono , se usan async await (try y catch)
-    return res.redirect('../views/products/' + result);
+    
     //return res.render('Hola');
 
 }, 
