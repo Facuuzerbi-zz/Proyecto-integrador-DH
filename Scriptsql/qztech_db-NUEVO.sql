@@ -90,15 +90,12 @@ CREATE TABLE `usersContact` (
 -- Table `qztech_db`.`productsType`
 -- -----------------------------------------------------
 
-
-CREATE TABLE `productsStock` (
+CREATE TABLE `productsType` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `stockproductid` int(11) NOT NULL,
-  `availability` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `stockproductid_idx` (`stockproductid`),
-  CONSTRAINT `stockproductid` FOREIGN KEY (`stockproductid`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `category` varchar(45) NOT NULL,
+  `detail` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`products`
