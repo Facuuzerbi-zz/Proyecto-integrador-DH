@@ -14,7 +14,7 @@ VALUES("MODEL-S",null),("MODEL-S-1.jpg","El coeficiente aerodinámico del Model 
 ("MODEL-S-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
 ("MODEL-S-3.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(1,"primary",1),(1,"secundary",2),(1,"secundary",3),(1,"secundary",4)
 
 --producto 2 auto
@@ -27,7 +27,7 @@ VALUES("NSX-2.jpg",null),("NSX-2-1.jpg","El coeficiente aerodinámico del Model 
 ("NSX-2-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
 ("NSX-2-3.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(2,"primary",5),(2,"secundary",6),(2,"secundary",7),(2,"secundary",8)
 
 --producto 3 auto
@@ -41,7 +41,7 @@ VALUES("SUPA MK5.jpg",null),("SUPA MK5-1.jpg","El coeficiente aerodinámico del 
 ("SUPA MK5-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
 ("SUPA MK5-3.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(3,"primary",9),(3,"secundary",10),(3,"secundary",11),(3,"secundary",12)
 
 --producto 4 moto
@@ -54,7 +54,7 @@ VALUES("VESPA.jpg",null),("VESPA-1.jpg","El coeficiente aerodinámico del Model 
 ("VESPA-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
 ("VESPA-3.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(4,"primary",13),(4,"secundary",14),(4,"secundary",15),(4,"secundary",16)
 
 --producto 5 moto
@@ -69,7 +69,7 @@ VALUES("GORO S2.jpg",null),("GORO S2-1.jpg","El coeficiente aerodinámico del Mo
 ("GORO S2-3.jpg",null)
 
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(5,"primary",17),(5,"secundary",18),(5,"secundary",19),(5,"secundary",20)
 
 
@@ -86,7 +86,7 @@ VALUES("LS-218.jpg",null),("LS-218-1.jpg","El coeficiente aerodinámico del Mode
 ("LS-218-3.jpg",null)
 
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(6,"primary",21),(6,"secundary",22),(6,"secundary",23),(6,"secundary",24)
 
 
@@ -101,7 +101,7 @@ VALUES("monopatin.jpg",null),("monopatin.jpg","sapien sapien non mi integer ac n
 ("monopatin.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
 ("monopatin.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(7,"primary",25),(7,"secundary",26),(7,"secundary",27),(7,"secundary",28)
 
 --producto 8 monopatin
@@ -116,7 +116,7 @@ VALUES("CitySurfer.jpg",null),("CitySurfer-1.jpg","sapien sapien non mi integer 
 ("CitySurfer-3.jpg",null)
 
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(8,"primary",29),(8,"secundary",30),(8,"secundary",31),(8,"secundary",32)
 
 --producto 9 monopatin
@@ -130,5 +130,5 @@ VALUES("monopatin.jpg",null),("monopatin.jpg","sapien sapien non mi integer ac n
 ("monopatin.jpg","sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla"),
 ("monopatin.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(9,"primary",33),(9,"secundary",34),(9,"secundary",35),(9,"secundary",36)

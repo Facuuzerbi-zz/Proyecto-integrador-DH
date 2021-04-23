@@ -20,201 +20,184 @@ USE `qztech_db` ;
 -- -----------------------------------------------------
 -- Table `qztech_db`.`usersRol`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`usersRol` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `roltype` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
+
+
+CREATE TABLE `usersRol` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `roltype` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`image`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`image` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `image` VARCHAR(45) NOT NULL,
-  `description` VARCHAR(600)  NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
 
+
+CREATE TABLE `image` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `image` varchar(45) NOT NULL,
+  `description` varchar(600) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8;
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`users`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`users` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `firstname` VARCHAR(45) NOT NULL,
-  `lastname` VARCHAR(45) NOT NULL,
-  `email` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(400) NOT NULL,
-  `isverified` TINYINT NULL,
-  `userrolid` INT NULL,
-  `socialid` INT NULL,
-  `provider` VARCHAR(45) NULL,
-  `imageid` INT NULL,
-  `active` TINYINT NULL,
+
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(45) NOT NULL,
+  `lastname` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `password` varchar(400) NOT NULL,
+  `isverified` tinyint(4) DEFAULT NULL,
+  `userrolid` int(11) DEFAULT NULL,
+  `socialid` int(11) DEFAULT NULL,
+  `provider` varchar(45) DEFAULT NULL,
+  `imageid` int(11) DEFAULT NULL,
+  `active` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  INDEX `userrolid_idx` (`userrolid` ASC),
-  INDEX `imageid_idx` (`imageid` ASC),
-  CONSTRAINT `userrolid`
-    FOREIGN KEY (`userrolid`)
-    REFERENCES `qztech_db`.`usersRol` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `imageid`
-    FOREIGN KEY (`imageid`)
-    REFERENCES `qztech_db`.`image` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `userrolid_idx` (`userrolid`),
+  KEY `imageid_idx` (`imageid`),
+  CONSTRAINT `imageid` FOREIGN KEY (`imageid`) REFERENCES `image` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `userrolid` FOREIGN KEY (`userrolid`) REFERENCES `usersRol` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`usersContact`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`usersContact` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `userid` INT NOT NULL,
-  `country` VARCHAR(45) NOT NULL,
-  `city` VARCHAR(45) NOT NULL,
-  `street` VARCHAR(45) NOT NULL,
-  `number` INT NOT NULL,
-  `floor` VARCHAR(45) NULL,
-  `phonenumber` INT NULL,
+CREATE TABLE `usersContact` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` int(11) NOT NULL,
+  `country` varchar(45) NOT NULL,
+  `city` varchar(45) NOT NULL,
+  `street` varchar(45) NOT NULL,
+  `number` int(11) NOT NULL,
+  `floor` varchar(45) DEFAULT NULL,
+  `phonenumber` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  INDEX `userid_idx` (`userid` ASC),
-  CONSTRAINT `userid`
-    FOREIGN KEY (`userid`)
-    REFERENCES `qztech_db`.`users` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `userid_idx` (`userid`),
+  CONSTRAINT `userid` FOREIGN KEY (`userid`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`productsType`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`productsType` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `category` VARCHAR(45) NOT NULL,
-  `detail` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
 
+CREATE TABLE `productsType` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category` varchar(45) NOT NULL,
+  `detail` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`products`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`products` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `name` VARCHAR(45) NOT NULL,
-  `productstypedid` INT NOT NULL,
-  `description` VARCHAR(600) NOT NULL,
-  `price` INT NOT NULL,
-  `potency` INT NOT NULL,
-  `autonomy` INT NOT NULL,
-  `security` VARCHAR(45) NOT NULL,
-  `active` TINYINT NOT NULL,
+
+
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `productstypedid` int(11) DEFAULT NULL,
+  `description` varchar(600) DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
+  `potency` int(11) DEFAULT NULL,
+  `autonomy` int(11) DEFAULT NULL,
+  `security` varchar(45) DEFAULT NULL,
+  `active` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  INDEX `producttypeid_idx` (`productstypedid` ASC),
-  CONSTRAINT `producttypeid`
-    FOREIGN KEY (`productstypedid`)
-    REFERENCES `qztech_db`.`productsType` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `producttypeid_idx` (`productstypedid`),
+  CONSTRAINT `producttypeid` FOREIGN KEY (`productstypedid`) REFERENCES `productsType` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`orders`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`orders` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `orderuserid` INT NOT NULL,
-  `orderproductid` INT NOT NULL,
-  `quantity` INT NULL,
-  `datecreated` DATETIME NULL,
+
+
+
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `orderuserid` int(11) NOT NULL,
+  `orderproductid` int(11) NOT NULL,
+  `quantity` int(11) DEFAULT NULL,
+  `datecreated` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
-  INDEX `orderproductid_idx` (`orderproductid` ASC),
-  INDEX `orderuserid_idx` (`orderuserid` ASC),
-  CONSTRAINT `orderuserid`
-    FOREIGN KEY (`orderuserid`)
-    REFERENCES `qztech_db`.`users` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `orderproductid`
-    FOREIGN KEY (`orderproductid`)
-    REFERENCES `qztech_db`.`products` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `orderproductid_idx` (`orderproductid`),
+  KEY `orderuserid_idx` (`orderuserid`),
+  CONSTRAINT `orderproductid` FOREIGN KEY (`orderproductid`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `orderuserid` FOREIGN KEY (`orderuserid`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`ordersState`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`ordersState` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `ordersid` INT NOT NULL,
-  `confirmed` INT NULL,
-  `departure` INT NULL,
-  `delivery` INT NULL,
-  `payed` INT NULL,
-  `cancel` INT NULL,
-  `departuredate` DATETIME NULL,
-  `confirmationdate` DATETIME NULL,
-  `deliverydate` DATETIME NULL,
-  `canceldate` DATETIME NULL,
-  `methodpayment` VARCHAR(45) NOT NULL,
+
+
+
+CREATE TABLE `ordersState` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `ordersid` int(11) NOT NULL,
+  `confirmed` int(11) DEFAULT NULL,
+  `departure` int(11) DEFAULT NULL,
+  `delivery` int(11) DEFAULT NULL,
+  `payed` int(11) DEFAULT NULL,
+  `cancel` int(11) DEFAULT NULL,
+  `departuredate` datetime DEFAULT NULL,
+  `confirmationdate` datetime DEFAULT NULL,
+  `deliverydate` datetime DEFAULT NULL,
+  `canceldate` datetime DEFAULT NULL,
+  `methodpayment` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `ordersid_idx` (`ordersid` ASC),
-  CONSTRAINT `ordersid`
-    FOREIGN KEY (`ordersid`)
-    REFERENCES `qztech_db`.`orders` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `ordersid_idx` (`ordersid`),
+  CONSTRAINT `ordersid` FOREIGN KEY (`ordersid`) REFERENCES `orders` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`productsStock`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`productsStock` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `stockproductid` INT NOT NULL,
-  `availability` INT NOT NULL,
+
+
+
+CREATE TABLE `productsStock` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `stockproductid` int(11) NOT NULL,
+  `availability` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  INDEX `stockproductid_idx` (`stockproductid` ASC),
-  CONSTRAINT `stockproductid`
-    FOREIGN KEY (`stockproductid`)
-    REFERENCES `qztech_db`.`products` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `stockproductid_idx` (`stockproductid`),
+  CONSTRAINT `stockproductid` FOREIGN KEY (`stockproductid`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`productImage`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `qztech_db`.`productImage` (
-  `id` INT NOT NULL,
-  `prodid` INT NOT NULL,
-  `type` VARCHAR(45) NOT NULL,
-  `imagid` INT NOT NULL,
+
+
+
+CREATE TABLE `productImage` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `prodid` int(11) NOT NULL,
+  `type` varchar(45) NOT NULL,
+  `imagid` int(11) NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `prodid`
-    FOREIGN KEY (`prodid`)
-    REFERENCES `qztech_db`.`products` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `imagid`
-    FOREIGN KEY (`imagid`)
-    REFERENCES `qztech_db`.`image` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  KEY `prodid` (`prodid`),
+  KEY `imagid` (`imagid`),
+  CONSTRAINT `imagid` FOREIGN KEY (`imagid`) REFERENCES `image` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `prodid` FOREIGN KEY (`prodid`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
 
-SET SQL_MODE=@OLD_SQL_MODE;
-SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
