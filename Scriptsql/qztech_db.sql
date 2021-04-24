@@ -64,14 +64,14 @@ CREATE TABLE `users` (
   KEY `userrolid_idx` (`userrolid`),
   KEY `imageid_idx` (`imageid`),
   CONSTRAINT `imageid` FOREIGN KEY (`imageid`) REFERENCES `image` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `userrolid` FOREIGN KEY (`userrolid`) REFERENCES `usersRol` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `userrolid` FOREIGN KEY (`userrolid`) REFERENCES `usersrol` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 
 -- -----------------------------------------------------
 -- Table `qztech_db`.`usersContact`
 -- -----------------------------------------------------
-CREATE TABLE `usersContact` (
+CREATE TABLE `userscontact` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `userid` int(11) NOT NULL,
   `country` varchar(45) NOT NULL,
@@ -90,7 +90,7 @@ CREATE TABLE `usersContact` (
 -- Table `qztech_db`.`productsType`
 -- -----------------------------------------------------
 
-CREATE TABLE `productsType` (
+CREATE TABLE `productstype` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `category` varchar(45) NOT NULL,
   `detail` varchar(45) DEFAULT NULL,
@@ -105,7 +105,7 @@ CREATE TABLE `productsType` (
 CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL,
-  `productstypedid` int(11) DEFAULT NULL,
+  `productstypeid` int(11) DEFAULT NULL,
   `description` varchar(600) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
   `potency` int(11) DEFAULT NULL,
@@ -113,8 +113,8 @@ CREATE TABLE `products` (
   `security` varchar(45) DEFAULT NULL,
   `active` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `producttypeid_idx` (`productstypedid`),
-  CONSTRAINT `producttypeid` FOREIGN KEY (`productstypedid`) REFERENCES `productsType` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `producttypeid_idx` (`productstypeid`),
+  CONSTRAINT `producttypeid` FOREIGN KEY (`productstypeid`) REFERENCES `productstype` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 
@@ -145,7 +145,7 @@ CREATE TABLE `orders` (
 
 
 
-CREATE TABLE `ordersState` (
+CREATE TABLE `ordersstate` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `ordersid` int(11) NOT NULL,
   `confirmed` int(11) DEFAULT NULL,
@@ -171,7 +171,7 @@ CREATE TABLE `ordersState` (
 
 
 
-CREATE TABLE `productsStock` (
+CREATE TABLE `productsstock` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `stockproductid` int(11) NOT NULL,
   `availability` int(11) NOT NULL,
@@ -187,7 +187,7 @@ CREATE TABLE `productsStock` (
 
 
 
-CREATE TABLE `productImage` (
+CREATE TABLE `productimage` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `prodid` int(11) NOT NULL,
   `type` varchar(45) NOT NULL,
