@@ -31,7 +31,10 @@ module.exports = function(sequelize, dataTypes){
     active: {
       type: dataTypes.INTEGER
     },
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6736bd84651e08e1824706d5c27002d9be9167d7
   }
   let config = {
       tableName: "products",
