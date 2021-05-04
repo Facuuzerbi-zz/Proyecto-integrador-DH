@@ -17,7 +17,8 @@ const userController ={
             });
         }
         
-        let userInDB =  db.users.findAll({attributes: ['email'], where: {email:req.body.email} });
+        let userInDB =  db.users.findAll({attributes: ['email'], where: {email:req.body.email} })
+
 
         if (userInDB =!"<pending>"){
             return res.render ('../views/users/signin.ejs', {
@@ -43,17 +44,41 @@ const userController ={
         },
        
     login: (req,res) => {
-        return res.render('../views/users/login.ejs');
+
+            return res.render('../views/users/login.ejs');
+        
     },
 
     processLogin: (req,res) => {
-        let userToLogin =  db.users.findAll({attributes: ['email',"password"], where: {email:req.body.email} });
+        
+        let email = [req.body.email];
+        let password = [req.body.password];     
 
-        console.log(userToLogin)
-        if(userToLogin!="<pending>") {
-            //let PassOk = (userToLogin.password);//falta validacion de password,
-            let PassOk = bcryptjs.compareSync(req.body.password, userToLogin);
+
+        let userToLogin =  db.users.findOne({
+            attributes: [
+                "email",
+                "password"
+                ],
+        where: { email: email[0],
+        
+       }
+
+    })
+    .then(function(userToLogin){
+        
+        console.log("hola " + userToLogin.password + "holaaaa " + password)
+       
+    })
+        if(userToLogin) {
+            let PassOk =  bcryptjs.compare(password,userToLogin.password) 
+            
+            .then(function(PassOk){
+                console.log(PassOk)
+            })
+            
             if(PassOk) {
+                
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
 
@@ -62,7 +87,7 @@ const userController ={
                 }
 
                 return res.redirect('/user/profile');
-            }
+            } 
 
             return res.render('../views/users/login.ejs', {
                 errors: {
@@ -72,7 +97,7 @@ const userController ={
                 }
             });
         }
-
+    
         return res.render('../views/users/login.ejs', {
             errors: {
                 email: {
@@ -80,6 +105,7 @@ const userController ={
                 }
             }
         });
+    
     },
 
     profile: (req,res) => {
