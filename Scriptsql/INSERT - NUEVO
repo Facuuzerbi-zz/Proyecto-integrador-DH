@@ -14,7 +14,7 @@ VALUES("MODEL-S",null),("MODEL-S-1.jpg","El coeficiente aerodinámico del Model 
 ("MODEL-S-2.jpg","Asientos delanteros calefactados con memoria ajustables eléctricamente en 12 direcciones. Asientos traseros abatibles 60/40. Sistema de sonido de 200 vatios y 7 altavoces. Pantalla primaria totalmente digital LCD de 12.3 pulgadas (312 mm) con gráficos en 3D que pueden ser configurados por el usuario. Pantalla secundaria vertical multitáctil capacitiva de 17 pulgadas (430 mm) con sistema operativo basado en Linux Ubuntu"),
 ("MODEL-S-3.jpg",null)
 
-INSERT INTO `qztech_db`.`productImage`(`prodid`,`type`,`imagid`)
+INSERT INTO `qztech_db`.`productimage`(`prodid`,`type`,`imagid`)
 VALUES(1,"primary",1),(1,"secundary",2),(1,"secundary",3),(1,"secundary",4)
 
 --producto 2 auto

@@ -28,6 +28,9 @@ module.exports = function(sequelize, dataTypes){
     security: {
       type: dataTypes.STRING
     },
+    active: {
+      type: dataTypes.INTEGER
+    },
 
   }
   let config = {
