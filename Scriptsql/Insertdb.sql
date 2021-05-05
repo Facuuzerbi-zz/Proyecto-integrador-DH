@@ -2,7 +2,7 @@
 -- cuando corren el insert de la tabla imagen, revisen q el id q se genera sea correcto.. me paso q me genero desde el id en adelante, si queda mal se puede editar manualmente y se guarda el id correcto, luego en opciones cambier valor de autoincremental
 
 
-INSERT INTO `qztech_db`.`productsType` (`category`, `detail`) VALUES ("auto", null), ("moto", null),("monopatín", null)
+INSERT INTO `qztech_db`.`productstype` (`category`, `detail`) VALUES ("auto", null), ("moto", null),("monopatín", null)
 
 -- producto 1 auto
 INSERT INTO `qztech_db`.`products`(`name`,`productstypeid`,`description`,`price`,`potency`,`autonomy`,`security`,`active`)
