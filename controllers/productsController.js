@@ -67,6 +67,9 @@ store: function (req,res){
         potency:req.body.potency,
         autonomy:req.body.autonomy,
         security:req.body.security,
+        performancedesc:req.body.performancedesc,
+        exteriordesc:req.body.exteriordesc,
+        confortdesc:req.body.confortdesc,
         active:1,
     })
 

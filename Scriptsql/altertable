@@ -1,0 +1,4 @@
+ALTER TABLE `qztech_db`.`products` 
+ADD COLUMN `performancedesc` VARCHAR(300) NULL AFTER `active`,
+ADD COLUMN `exteriordesc` VARCHAR(300) NULL AFTER `performancedesc`,
+ADD COLUMN `confortdesc` VARCHAR(300) NULL AFTER `exteriordesc`;

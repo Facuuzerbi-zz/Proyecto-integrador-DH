@@ -28,13 +28,18 @@ module.exports = function(sequelize, dataTypes){
     security: {
       type: dataTypes.STRING
     },
+    performancedesc: {
+      type: dataTypes.STRING
+    },
+    exteriordesc: {
+      type: dataTypes.STRING
+    },
+    confortdesc: {
+      type: dataTypes.STRING
+    },
     active: {
       type: dataTypes.INTEGER
     },
-<<<<<<< HEAD
-
-=======
->>>>>>> 6736bd84651e08e1824706d5c27002d9be9167d7
   }
   let config = {
       tableName: "products",
