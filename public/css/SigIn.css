@@ -54,8 +54,8 @@ body{
     margin: auto;
 }
 .check-acep{
-    align-self: flex-start;
+    align-self: center;
 }
 .check-reci{
-    align-self: flex-start;
+    align-self: center;
 }
