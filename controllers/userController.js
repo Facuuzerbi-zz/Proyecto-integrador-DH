@@ -17,6 +17,7 @@ const userController = {
                 email:req.body.email,
                 password:hash,
             });
+            
             console.log('todo ok');
             res.redirect('../user/login');
 
@@ -39,23 +40,31 @@ const userController = {
             const user = await db.users.findOne({
                 attributes: [
                     "email", "password"],
-            where: {email: req.body.email}
-    
+            where: {email: req.body.email }
         });
+        console.log(password,user.password)
             if(user){
-                const validPass = await bcryptjs.compare(password, user.hash);
+                const validPass = await bcryptjs.compare(password, user.password);
                 if(validPass){
                     console.log('pass correcta');
                     delete user.password;
                     req.session.userLogged = user;
-                    
+
                     if(req.body.remember_user){
                     res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 });
-                }
+                    }
 
-                    return res.redirect('/user/profile');
-                } else {
+                return res.redirect('/user/profile');
+                
+            } else{
                     console.log('pass incorrecta');
+                    return res.render('../views/users/login.ejs', {
+                        errors: {
+                            email: {
+                                msg: 'Password incorrecta, intenta nuevamente'
+                            }
+                        }
+                    });
                 }
             } else {
                 console.log('user no encontrado');
@@ -73,7 +82,7 @@ const userController = {
             return res.render('../views/users/login.ejs', {
                 errors: {
                     email: {
-                        msg: 'Problema en Credenciales'
+                        msg: 'Mail no registrado'
                     }
                 }
             });
