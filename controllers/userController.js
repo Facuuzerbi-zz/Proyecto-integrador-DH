@@ -10,13 +10,17 @@ const userController = {
      processSignin: async (req,res)=>{
         try {
             const password =req.body.password;
-            const hash = await bcryptjs.hash(password,10);
             await db.users.create({
                 firstname:req.body.first_name,
                 lastname:req.body.last_name,
                 email:req.body.email,
-                password:hash,
+                password:req.body.password,
             });
+            let userToCreate = {
+                ...req.body,
+                password: bcryptjs.hashSync(req.body.password, 10)
+
+            }
             
             console.log('todo ok');
             res.redirect('../user/login');
@@ -44,7 +48,7 @@ const userController = {
         });
         console.log(password,user.password)
             if(user){
-                const validPass = await bcryptjs.compare(password, user.password);
+                const validPass = await bcryptjs.compareSync(password, user.password);
                 if(validPass){
                     console.log('pass correcta');
                     delete user.password;
