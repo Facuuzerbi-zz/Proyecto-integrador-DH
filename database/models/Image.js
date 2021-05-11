@@ -7,11 +7,15 @@ module.exports = function(sequelize, dataTypes){
           primaryKey: true,
           type: dataTypes.INTEGER
         },
-        image: {
-          type: dataTypes.STRING
-          
+        type: {
+          type: dataTypes.STRING,
         },
-      
+        name: {
+          type: dataTypes.STRING,
+        },
+        data: {
+          type: dataTypes.BLOB("long"),
+        },
 
   }
   let config = {

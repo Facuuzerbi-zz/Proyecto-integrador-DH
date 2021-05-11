@@ -1,66 +1,69 @@
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 const db = require('../database/models');
-const User = db.User;
+const User = db.users;
 
 const userController = {
-    signin: (req,res) => {
+    signin: (req, res) => {
         return res.render('../views/users/signin');
     },
-     processSignin: async (req,res)=>{
+
+    processSignin: async (req, res) => {
         try {
-            const password =req.body.password;
-            await db.users.create({
-                firstname:req.body.first_name,
-                lastname:req.body.last_name,
-                email:req.body.email,
-                password:req.body.password,
-            });
-            let userToCreate = {
-                ...req.body,
-                password: bcryptjs.hashSync(req.body.password, 10)
+            let resultadoValidacion = validationResult(req);
+            if (resultadoValidacion.errors.length == 0) {
+                const password = req.body.password;
+                await User.create({
+                    firstname: req.body.first_name,
+                    lastname: req.body.last_name,
+                    email: req.body.email,
+                    password: req.body.password,
+                });
+                bcryptjs.hashSync(req.body.password, 10)
 
+                console.log('todo ok');
+                res.redirect('../user/login');
             }
-            
-            console.log('todo ok');
-            res.redirect('../user/login');
+            else {
+                res.render('../views/users/signin.ejs', { errors: resultadoValidacion.errors })
+            }
 
 
-        } catch(e){
+        } catch (e) {
             console.log(e);
             console.log('algo anda mal');
         }
-        
-     
+
     },
-    login: (req,res) => {
+
+    login: (req, res) => {
 
         return res.render('../views/users/login.ejs');
-    
-},
-    processLogin: async (req,res) => {
-        try {                
+
+    },
+    processLogin: async (req, res) => {
+        try {
             let password = req.body.password
-            const user = await db.users.findOne({
+            const user = await User.findOne({
                 attributes: [
                     "email", "password"],
-            where: {email: req.body.email }
-        });
-        console.log(password,user.password)
-            if(user){
+                where: { email: req.body.email }
+            });
+            console.log(password, user.password)
+            if (user) {
                 const validPass = await bcryptjs.compareSync(password, user.password);
-                if(validPass){
+                if (validPass) {
                     console.log('pass correcta');
                     delete user.password;
                     req.session.userLogged = user;
 
-                    if(req.body.remember_user){
-                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 });
+                    if (req.body.remember_user) {
+                        res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 });
                     }
 
-                return res.redirect('/user/profile');
-                
-            } else{
+                    return res.redirect('/user/profile');
+
+                } else {
                     console.log('pass incorrecta');
                     return res.render('../views/users/login.ejs', {
                         errors: {
@@ -80,7 +83,7 @@ const userController = {
                     }
                 });
             }
-        } catch (e){
+        } catch (e) {
             console.log(e);
             console.log('algo se rompio')
             return res.render('../views/users/login.ejs', {
@@ -90,21 +93,21 @@ const userController = {
                     }
                 }
             });
-        }         
+        }
     },
 
-    profile: (req,res) => {
-        return res.render('../views/users/userProfile.ejs',{
+    profile: (req, res) => {
+        return res.render('../views/users/userProfile.ejs', {
             user: req.session.userLogged
         });
     },
-    
+
     logout: (req, res) => {
         res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/');
     },
- 
+
 
 }
 

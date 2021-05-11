@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 const publicPath = path.resolve(__dirname, './public');
 const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 
+global.__basedir = __dirname;
 
 // Middlewares
 app.use(express.static(publicPath));

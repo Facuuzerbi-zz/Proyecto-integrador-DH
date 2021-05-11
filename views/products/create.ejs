@@ -25,11 +25,11 @@
                             value="<%= oldData.name %> "
                            <% } %>
                         
-                        >
+                        required>
                     </div>
                     <div>
-                        <label for="description">Descripcion general:</label>
-                        <input type="text" placeholder="Ex: Este es un auto..." name="description" >
+                       <label for="description">Descripcion general:</label>
+                        <input type="text" placeholder="Ex: Este es un auto..." name="description" required>
                     </div>
                     <div>
                         <label for="category">Categoría:</label>
@@ -44,30 +44,30 @@
                     </div>
                     <div>
                         <label for="price">Precio:</label>
-                        <input type="text" placeholder="Ex: $1000" name="price" >
+                        <input type="text" placeholder="Ex: $1000" name="price" required >
                     </div>
                 </div>
                 <hr>
                 <h2>Secccion principal</h2>
                 <div>
                     <label for="image">Imagen principal:</label>
-                    <input type="file" name="image" >
+                    <input type="file" name="file" required>
                 </div>
                 <div class="seccion-flex">
                     <div>
                         <h3>Potencia</h3>
                         <label for="potency">Desc :</label>
-                        <input type="text" placeholder="Ex: 250HP" name="potency" >
+                        <input type="text" placeholder="Ex: 250HP" name="potency" required>
                     </div>
                     <div>
                         <h3>Autonomía</h3>
                         <label for="autonomy">Desc :</label>
-                        <input type="text" placeholder="Ex: 300km" name="autonomy" >
+                        <input type="text" placeholder="Ex: 300km" name="autonomy" required>
                     </div>
                     <div>
                         <h3>Seguridad</h3>
                         <label for="security">Desc :</label>
-                        <input type="text" placeholder="Ex: 5 Airbags" name="security" >
+                        <input type="text" placeholder="Ex: 5 Airbags" name="security" required>
                     </div>
                 </div>
                 <hr>
@@ -77,25 +77,25 @@
                     <div>
                         <h3>Performance & Autonomía</h3>
                         <label for="ch1-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="performancedesc" ><br>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="performancedesc" required><br>
                         <label for="ch1-img">Imagen:</label>
-                        <input type="file" name="ch1-img" >
+                        <input type="file" name="file2" >
                     </div>
 
                     <div>
                         <h3>Exterior</h3>
                         <label for="ch2-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="exteriordesc" ><br>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="exteriordesc" required><br>
                         <label for="ch2-img">Imagen:</label>
-                        <input type="file" name="ch2-img" >
+                        <input type="file" name="file3" >
                     </div>
 
                     <div>
                         <h3>Confort</h3>
                         <label for="ch3-desc">Desc :</label>
-                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="confortdesc" ><br>
+                        <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="confortdesc" required><br>
                         <label for="ch3-img">Imagen:</label>
-                        <input type="file" name="ch3-img" >
+                        <input type="file" name="file4" >
                     </div>
                 </div>
                 <hr>

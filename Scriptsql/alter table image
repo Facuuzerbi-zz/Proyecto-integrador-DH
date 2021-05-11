@@ -1,0 +1,4 @@
+ALTER TABLE `qztech_db`.`image` 
+ADD COLUMN `type` VARCHAR(45) NULL AFTER `name`,
+ADD COLUMN `data` BLOB NULL AFTER `type`,
+CHANGE COLUMN `image` `name` VARCHAR(45) NOT NULL , RENAME TO  `qztech_db`.`name` ;

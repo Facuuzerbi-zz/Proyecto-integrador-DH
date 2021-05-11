@@ -24,60 +24,64 @@
                        type="text" 
                        name="first_name" 
                        placeholder="Nombre"
-                       <% if (locals.oldData) { %>
-                        value="<%= oldData.first_name %> "
-                       <% } %>
                        >
-                <% if (locals.errors && errors.first_name) { %>
-                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
-                        <%= errors.first_name.msg %> 
-                    </div>
-                <% } %>
+                       <% if(typeof errors != 'undefined'){ %>
+                            <% for(let i = 0; i < errors.length; i++){ %>
+                                <% if(errors[i].param == "first_name"){ %>
+
+                        <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors[i].msg%> </div>
+                                <% } %>
+                            <% } %>
+                        <% } %>
 
 
                 <input id="input-login"
                        type="text" 
                        name="last_name" 
                        placeholder="Apellido"
-                       <% if (locals.oldData) { %>
-                         value="<%= oldData.last_name %> "
-                       <% } %>
                        >
-                <% if (locals.errors && errors.last_name) { %>
+                       <% if(typeof errors != 'undefined'){ %>
+                        <% for(let i = 0; i < errors.length; i++){ %>
+                            <% if(errors[i].param == "last_name"){ %>
+
                     <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
-                        <%= errors.last_name.msg %> 
-                    </div>
-                <% } %>
+                    <%= errors[i].msg%> </div>
+                            <% } %>
+                        <% } %>
+                    <% } %>
 
 
                 <input id="input-login" 
                        type="text" 
                        name="email" 
                        placeholder="Email"
-                       <% if (locals.oldData) { %>
-                        value="<%= oldData.email %>"
-                       <% } %>
                        >
-                <% if (locals.errors && errors.email) { %>
+                       <% if(typeof errors != 'undefined'){ %>
+                        <% for(let i = 0; i < errors.length; i++){ %>
+                            <% if(errors[i].param == "email"){ %>
+
                     <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
-                        <%= errors.email.msg %> 
-                    </div>
-                <% } %>
+                    <%= errors[i].msg%> </div>
+                            <% } %>
+                        <% } %>
+                    <% } %>
 
 
                 <input id="input-login" 
                        type="password" 
                        name="password" 
                        placeholder="Contraseña"
-                       <% if (locals.oldData) { %>
-                       value="<%= oldData.password %> "
-                       <% } %>
                         >
-                <% if (locals.errors && errors.password) { %>
-                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
-                        <%= errors.password.msg %> 
-                    </div>
-                <% } %>
+                        <% if(typeof errors != 'undefined'){ %>
+                            <% for(let i = 0; i < errors.length; i++){ %>
+                                <% if(errors[i].param == "password"){ %>
+    
+                        <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors[i].msg%> </div>
+                                <% } %>
+                            <% } %>
+                        <% } %>
 
 
                 <div class="checkboxes">
@@ -86,18 +90,19 @@
                             <input type="checkbox" 
                             class="check" 
                             name="accepted_terms"
-                            <% if (locals.oldData) { %>
-                             value="<%= oldData.accepted_terms %> "
-                            <% } %>
                             >
                             Acepto terminos y condiciones
                         </label>
                     </div>
-                    <% if (locals.errors && errors.accepted_terms) { %>
-                        <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
-                            <%= errors.accepted_terms.msg %> 
-                        </div>
-                       <% } %>
+                    <% if(typeof errors != 'undefined'){ %>
+                        <% for(let i = 0; i < errors.length; i++){ %>
+                            <% if(errors[i].param == "accepted_terms"){ %>
+
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                    <%= errors[i].msg%> </div>
+                            <% } %>
+                        <% } %>
+                    <% } %>
                     <div class="check-reci">
                         <label id="terminos"><input type="checkbox" class="check" name="opt_in_newsletter">Recibir novedades</label><br>
                     </div>
