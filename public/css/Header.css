@@ -12,7 +12,6 @@ body{
 .main-header{
   background-color: transparent;
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 .main-header-top-bar{

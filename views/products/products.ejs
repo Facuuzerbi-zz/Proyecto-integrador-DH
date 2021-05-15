@@ -11,7 +11,7 @@
     <body>
         <%- include("../partials/products-header") %>
         <main>
-            <h1> Encontrá tu <%= productosAMostrar[0].productstypeid %> ideal</h1>
+            <h1> Encontrá tu <%= productosAMostrar[0].category %> ideal</h1>
             <% productosAMostrar.forEach(function(product){ %>
             <% let color; %>
             <% if((product.id) %2 != 0){ %> 
@@ -27,8 +27,8 @@
                     <p><%= product.description%></p>
                     <div>
                         <a href="http://localhost:3030/products/detail/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Ver más"></a>
-                        <a href="http://localhost:3030/products/edit/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Editar"></a>
-                        <a href="http://localhost:3030/products/delete/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Eliminar"></a>
+                        <!--a href="http://localhost:3030/products/edit/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Editar"></a>
+                        <a href="http://localhost:3030/products/delete/<%= product.id %>" style="text-decoration: none"><input class="button" type="button" value="Eliminar"></a!-->
                     </div>
                 </div>  
             </section>

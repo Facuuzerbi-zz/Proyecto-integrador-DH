@@ -46,7 +46,7 @@ const userController = {
             let password = req.body.password
             const user = await User.findOne({
                 attributes: [
-                    "email", "password"],
+                    "email", "password", "userrolid"],
                 where: { email: req.body.email }
             });
             console.log(password, user.password)
@@ -61,7 +61,7 @@ const userController = {
                         res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 });
                     }
 
-                    return res.redirect('/user/profile');
+                    return res.redirect('/');
 
                 } else {
                     console.log('pass incorrecta');

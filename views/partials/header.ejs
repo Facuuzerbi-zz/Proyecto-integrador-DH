@@ -25,19 +25,26 @@
                         <li><a href="/cart"><i class="fas fa-shopping-cart fa-2x"></i></li>
                         <li class = "nav-item dropdown">
                             <i class="far fa-user fa-2x"></i>
-                                <a class = "nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i></a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <% if (locals.isLogged) { %>
-                                        <a class="dropdown-item" href="/user/profile">Mi perfil</a>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <a class="dropdown-item" href="/user/logout">Cerrar sesión</a>
-                                    <% } else { %>
-                                        <a class="dropdown-item" href="/user/signin">Registrarse</a>
-                                        <li><hr class="dropdown-divider"></li>
-                                        <a class="dropdown-item" href="/user/login">Iniciar sesión</a>
-                                    <% } %>
-                                </ul>
+                                <a class = "nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i></a>          
                         </li>
+                     
+                        
+
+                            
+                         
+                       
+                        <ul  id="myBtn" class="dropdown-menu" aria-labelledby="navbarDropdown" style="position: absolute; right: 0; top: 6vh; z-index: 99; background-color: white;">
+                                    
+                            <% if (locals.isLogged) { %>
+                                <a class="dropdown-item" href="/user/profile">Mi perfil</a>
+                                <li><hr class="dropdown-divider"></li>
+                                <a class="dropdown-item" href="/user/logout">Cerrar sesión</a>
+                            <% } else { %>
+                                <a class="dropdown-item" href="/user/signin">Registrarse</a>
+                                <li><hr class="dropdown-divider"></li>
+                                <a class="dropdown-item" href="/user/login">Iniciar sesión</a>
+                            <% } %>
+                        </ul>
                     </ul>
             </div>
         </header>

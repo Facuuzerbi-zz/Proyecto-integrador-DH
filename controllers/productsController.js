@@ -7,12 +7,14 @@ const Image = db.Image;
 const path = require("path");
 module.exports = {
     autos: function (req, res) {
-        let productosAMostrar = Product.findAll({ where: { productstypeid: 1 } })
+      //  let productosAMostrar = Product.findAll({ where: { productstypeid: 1 } })
 
-            .then(function (productosAMostrar) {
+        //    .then(function (productosAMostrar) {
                 //console.log(productosAMostrar)
-                res.render('../views/products/products.ejs', { productosAMostrar });
-            })
+          //      res.render('../views/products/products.ejs', { productosAMostrar });
+            //})
+        let productosAMostrar = data.filter(x => x.category == "auto");
+        res.render('../views/products/products.ejs', { productosAMostrar });
     },
 
     motos: function (req, res) {
