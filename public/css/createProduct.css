@@ -6,16 +6,20 @@ main{
 }
 
 h1 {
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 15px;
-    background-color: black;
+    background-color:  #212529;
     color: white;
     margin: 0px;
-    text-align: center;
+    text-align:center;
+    font-size:25px;
+    text-anchor: middle;
 }
 
 h2{
     text-align: center;
+    font-size: inherit;
+    color: black;
 }
 
 h3{
@@ -25,19 +29,43 @@ h3{
 .form-crear {
     margin-left: 20px;
     margin-right: 20px;
-}
+    
+    
 
+}
+.flex-secundaria{
+    margin: 10px auto;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .seccion-flex{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap:inherit;
+    justify-content:initial; 
     align-items: center;
     margin-bottom: 20px;
     margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    
 }
 
 input{
     margin-bottom: 5px;
+    align-content: center;
+    margin-right:10px;
+    margin-left:10px;
+
+}
+label{
+    margin-bottom: 5px;
+    align-content: center;
+    margin-right:10px;
+    margin-left:10px;
+
 }
 
 .button{

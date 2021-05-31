@@ -10,13 +10,17 @@ router.use('/auto', (productsController.autos));
 router.use('/moto', (productsController.motos));
 router.use('/monopatin', (productsController.monopatines));
 router.use('/detail/:id?', (productsController.detail));
-router.use('/edit/:id?', (productsController.edit));
+//router.use('/edit/:id?', (productsController.edit));
 
 // Routes
 // Formulario de Producto
 router.get('/create',  (productsController.create));
 router.post('/create', upload.single("file"), (productsController.store));
 
+
+// Formulario de Producto
+router.get('/edit/:id',  productsController.edit);
+router.post('/edit/:id', productsController.saveEdit);
 //router.get('/create', (productcrudController.create));
 //router.post('/create', (productcrudController.store));
 

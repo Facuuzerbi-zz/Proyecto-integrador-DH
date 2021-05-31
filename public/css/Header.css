@@ -185,6 +185,7 @@ footer{
   }
   .navbar-prod, .iconos{
     display: flex;
+    align-content:center;
   }
   .navbar-prod li, .iconos li{
     list-style: none;
@@ -192,6 +193,7 @@ footer{
   .left-navbar, .right-navbar{
     display: flex;
     align-items: center;
+    align-content:center;
     margin: 0px;
     padding: 0px;
   }

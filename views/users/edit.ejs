@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/img/Logos/Rayito-celeste.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/LogIn.css">
+        <link rel="stylesheet" href="/css/SigIn.css">
+        <title>Edit</title>
+    </head>
+    <body>
+        <header class="header-logsin">
+            <div>
+            <a href="/" class="logo-logsin"><img src="/img/Logos/logo-negro.png" alt="Logo"></a>
+            </div>    
+        </header>
+        <section>
+            <h3 class="titulo-in"> Modificar Cuenta</h3>
+            <form  method="POST" class="formulario">
+
+
+                <input id="input-login"
+                       type="text" 
+                       name="first_name" 
+                       <%user.forEach(user =>{%>
+                       value="<%=user.firstname%>"<% }) %>
+                       >
+                       <% if(typeof errors != 'undefined'){ %>
+                            <% for(let i = 0; i < errors.length; i++){ %>
+                                <% if(errors[i].param == "first_name"){ %>
+
+                        <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                        <%= errors[i].msg%> </div>
+                                <% } %>
+                            <% } %>
+                        <% } %>
+
+
+                <input id="input-login"
+                       type="text" 
+                       name="last_name" 
+                       <%user.forEach(user =>{%>
+                        value="<%=user.lastname%>"<% }) %>
+                       >
+                       <% if(typeof errors != 'undefined'){ %>
+                        <% for(let i = 0; i < errors.length; i++){ %>
+                            <% if(errors[i].param == "last_name"){ %>
+
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                    <%= errors[i].msg%> </div>
+                            <% } %>
+                        <% } %>
+                    <% } %>
+
+
+                <input id="input-login" 
+                       type="text" 
+                       name="email" 
+                       <%user.forEach(user =>{%>
+                        value="<%=user.email%>"<% }) %>
+                       >
+                       <% if(typeof errors != 'undefined'){ %>
+                        <% for(let i = 0; i < errors.length; i++){ %>
+                            <% if(errors[i].param == "email"){ %>
+
+                    <div style="color: red; display: flex; justify-content: center; font-family: 'Open Sans', sans-serif; padding-top: 5px;"> 
+                    <%= errors[i].msg%> </div>
+                            <% } %>
+                        <% } %>
+                    <% } %>
+
+
+                    
+                <div id="div-buttons">
+                    <input id="button-acept" type="submit" value="Modificar">
+                </div>
+            </form>
+            <p class="line">___________________________________</p>
+
+            <div id="div-buttons">
+                <a href="/user/login" style="text-decoration: none"><input id="button-other" type="button" value="Ingresar"></a>
+            </div>
+        </section>
+    </body>
+</html>

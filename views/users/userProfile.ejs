@@ -17,11 +17,19 @@
         </header>
        
         <section>
-            <h3 class="titulo-in">Hola <%=user.firs_tname %></h3>
+            <h3 class="titulo-in"> Hola </h3>
+                <div>
+           
+                <%=user.firstname %>
+                
+                </div>
+           
             <p class="titulo-in"><%=user.email %></p>
             <div id="div-buttons">
                 <a href="/user/logout" style="text-decoration: none"><input id="button-acept" type="submit" value="Cerrar sesión"></a>
+                <a href="/user/edit/" <%=user.id %> style="text-decoration: none"><input id="button-acept" type="submit" value="Modifcar Datos"></a>
             </div>
+           
         </section>
     </body>
 </html>

@@ -5,16 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/img/Logos/Rayito-celeste.png">
         <link rel="stylesheet" href="/css/createProduct.css">
-        <link rel="stylesheet" href="/css/Header.css">
+        <link rel="stylesheet" href="/css/products-header.css">
+
         <title>Crear producto</title>
     </head>
     <body>
-        <%- include("../partials/header") %>
+        <%- include("../partials/products-header") %>
+     
         <main>
             <h1> Crear nuevo producto</h1>
             <form action "/products/create" method="POST" enctype='multipart/form-data' class="form-crear">
+                
                 <h2>Datos generales</h2>
                 <div class="seccion-flex">
+                    
                     <div>
                         <label for="name">Titulo del producto:</label>
                         <input id="input-pr"
@@ -38,69 +42,67 @@
                                 <% types.forEach(type => { %>
                                     <option value="<%= type.id %>"><%=type.category%> </option>
                                 <% }) %>
-
+                                   
                             </select>
-                    
+
+                      
                     </div>
                     <div>
                         <label for="price">Precio:</label>
                         <input type="text" placeholder="Ex: $1000" name="price" required >
                     </div>
+              
                 </div>
                 <hr>
                 <h2>Secccion principal</h2>
-                <div>
-                    <label for="image">Imagen principal:</label>
-                    <input type="file" name="file" required>
-                </div>
+               
                 <div class="seccion-flex">
-                    <div>
-                        <h3>Potencia</h3>
-                        <label for="potency">Desc :</label>
+                    <div class="flex-secundaria">
+                        <label for="potency">Potencia</label>
                         <input type="text" placeholder="Ex: 250HP" name="potency" required>
-                    </div>
-                    <div>
-                        <h3>Autonomía</h3>
-                        <label for="autonomy">Desc :</label>
+                    
+                        <label for="autonomy">Autonomía</label>
                         <input type="text" placeholder="Ex: 300km" name="autonomy" required>
-                    </div>
-                    <div>
-                        <h3>Seguridad</h3>
-                        <label for="security">Desc :</label>
+    
+                        <label for="security">Seguridad</label>
                         <input type="text" placeholder="Ex: 5 Airbags" name="security" required>
                     </div>
+                    
+                </div>
+
+                
+                <div class="flex-secundaria">
+                    <label for="image">Imagen Principal</label>
+                    <input type="file" name="file" required>
                 </div>
                 <hr>
 
                 <h2>Secciones secundarias</h2>
                 <div class="seccion-flex">
-                    <div>
-                        <h3>Performance & Autonomía</h3>
-                        <label for="ch1-desc">Desc :</label>
+                    
+                    <div class="flex-secundaria">
+                
+                        <label for="ch1-desc">Performance</label>
                         <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="performancedesc" required><br>
-                        <label for="ch1-img">Imagen:</label>
-                        <input type="file" name="file2" >
-                    </div>
-
-                    <div>
-                        <h3>Exterior</h3>
-                        <label for="ch2-desc">Desc :</label>
+                        <!--label for="ch1-img">Imagen:</label>
+                        <input type="file" name="file2" -->
+             
+                       
+                        <label for="ch2-desc">Exterior</label>
                         <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="exteriordesc" required><br>
-                        <label for="ch2-img">Imagen:</label>
-                        <input type="file" name="file3" >
-                    </div>
-
-                    <div>
-                        <h3>Confort</h3>
-                        <label for="ch3-desc">Desc :</label>
+                        <!--label for="ch2-img">Imagen:</label>
+                        <input type="file" name="file3" -->
+                   
+                        
+                        <label for="ch3-desc">Confort</label>
                         <input type="text" placeholder="Ex: Este modelo tiene una performance..." name="confortdesc" required><br>
-                        <label for="ch3-img">Imagen:</label>
-                        <input type="file" name="file4" >
+                        <!--label for="ch3-img">Imagen:</label>
+                        <input type="file" name="file4" -->
                     </div>
                 </div>
                 <hr>
                 <div id="div-buttons">
-                    <input id="button-acept" type="submit" value="Crear producto"">
+                    <input id="button-acept" type="submit" value="Crear producto">
                 </div>
             
             </form>

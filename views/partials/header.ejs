@@ -1,15 +1,15 @@
  
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/header.css">
         
         <header class="main-header">
             <div class="main-header-top-bar">
                 <div class="caja-logo">
                     <a href="/"><img src="/img/Logos/logo-negro.png" alt="Logo" class="logo"></a>
                 </div>
-                <form action="#" method="GET" class="busqueda">
+                <!--form action="#" method="GET" class="busqueda">
                     <input type="search" placeholder="Buscar" name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+                </form-->
             </div>
             <a href="#" class="hamburguer-button"><i class="fa fa-bars burger"></i></a>
             <div class="navbar-prod">
@@ -21,29 +21,27 @@
             </div>
             <div class="iconos">
                     <ul class="right-navbar">
-                        <li><a href="#"><i class="fas fa-search fa-2x"></i></a></li>
-                        <li><a href="/cart"><i class="fas fa-shopping-cart fa-2x"></i></li>
-                        <li class = "nav-item dropdown">
+                        <!--li><a href="#"><i class="fas fa-search fa-2x"></i></a></li-->
+                        <!--li><a href="#"><i class="fas fa-shopping-cart fa-2x"></i></li-->
+                        <li><a href="/user/login"><i class="far fa-user fa-2x"></i></li>
+                        <!--li class = "nav-item dropdown">
                             <i class="far fa-user fa-2x"></i>
                                 <a class = "nav-link dropdown-toggle" href="#" id="dropUser" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i></a>          
-                        </li>
+                        </li-->
                      
-                        
+                        <% if (locals.isLogged) { %>
+                            <a class="dropdown-item" href="/user/profile">Mi perfil</a>
+                            <li><hr class="dropdown-divider"></li>
+                            <a class="dropdown-item" href="/user/logout">Cerrar sesión</a>
+                        <% } else { %>
+                            <a class="dropdown-item" href="/user/signin">Registrarse</a>
+                            <li><hr class="dropdown-divider"></li>
+                            <!--a class="dropdown-item" href="/user/login">Iniciar sesión</a-->
+                        <% } %>
 
-                            
-                         
-                       
                         <ul  id="myBtn" class="dropdown-menu" aria-labelledby="navbarDropdown" style="position: absolute; right: 0; top: 6vh; z-index: 99; background-color: white;">
                                     
-                            <% if (locals.isLogged) { %>
-                                <a class="dropdown-item" href="/user/profile">Mi perfil</a>
-                                <li><hr class="dropdown-divider"></li>
-                                <a class="dropdown-item" href="/user/logout">Cerrar sesión</a>
-                            <% } else { %>
-                                <a class="dropdown-item" href="/user/signin">Registrarse</a>
-                                <li><hr class="dropdown-divider"></li>
-                                <a class="dropdown-item" href="/user/login">Iniciar sesión</a>
-                            <% } %>
+                            
                         </ul>
                     </ul>
             </div>

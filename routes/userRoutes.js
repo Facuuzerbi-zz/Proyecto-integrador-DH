@@ -14,6 +14,10 @@ const authMiddleware = require ('../middlewares/authMiddleware');
 router.get('/signin', guestMiddleware, userController.signin);
 router.post('/signin',validationsCreate, userController.processSignin);
 
+// Form de Edit
+router.get('/edit/:id', guestMiddleware, userController.edit);
+router.post('/edit/:id',validationsCreate, userController.saveEdit);
+
 // Form de Log in 
 router.get('/login',  guestMiddleware, userController.login);
 router.post('/login', userController.processLogin);

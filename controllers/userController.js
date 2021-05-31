@@ -108,6 +108,28 @@ const userController = {
         return res.redirect('/');
     },
 
+    edit:(req, res)=>{
+        let usuarioAEditar = User.findAll({ where: {id: req.params.id} })
+        Promise.all([usuarioAEditar])
+        .then(function ([user]) {
+             //console.log(product)
+            res.render('../views/users/edit', {user:user});
+         }); 
+
+    },
+    saveEdit:(req, res)=>{
+        let userSave=User.update({
+            firstname: req.body.first_name,
+            lastname: req.body.last_name,
+            email: req.body.email,
+        },{where:{id: req.params.id}} )
+        .then(function(userSave){
+            return res.redirect('../edit/' + req.params.id);     
+            })
+
+
+    },
+
 
 }
 

@@ -13,6 +13,9 @@ module.exports = function(sequelize, dataTypes){
     productstypeid: {
       type: dataTypes.INTEGER,
     },
+    category: {
+      type: dataTypes.INTEGER,
+    },
     description: {
       type: dataTypes.STRING
     },
@@ -36,6 +39,15 @@ module.exports = function(sequelize, dataTypes){
     },
     confortdesc: {
       type: dataTypes.STRING
+    },
+    type: {
+      type: dataTypes.STRING,
+    },
+    image: {
+      type: dataTypes.STRING,
+    },
+    data: {
+      type: dataTypes.BLOB("long"),
     },
     active: {
       type: dataTypes.INTEGER
